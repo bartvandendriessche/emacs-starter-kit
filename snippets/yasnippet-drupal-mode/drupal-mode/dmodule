@@ -8,11 +8,11 @@
 /**
  * Implementation of hook_info
  */
-function ${1:module}_info() {
+function ${1:`(sacha/drupal-module-name)`}_info() {
   return array(
-    '${1:module}' => array(
+    '${1:`(sacha/drupal-module-name)`}' => array(
       'name' => t('${2:title}'),
-      'module' => '${1:module}',
+      'module' => '${1:`(sacha/drupal-module-name)`}',
       'description' => t('Manage the ${2:title} module'),
     )
   );
@@ -21,7 +21,7 @@ function ${1:module}_info() {
 /**
  * Implementation of hook_help
  */
-function ${1:module}_help($section) {
+function ${1:`(sacha/drupal-module-name)`}_help($section) {
   switch ($section) {
   }
 }
@@ -29,16 +29,16 @@ function ${1:module}_help($section) {
 /**
  * Implementation of hook_menu
  */
-function ${1:module}_menu($may_cache) {
+function ${1:`(sacha/drupal-module-name)`}_menu($may_cache) {
   $items = array();
   if ($may_cache) {
     $items[] = array(
-      'path' => 'admin/settings/${1:module}',
+      'path' => 'admin/settings/${1:`(sacha/drupal-module-name)`}',
       'title' => t('${2:title}'),
       'description' => t('manage the ${2:title} module'),
       'callback' => 'drupal_get_form',
-      'callback arguments' => '{$1:module}_settings',
-      'access' => user_access('administer ${1:module}'),
+      'callback arguments' => '{$1:`(sacha/drupal-module-name)`}_settings',
+      'access' => user_access('administer ${1:`(sacha/drupal-module-name)`}'),
       'type' => MENU_NORMAL_ITEM,
     );
   } else {
@@ -49,14 +49,14 @@ function ${1:module}_menu($may_cache) {
 /**
  * Implementation of hook_perm
  */
-function ${1:module}_perm() {
-  return array('administer ${1:module}');
+function ${1:`(sacha/drupal-module-name)`}_perm() {
+  return array('administer ${1:`(sacha/drupal-module-name)`}');
 }
 
 /**
  * Implementation of hook_cron
  */
-function ${1:module}_cron() {
+function ${1:`(sacha/drupal-module-name)`}_cron() {
 }
 
 /*********************************************************************
@@ -65,19 +65,19 @@ function ${1:module}_cron() {
 /**
  * Implementation of hook_form_alter
  */
-function ${1:module}_form_alter($form_id, &$form) {
+function ${1:`(sacha/drupal-module-name)`}_form_alter($form_id, &$form) {
 }
 
 /**
  * Implementation of hook_footer
  */
-function ${1:module}_footer() {
+function ${1:`(sacha/drupal-module-name)`}_footer() {
 }
 
 /**
  * Implementation of hook_user
  */
-function ${1:module}_user($op, &$edit, &$account, $category = NULL) {
+function ${1:`(sacha/drupal-module-name)`}_user($op, &$edit, &$account, $category = NULL) {
   switch ($op) {
     case 'login':
       break;
@@ -95,7 +95,7 @@ function ${1:module}_user($op, &$edit, &$account, $category = NULL) {
 /**
  * Implementation of hook_nodeapi()
  */
-function ${1:module}_nodeapi(&$node, $op, $teaser = NULL, $page = NULL) {
+function ${1:`(sacha/drupal-module-name)`}_nodeapi(&$node, $op, $teaser = NULL, $page = NULL) {
 }
 
 /***********************************************************
@@ -105,7 +105,7 @@ function ${1:module}_nodeapi(&$node, $op, $teaser = NULL, $page = NULL) {
 /**
  * Implementation of hook_block
  */
-function ${1:module}_block($op = 'list', $delta = 0, $edit = array()) {
+function ${1:`(sacha/drupal-module-name)`}_block($op = 'list', $delta = 0, $edit = array()) {
   switch ($op) {
     case 'list':
       break;
@@ -118,8 +118,8 @@ function ${1:module}_block($op = 'list', $delta = 0, $edit = array()) {
   }
 }
 
-function ${1:module}_settings() {
-  if (!user_access('administer ${1:module}')) {
+function ${1:`(sacha/drupal-module-name)`}_settings() {
+  if (!user_access('administer ${1:`(sacha/drupal-module-name)`}')) {
     drupal_access_denied();
     return;
   }
@@ -140,8 +140,8 @@ $0
 /**
  * Implementation of hook_simpletest().
  */
-function ${1:module}_simpletest() {
-  $module_name = '${1:module}'; 
+function ${1:`(sacha/drupal-module-name)`}_simpletest() {
+  $module_name = '${1:`(sacha/drupal-module-name)`}'; 
   $dir = drupal_get_path('module', $module_name). '/tests';
   $tests = file_scan_directory($dir, '\.test$');
   return array_keys($tests);
