@@ -1,0 +1,20 @@
+/**
+ * Implementation of hook_access
+ * Define access restrictions.
+ * This hook allows node modules to limit access to the node types they define.
+ *
+ * @return TRUE if allowed, FALSE if not allowed,
+ * NULL to not override node_access
+ */
+function ${1:`(sacha/drupal-module-name)`}_access($op, $node)
+  switch ($op) {
+    case 'create':
+      break;
+    case 'delete':
+      break;
+    case 'update':
+      break;
+    case 'view':
+      break;
+  }
+}

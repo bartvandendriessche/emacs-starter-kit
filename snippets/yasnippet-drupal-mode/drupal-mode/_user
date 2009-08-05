@@ -1,0 +1,17 @@
+/**
+ * Implementation of hook_user
+ */
+function ${1:`(sacha/drupal-module-name)`}_user($op, &$edit, &$account, $category = NULL) {
+  switch ($op) {
+    case 'login':
+      break;
+    case 'load':
+      break;
+    case 'form':
+      break;
+    case 'update':
+      break;
+    case 'delete':
+      break;
+  }
+}

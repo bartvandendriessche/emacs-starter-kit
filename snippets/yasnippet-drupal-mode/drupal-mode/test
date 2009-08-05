@@ -1,0 +1,14 @@
+<?php
+class ${1:classname} extends DrupalTestCase {
+  function get_info() {
+    return array(
+      'name' => t('${2:name}'),
+      'desc' => t('${3:desc}'),
+      'group' => t('${4:group}'),
+    );
+  }
+
+  function test${5:function}() {
+    $0
+  }
+}

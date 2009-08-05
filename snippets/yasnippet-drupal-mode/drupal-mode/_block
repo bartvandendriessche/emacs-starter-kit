@@ -1,0 +1,24 @@
+/**
+ * Declare a block or set of blocks.
+ *
+ * Implementation of hook_block
+ *
+ * @return If $op is 'list', return an array of arrays, each of which
+ * must define an 'info' element describing the block. If $op is
+ * 'configure', optionally return a string containing the
+ * configuration form. If $op is 'save', return nothing, If $op is
+ * 'view', return an array which must define a 'subject' element and a
+ * 'content' element defining the block indexed by $delta.
+ */
+function ${1:`(sacha/drupal-module-name)`}_block($op, $delta, $edit) {
+  switch ($op) {
+  case 'list': // A list of all blocks defined by the module.
+    break;
+  case 'configure': // A configuration form.
+    break;
+  case 'save': // Save the configuration options.
+    break;
+  case 'view': // Information about a particular block and default settings.
+    break;
+  }
+}

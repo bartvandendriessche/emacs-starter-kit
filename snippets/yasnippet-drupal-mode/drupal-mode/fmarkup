@@ -1,0 +1,4 @@
+$form['${1:id}'] = array(
+  '#type' => 'markup',
+  '#value' => $0,
+);
