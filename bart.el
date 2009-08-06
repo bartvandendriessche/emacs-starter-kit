@@ -18,3 +18,11 @@
 (defun sacha/drupal-module-name ()
   "Return the Drupal module name for .module and .install files"
   (file-name-sans-extension (file-name-nondirectory (buffer-file-name))))
+
+;; custom function, analoguous to vi's join lines
+(defun pull-next-line()
+  (interactive) 
+  (move-end-of-line 1) 
+  (kill-line)
+  (just-one-space))
+(global-set-key (kbd "M-j") 'pull-next-line)
