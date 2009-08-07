@@ -5,6 +5,13 @@
 (require 'setup-php)
 (setup-php)
 
+;; load custom yasnippets
+(yas/load-directory "~/.emacs.d/snippets/yasnippet-drupal-mode")
+(yas/load-directory "~/.emacs.d/snippets/yasnippet-php-mode")
+
+; enable drupal snippets in php-mode
+(yas/define-snippets 'php-mode nil 'drupal-mode)
+
 ;; enable yasnippet for nxhtml mode
 (yas/define-snippets 'nxhtml-mode nil 'html-mode)
 

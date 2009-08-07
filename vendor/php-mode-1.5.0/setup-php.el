@@ -11,8 +11,8 @@
   (c-set-offset 'arglist-cont-nonempty 'c-lineup-math) ; for DBTNG fields and values
   
   ; More Drupal-specific customizations here
-  (yas/load-directory "~/.emacs.d/snippets/yasnippet-drupal-mode")
-  (yas/define-snippets 'php-mode nil 'drupal-mode)
+  ; (yas/load-directory "~/.emacs.d/snippets/yasnippet-drupal-mode")
+  ; (yas/define-snippets 'php-mode nil 'drupal-mode)
 )
 
 (defconst my-php-style
@@ -28,7 +28,7 @@
   (c-set-style "my-php-style")
   ; More generic PHP customizations here
   ; load the php yas snippets
-  (yas/load-directory "~/.emacs.d/snippets/yasnippet-php-mode")
+  ; (yas/load-directory "~/.emacs.d/snippets/yasnippet-php-mode")
 )
 
 (defun setup-php ()
