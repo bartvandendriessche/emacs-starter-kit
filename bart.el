@@ -39,5 +39,3 @@
 ;; a few custom keybindings
 (global-set-key (kbd "M-j") 'pull-next-line)
 (global-set-key (kbd "S-SPC") 'complete-symbol)
-
-
