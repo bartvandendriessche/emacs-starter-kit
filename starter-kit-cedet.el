@@ -39,7 +39,7 @@
 
 ;(semantic-load-enable-semantic-debugging-helpers)
 
-;; enable semantic tag folding mode
-;; (global-semantic-tag-folding-mode)
+(global-semantic-tag-folding-mode 1) ; Enable semantic tag folding mode
+(global-srecode-minor-mode 1) ; Enable template insertion menu
 
 (provide 'starter-kit-cedet)
