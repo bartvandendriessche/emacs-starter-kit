@@ -46,7 +46,7 @@
 (require 'starter-kit-elpa)
 
 ;; Load up starter kit customizations
-
+;; (require 'starter-kit-jde)
 (require 'starter-kit-defuns)
 (require 'starter-kit-bindings)
 (require 'starter-kit-misc)
@@ -56,6 +56,8 @@
 (require 'starter-kit-perl)
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
+(require 'starter-kit-cedet)
+
 
 (regen-autoloads)
 (load custom-file 'noerror)
