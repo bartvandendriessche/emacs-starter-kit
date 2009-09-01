@@ -42,4 +42,10 @@
 (global-semantic-tag-folding-mode 1) ; Enable semantic tag folding mode
 (global-srecode-minor-mode 1) ; Enable template insertion menu
 
+;; bind folding functions
+(global-set-key (kbd "C-M--") 'semantic-tag-folding-fold-all)
+(global-set-key (kbd "C-M-=") 'semantic-tag-folding-show-all)
+(global-set-key (kbd "C--") 'semantic-tag-folding-fold-block)
+(global-set-key (kbd "C-=") 'semantic-tag-folding-show-block)
+
 (provide 'starter-kit-cedet)
