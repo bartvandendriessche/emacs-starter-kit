@@ -57,7 +57,7 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 (require 'starter-kit-cedet)
-
+(require 'starter-kit-jde)
 
 (regen-autoloads)
 (load custom-file 'noerror)
