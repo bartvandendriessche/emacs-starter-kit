@@ -1,0 +1,1 @@
+find . -name \*.el -o -name \*.elc | etags -l lisp -
