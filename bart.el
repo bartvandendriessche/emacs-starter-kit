@@ -1,5 +1,7 @@
-;; load the zenburn scheme
-(zenburn)
+;; load a peculiarly nice mix between twilight and zenburn scheme
+(color-theme-twilight)
+(color-theme-zenburn)
+
 
 (add-to-list 'load-path "~/.emacs.d/vendor/php-mode-1.5.0/")
 (require 'php-mode)
