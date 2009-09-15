@@ -1703,7 +1703,8 @@ Example:
   (* (/ (+ arg tab-width) tab-width) tab-width))
 
 (defun company-untabify (str)
-  (let* ((pieces (split-string str "\t"))
+  (let* ((pieces (if str (split-string str "\t")
+                   nil))
          (copy pieces))
     (while (cdr copy)
       (setcar copy (company-safe-substring
