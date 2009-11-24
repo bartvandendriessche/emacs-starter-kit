@@ -8,9 +8,8 @@
                                    'js2-mode
                                    'css-mode
                                    'gist
-                                   'nxml-mode
-                                   'paredit
-                                   'yasnippet-bundle)
+                                   'yasnippet-bundle
+                                   'nxml-mode)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
