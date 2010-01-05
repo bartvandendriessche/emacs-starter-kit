@@ -118,9 +118,9 @@
 
 (eval-after-load 'mumamo
   '(eval-after-load 'zenburn
-;     '(set-face-background 'mumamo-background-chunk-submode1 "gray22")))
-     '(ignore-errors (set-face-background
-                      'mumamo-background-chunk-submode "gray22"))))
+     '(ignore-errors  (set-face-background 'mumamo-background-chunk-submode1 "gray22"))))
+     ;; '(ignore-errors (set-face-background
+     ;;                  'mumamo-background-chunk-submode "gray22"))))
 
 ;; Platform-specific stuff
 (when (eq system-type 'darwin)
