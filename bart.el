@@ -2,7 +2,6 @@
 (color-theme-twilight)
 (color-theme-zenburn)
 
-(add-to-list 'load-path "~/.emacs.d/vendor/php-mode-1.5.0/")
 (require 'php-mode)
 
 ;; setup drupal-mode
