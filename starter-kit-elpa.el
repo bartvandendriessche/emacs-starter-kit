@@ -6,13 +6,8 @@
                                    'ruby-mode
                                    'inf-ruby
                                    'css-mode
-<<<<<<< HEAD:starter-kit-elpa.el
                                    'gist
-                                   'yasnippet-bundle
-                                   'nxml-mode)
-=======
-                                   'gist)
->>>>>>> b191b8b19fe834291c4f14899dc326fcd94b157d:starter-kit-elpa.el
+                                   'yasnippet-bundle)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
