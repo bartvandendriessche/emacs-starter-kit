@@ -34,7 +34,7 @@
       save-place-file (concat dotfiles-dir "places"))
 
 ;; Set this to whatever browser you use
-;; (setq browse-url-browser-function 'browse-url-firefox)
+(setq browse-url-browser-function 'browse-url-firefox)
 ;; (setq browse-url-browser-function 'browse-default-macosx-browser)
 ;; (setq browse-url-browser-function 'browse-default-windows-browser)
 ;; (setq browse-url-browser-function 'browse-default-kde)
@@ -118,9 +118,10 @@
 
 (eval-after-load 'mumamo
   '(eval-after-load 'zenburn
-     '(ignore-errors  (set-face-background 'mumamo-background-chunk-submode1 "gray22"))))
-     ;; '(ignore-errors (set-face-background
-     ;;                  'mumamo-background-chunk-submode "gray22"))))
+     '(ignore-errors  (set-face-background 'mumamo-background-chunk-submode1 "gray22")
+                      (set-face-background 'mumamo-background-chunk-major "gray22"))))
+      ;; '(ignore-errors (set-face-background
+      ;;                  'mumamo-background-chunk-submode "gray22"))))
 
 ;; Platform-specific stuff
 (when (eq system-type 'darwin)
