@@ -9,10 +9,6 @@
   (c-set-offset 'case-label '+)
   (c-set-offset 'arglist-intro '+) ; for FAPI arrays and DBTNG
   (c-set-offset 'arglist-cont-nonempty 'c-lineup-math) ; for DBTNG fields and values
-  
-  ; More Drupal-specific customizations here
-  ; (yas/load-directory "~/.emacs.d/snippets/yasnippet-drupal-mode")
-  ; (yas/define-snippets 'php-mode nil 'drupal-mode)
 )
 
 (defconst my-php-style
