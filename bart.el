@@ -24,11 +24,6 @@
 ;; enable the menu bar
 (menu-bar-mode)
 
-;; custom function to make drupal-snippets work
-(defun sacha/drupal-module-name ()
-  "Return the Drupal module name for .module and .install files"
-  (file-name-sans-extension (file-name-nondirectory (buffer-file-name))))
-
 ;; custom function, analoguous to vi's join lines
 (defun pull-next-line()
   (interactive) 
