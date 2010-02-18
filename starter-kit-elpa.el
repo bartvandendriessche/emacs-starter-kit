@@ -7,7 +7,9 @@
                                    'inf-ruby
                                    'css-mode
                                    'gist
-                                   'yasnippet-bundle)
+                                   'yasnippet-bundle
+                                   'weblogger
+                                   'htmlize)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
