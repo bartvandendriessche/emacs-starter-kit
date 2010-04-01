@@ -39,8 +39,8 @@
 ;; customize company mode
 ;; (add-to-list 'load-path "~/.emacs.d/lisp/company-mode")
 ;; (require 'company)
-(setq company-begin-commands '(self-insert-command))
-(setq company-backends nil)
-(add-hook 'css-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-css company-dabbrev-code company-semantic))(company-mode 1)))
-(add-hook 'emacs-lisp-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-elisp))(company-mode 1)))
-(add-hook 'php-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-etags)) (setq company-etags-modes nil) (set (make-local-variable 'company-etags-modes) '(php-mode)) (company-mode 1)))
+;; (setq company-begin-commands '(self-insert-command))
+;; (setq company-backends nil)
+;; (add-hook 'css-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-css company-dabbrev-code company-semantic))(company-mode 1)))
+;; (add-hook 'emacs-lisp-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-elisp))(company-mode 1)))
+;; (add-hook 'php-mode-hook (lambda () (set (make-local-variable 'company-backends) '(company-etags)) (setq company-etags-modes nil) (set (make-local-variable 'company-etags-modes) '(php-mode)) (company-mode 1)))
