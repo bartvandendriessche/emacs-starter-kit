@@ -8,8 +8,7 @@
                                    'css-mode
                                    'gist
                                    'yasnippet-bundle
-                                   'weblogger
-                                   'htmlize)
+                                   'magit)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
