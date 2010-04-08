@@ -3,6 +3,7 @@
 ;; Part of the Emacs Starter Kit
 
 (defvar starter-kit-packages (list 'idle-highlight
+                                   'javascript
                                    'ruby-mode
                                    'inf-ruby
                                    'css-mode
