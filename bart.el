@@ -5,21 +5,18 @@
 (require 'php-mode)
 
 ;; setup drupal-mode
-(require 'setup-php)
-(setup-php)
+;;(require 'setup-php)
+;;(setup-php)
 
 ;; load custom yasnippets
 (yas/load-directory "~/.emacs.d/snippets/yasnippet-drupal-mode")
-(yas/load-directory "~/.emacs.d/snippets/yasnippet-php-mode")
-
-; enable drupal snippets in php-mode
-(yas/define-snippets 'php-mode nil 'drupal-mode)
+;;(yas/load-directory "~/.emacs.d/snippets/yasnippet-php-mode")
 
 ;; enable yasnippet for nxhtml mode
-(yas/define-snippets 'nxhtml-mode nil 'html-mode)
+;;(yas/define-snippets 'nxhtml-mode nil 'html-mode)
 
 ;; automatically open .tpl.php files in nxhtml-mumamo-mode
-(add-to-list 'auto-mode-alist '("\\.\\(tpl\\.php\\)$" . nxhtml-mumamo-mode))
+;;(add-to-list 'auto-mode-alist '("\\.\\(tpl\\.php\\)$" . nxhtml-mumamo-mode))
 
 ;; enable the menu bar
 (menu-bar-mode)
