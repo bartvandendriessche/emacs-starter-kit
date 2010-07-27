@@ -8,6 +8,7 @@
                                    'ruby-mode
                                    'inf-ruby
                                    'ruby-electric
+                                   'htmlize
                                    'css-mode
                                    'gist
                                    'yasnippet-bundle)
