@@ -12,10 +12,4 @@
 (global-set-key (kbd "M-j") 'pull-next-line)
 (global-set-key (kbd "S-SPC") 'complete-symbol)
 
-;; load a peculiarly nice mix between twilight and zenburn scheme
-(defun color-theme-bart()
-  (interactive)
-  (color-theme-twilight)
-  (color-theme-zenburn))
-
-(color-theme-bart)
+(color-theme-zenburn)
