@@ -7,6 +7,8 @@
 (defvar starter-kit-packages (list 'idle-highlight
                                    'ruby-mode
                                    'inf-ruby
+                                   'ruby-electric
+                                   'htmlize
                                    'css-mode
                                    'gist
                                    'yasnippet-bundle)
