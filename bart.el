@@ -13,6 +13,7 @@
 (global-set-key (kbd "S-SPC") 'complete-symbol)
 
 ;;(color-theme-zenburn)
+(color-theme-blackboard)
 
 ;; use Monaco as default font
 (set-face-attribute 'default nil :family "Monaco" :height 120)
