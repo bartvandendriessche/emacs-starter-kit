@@ -12,4 +12,7 @@
 (global-set-key (kbd "M-j") 'pull-next-line)
 (global-set-key (kbd "S-SPC") 'complete-symbol)
 
-(color-theme-zenburn)
+;;(color-theme-zenburn)
+
+;; use Monaco as default font
+(set-face-attribute 'default nil :family "Monaco" :height 120)
