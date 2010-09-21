@@ -1,5 +1,5 @@
 ;; enable the menu bar
-(menu-bar-mode)
+;; (menu-bar-mode)
 
 ;; custom function, analoguous to vi's join lines
 (defun pull-next-line()

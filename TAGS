@@ -86,8 +86,92 @@ package.el,3575
 (defun package-list-packages-no-fetch 1435,58837
 (define-key-after menu-bar-options-menu 1443,59103
 
-loaddefs.el,38
-(defalias 'zenburn zenburn642,22976
+loaddefs.el,37
+(defvar php-file-patterns 544,20283
+
+package.elc,5331
+(defconst package-archive-version 23,1145
+(defconst package-el-version 25,1223
+(defvar package-archive-contents 32,1620
+(defvar package-user-dir 34,1736
+(defvar package-directory-list 36,1922
+(defalias 'package-version-split package-version-split38,2125
+(defconst package--builtins-base 40,2304
+(defvar package--builtins 43,2668
+(defvar package-alist 46,3178
+(defvar package-activated-list 48,3282
+(defvar package-obsolete-alist 52,3498
+(defalias 'package-version-join package-version-join54,3608
+(defalias 'package--version-first-nonzero package--version-first-nonzero59,3846
+(defalias 'package-version-compare package-version-compare63,4069
+(defalias 'package--test-version-compare package--test-version-compare65,4352
+(defalias 'package-strip-version package-strip-version68,4779
+(defalias 'package-load-descriptor package-load-descriptor71,5060
+(defalias 'package-load-all-descriptors package-load-all-descriptors74,5421
+(defalias 'package-desc-vers package-desc-vers76,5765
+(defalias 'package-desc-reqs package-desc-reqs79,5977
+(defalias 'package-desc-doc package-desc-doc82,6187
+(defalias 'package-desc-kind package-desc-kind85,6414
+(defalias 'package-do-activate package-do-activate92,6759
+(defalias 'package--built-in package--built-in94,7455
+(defalias 'package-activate package-activate98,7805
+(defalias 'package-mark-obsolete package-mark-obsolete102,8360
+(defalias 'define-package define-package110,8903
+(defalias 'package-autoload-ensure-default-file package-autoload-ensure-default-file112,9528
+(defalias 'package-generate-autoloads package-generate-autoloads114,10037
+(defalias 'package-untar-buffer package-untar-buffer119,10587
+(defalias 'package-unpack package-unpack125,11017
+(defalias 'package-write-file-no-coding package-write-file-no-coding126,11497
+(defalias 'package-unpack-single package-unpack-single138,12042
+(defalias 'package-handle-response package-handle-response144,13022
+(defalias 'package-download-single package-download-single149,13513
+(defalias 'package-download-tar package-download-tar151,13972
+(defalias 'package-installed\? package-installed\?153,14399
+(defalias 'package-compute-transaction package-compute-transaction162,14943
+(defalias 'package-read-from-string package-read-from-string165,15642
+(defalias 'package--read-archive-file package--read-archive-file169,16112
+(defalias 'package-read-all-archive-contents package-read-all-archive-contents171,16764
+(defalias 'package-read-archive-contents package-read-archive-contents177,17551
+(defalias 'package--add-to-archive-contents package--add-to-archive-contents181,17990
+(defalias 'package-download-transaction package-download-transaction183,18400
+(defalias 'package-install package-install186,18930
+(defalias 'package-strip-rcs-id package-strip-rcs-id191,19563
+(defalias 'package-buffer-info package-buffer-info202,20416
+(defalias 'package-tar-file-info package-tar-file-info206,21536
+(defalias 'package-install-buffer-internal package-install-buffer-internal212,22653
+(defalias 'package-install-from-buffer package-install-from-buffer217,23383
+(defalias 'package-install-file package-install-file220,23626
+(defalias 'package-delete package-delete222,24210
+(defalias 'package--encode package--encode224,24482
+(defalias 'package--update-file package--update-file226,24946
+(defalias 'package-archive-for package-archive-for228,25338
+(defalias 'package--download-one-archive package--download-one-archive232,25630
+(defalias 'package-refresh-contents package-refresh-contents237,26321
+(defalias 'package-initialize package-initialize239,26643
+(defvar package-menu-mode-map 241,26969
+(defvar package-menu-sort-button-map 243,29522
+(defalias 'package-menu-mode package-menu-mode249,29958
+(defalias 'package-menu-refresh package-menu-refresh255,30525
+(defalias 'package-menu-revert package-menu-revert257,30698
+(defalias 'package-menu-mark-internal package-menu-mark-internal261,30890
+(defalias 'package-menu-mark-delete package-menu-mark-delete265,31177
+(defalias 'package-menu-mark-install package-menu-mark-install269,31414
+(defalias 'package-menu-mark-unmark package-menu-mark-unmark273,31649
+(defalias 'package-menu-backup-unmark package-menu-backup-unmark275,31833
+(defalias 'package-menu-mark-obsolete-for-deletion package-menu-mark-obsolete-for-deletion277,32015
+(defalias 'package-menu-quick-help package-menu-quick-help279,32305
+(defalias 'package-menu-view-commentary package-menu-view-commentary283,32636
+(defalias 'package-menu-get-package package-menu-get-package285,33343
+(defalias 'package-menu-get-version package-menu-get-version287,33585
+(defalias 'package-menu-get-status package-menu-get-status289,33806
+(defalias 'package-menu-execute package-menu-execute295,34201
+(defalias 'package-print-package package-print-package306,35058
+(defalias 'package-list-maybe-add package-list-maybe-add319,35963
+(defalias 'package-list-packages-internal package-list-packages-internal322,36344
+(defalias 'package-menu-sort-by-column package-menu-sort-by-column324,37589
+(defalias 'package--list-packages package--list-packages327,38145
+(defalias 'package-list-packages package-list-packages331,38886
+(defalias 'package-list-packages-no-fetch package-list-packages-no-fetch335,39169
 
 starter-kit-bindings.el,164
 (define-key global-map 21,559
@@ -100,6 +184,41 @@ starter-kit-php.el,80
 (defconst my-php-style3,21
 (defun my-php-mode 12,232
 (defun setup-php 20,468
+
+starter-kit-defuns.elc,1477
+(defalias 'view-url view-url19,708
+(defalias 'ido-imenu ido-imenu22,1211
+(defalias 'local-column-number-mode local-column-number-mode23,2413
+(defalias 'local-comment-auto-fill local-comment-auto-fill24,2531
+(defalias 'turn-on-hl-line-mode turn-on-hl-line-mode25,2681
+(defalias 'turn-on-save-place-mode turn-on-save-place-mode26,2777
+(defalias 'turn-on-whitespace turn-on-whitespace27,2853
+(defalias 'turn-on-paredit turn-on-paredit28,2929
+(defalias 'turn-off-tool-bar turn-off-tool-bar29,2999
+(defalias 'add-watchwords add-watchwords30,3073
+(defalias 'run-coding-hook run-coding-hook33,3611
+(defalias 'untabify-buffer untabify-buffer34,3700
+(defalias 'indent-buffer indent-buffer35,3771
+(defalias 'cleanup-buffer cleanup-buffer37,3920
+(defalias 'recentf-ido-find-file recentf-ido-find-file39,4097
+(defalias 'pretty-lambdas pretty-lambdas40,4278
+(defalias 'eval-and-replace eval-and-replace42,4571
+(defalias 'recompile-init recompile-init44,4906
+(defalias 'regen-autoloads regen-autoloads46,5129
+(defalias 'sudo-edit sudo-edit47,5600
+(defalias 'lorem lorem49,5839
+(defalias 'switch-or-start switch-or-start51,6462
+(defalias 'insert-date insert-date53,6713
+(defalias 'pairing-bot pairing-bot55,6888
+(defalias 'esk-paredit-nonlisp esk-paredit-nonlisp57,7087
+(defalias 'message-point message-point58,7245
+(defalias 'toggle-fullscreen toggle-fullscreen59,7321
+(defalias 'vc-git-annotate-command vc-git-annotate-command60,7562
+
+starter-kit-php.elc,113
+(defconst my-php-style 19,628
+(defalias 'my-php-mode my-php-mode22,808
+(defalias 'setup-php setup-php23,897
 
 starter-kit-ruby.el,155
 (defun pcomplete/rake 31,1113
@@ -123,6 +242,189 @@ starter-kit-eshell.el,55
 (defun eshell/cds 29,1101
 (defun eshell/find 33,1231
 
+elpa-to-submit/cperl-mode.elc,11652
+(defalias 'cperl-choose-color cperl-choose-color18,1052
+(defvar cperl-tips 287,23249
+(defvar cperl-problems 300,23852
+(defvar cperl-problems-old-emaxen 343,26041
+(defvar cperl-non-problems 398,28337
+(defvar cperl-praise 491,32748
+(defvar cperl-speed 534,34648
+(defvar cperl-tips-faces 588,37281
+(defalias 'cperl-define-key cperl-define-key589,37345
+(defvar cperl-del-back-ch 591,37621
+(defalias 'cperl-mark-active cperl-mark-active593,37874
+(defalias 'cperl-enable-font-lock cperl-enable-font-lock595,38246
+(defalias 'cperl-putback-char cperl-putback-char597,38394
+(defvar cperl-do-not-fontify 600,38981
+(defalias 'cperl-put-do-not-fontify cperl-put-do-not-fontify601,39116
+(defalias 'cperl-val cperl-val606,39795
+(defalias 'cperl-make-indent cperl-make-indent611,40162
+(defvar cperl-mode-abbrev-table 614,40838
+(defvar cperl-mode-map 617,40987
+(defconst cperl-maybe-white-and-comment-rex 624,50302
+(defconst cperl-white-and-comment-rex 627,50502
+(defalias 'cperl-after-sub-regexp cperl-after-sub-regexp632,50805
+(defvar cperl-mode-syntax-table 635,52199
+(defvar cperl-string-syntax-table 637,52309
+(defalias 'cperl-1- cperl-1-638,52361
+(defalias 'cperl-1+ cperl-1+640,52466
+(defalias 'cperl-mode cperl-mode815,62377
+(defalias 'cperl-insert-faces-example cperl-insert-faces-example817,69125
+(defalias 'cperl-db cperl-db818,70124
+(defalias 'cperl-msb-fix cperl-msb-fix819,70376
+(defalias 'cperl-comment-indent cperl-comment-indent821,71023
+(defalias 'cperl-indent-for-comment cperl-indent-for-comment823,71601
+(defalias 'cperl-comment-region cperl-comment-region826,71876
+(defalias 'cperl-uncomment-region cperl-uncomment-region829,72097
+(defalias 'cperl-electric-brace cperl-electric-brace836,72658
+(defalias 'cperl-electric-lbrace cperl-electric-lbrace838,74028
+(defalias 'cperl-electric-paren cperl-electric-paren841,75122
+(defalias 'cperl-electric-rparen cperl-electric-rparen845,76146
+(defalias 'cperl-electric-keyword cperl-electric-keyword849,77085
+(defalias 'cperl-ensure-newlines cperl-ensure-newlines851,78700
+(defalias 'cperl-electric-pod cperl-electric-pod853,78961
+(defalias 'cperl-electric-else cperl-electric-else857,80392
+(defalias 'cperl-linefeed cperl-linefeed860,81327
+(defalias 'cperl-electric-semi cperl-electric-semi862,82905
+(defalias 'cperl-electric-terminator cperl-electric-terminator864,83207
+(defalias 'cperl-electric-backspace cperl-electric-backspace867,84127
+(defalias 'cperl-electric-delete cperl-electric-delete870,84854
+(defalias 'cperl-inside-parens-p cperl-inside-parens-p871,85273
+(defalias 'cperl-indent-command cperl-indent-command881,86004
+(defalias 'cperl-indent-line cperl-indent-line884,86526
+(defalias 'cperl-after-label cperl-after-label885,87302
+(defalias 'cperl-get-state cperl-get-state886,87468
+(defalias 'cperl-beginning-of-property cperl-beginning-of-property890,88158
+(defalias 'cperl-sniff-for-indent cperl-sniff-for-indent891,88313
+(defvar cperl-indent-rules-alist 896,91856
+(defalias 'cperl-calculate-indent cperl-calculate-indent903,92352
+(defalias 'cperl-calculate-indent-within-comment cperl-calculate-indent-within-comment906,94765
+(defalias 'cperl-to-comment-or-eol cperl-to-comment-or-eol909,95144
+(defalias 'cperl-modify-syntax-type cperl-modify-syntax-type910,96101
+(defalias 'cperl-protect-defun-start cperl-protect-defun-start912,96353
+(defalias 'cperl-commentify cperl-commentify913,96549
+(defalias 'cperl-cached-syntax-table cperl-cached-syntax-table918,97662
+(defalias 'cperl-forward-re cperl-forward-re933,98677
+(defalias 'cperl-forward-group-in-re cperl-forward-group-in-re937,100756
+(defalias 'cperl-postpone-fontification cperl-postpone-fontification938,101296
+(defalias 'cperl-unwind-to-safe cperl-unwind-to-safe940,101584
+(defalias 'cperl-find-sub-attrs cperl-find-sub-attrs943,102282
+(defalias 'cperl-look-at-leading-count cperl-look-at-leading-count944,104136
+(defalias 'cperl-highlight-charclass cperl-highlight-charclass946,104591
+(defalias 'cperl-find-pods-heres cperl-find-pods-heres952,105978
+(defalias 'cperl-find-pods-heres-region cperl-find-pods-heres-region953,128304
+(defalias 'cperl-backward-to-noncomment cperl-backward-to-noncomment954,128415
+(defalias 'cperl-block-p cperl-block-p955,128883
+(defalias 'cperl-after-block-p cperl-after-block-p960,129639
+(defalias 'cperl-after-expr-p cperl-after-expr-p965,130515
+(defalias 'cperl-backward-to-start-of-expr cperl-backward-to-start-of-expr966,131417
+(defalias 'cperl-at-end-of-expr cperl-at-end-of-expr967,131656
+(defalias 'cperl-forward-to-end-of-expr cperl-forward-to-end-of-expr968,131991
+(defalias 'cperl-backward-to-start-of-continued-exp cperl-backward-to-start-of-continued-exp969,132202
+(defalias 'cperl-after-block-and-statement-beg cperl-after-block-and-statement-beg970,132408
+(defalias 'cperl-indent-exp cperl-indent-exp979,133165
+(defalias 'cperl-fix-line-spacing cperl-fix-line-spacing982,134333
+(defalias 'cperl-delay-update-hook cperl-delay-update-hook983,137505
+(defalias 'cperl-indent-region cperl-indent-region992,138019
+(defalias 'cperl-fill-paragraph cperl-fill-paragraph997,139774
+(defalias 'cperl-do-auto-fill cperl-do-auto-fill998,141021
+(defalias 'cperl-imenu-addback cperl-imenu-addback999,141414
+(defalias 'cperl-imenu--create-perl-index cperl-imenu--create-perl-index1000,141701
+(defalias 'cperl-outline-level cperl-outline-level1001,144273
+(defvar cperl-compilation-error-regexp-alist 1003,144540
+(defalias 'cperl-windowed-init cperl-windowed-init1006,144907
+(defalias 'cperl-load-font-lock-keywords cperl-load-font-lock-keywords1007,145401
+(defalias 'cperl-load-font-lock-keywords-1 cperl-load-font-lock-keywords-11008,145536
+(defalias 'cperl-load-font-lock-keywords-2 cperl-load-font-lock-keywords-21009,145675
+(defvar perl-font-lock-keywords-1 1011,145884
+(defvar perl-font-lock-keywords 1013,146007
+(defvar perl-font-lock-keywords-2 1015,146128
+(defalias 'cperl-init-faces-weak cperl-init-faces-weak1016,146181
+(defalias 'cperl-init-faces cperl-init-faces1017,146713
+(defalias 'cperl-ps-print-init cperl-ps-print-init1019,159483
+(defalias 'cperl-ps-print cperl-ps-print1025,160125
+(defconst cperl-style-examples 1028,161049
+(defconst cperl-style-alist 1033,162858
+(defalias 'cperl-set-style cperl-set-style1044,165056
+(defalias 'cperl-set-style-back cperl-set-style-back1046,165526
+(defalias 'cperl-check-syntax cperl-check-syntax1047,165712
+(defalias 'cperl-info-buffer cperl-info-buffer1048,165884
+(defalias 'cperl-word-at-point cperl-word-at-point1050,166469
+(defalias 'cperl-info-on-command cperl-info-on-command1055,166945
+(defalias 'cperl-info-on-current-command cperl-info-on-current-command1057,168729
+(defalias 'cperl-imenu-info-imenu-search cperl-imenu-info-imenu-search1058,168859
+(defalias 'cperl-imenu-info-imenu-name cperl-imenu-info-imenu-name1059,169026
+(defalias 'cperl-imenu-on-info cperl-imenu-on-info1062,169177
+(defalias 'cperl-lineup cperl-lineup1073,170404
+(defalias 'cperl-etags cperl-etags1077,171551
+(defalias 'cperl-toggle-auto-newline cperl-toggle-auto-newline1079,172475
+(defalias 'cperl-toggle-abbrev cperl-toggle-abbrev1081,172729
+(defalias 'cperl-toggle-electric cperl-toggle-electric1083,173009
+(defalias 'cperl-toggle-autohelp cperl-toggle-autohelp1086,173528
+(defalias 'cperl-toggle-construct-fix cperl-toggle-construct-fix1088,173998
+(defalias 'cperl-toggle-set-debug-unwind cperl-toggle-set-debug-unwind1102,174894
+(defalias 'cperl-setup-tmp-buf cperl-setup-tmp-buf1104,175391
+(defalias 'cperl-xsub-scan cperl-xsub-scan1105,175724
+(defalias 'cperl-find-tags cperl-find-tags1107,176785
+(defalias 'cperl-add-tags-recurse-noxs cperl-add-tags-recurse-noxs1112,178750
+(defalias 'cperl-add-tags-recurse-noxs-fullpath cperl-add-tags-recurse-noxs-fullpath1118,179181
+(defalias 'cperl-add-tags-recurse cperl-add-tags-recurse1123,179498
+(defalias 'cperl-write-tags cperl-write-tags1124,179609
+(defvar cperl-hierarchy 1127,181667
+(defalias 'cperl-tags-hier-fill cperl-tags-hier-fill1128,181717
+(defalias 'cperl-tags-hier-init cperl-tags-hier-init1133,182668
+(defalias 'cperl-tags-treeify cperl-tags-treeify1134,184154
+(defalias 'cperl-list-fold cperl-list-fold1135,185488
+(defalias 'cperl-menu-to-keymap cperl-menu-to-keymap1136,185742
+(defvar cperl-bad-style-regexp 1138,186118
+(defvar cperl-not-bad-style-regexp 1141,186376
+(defalias 'cperl-find-bad-style cperl-find-bad-style1145,186933
+(defalias 'cperl-next-bad-style cperl-next-bad-style1146,187592
+(defvar cperl-have-help-regexp 1148,188267
+(defalias 'cperl-word-at-point-hard cperl-word-at-point-hard1150,188728
+(defalias 'cperl-get-help cperl-get-help1154,189967
+(defvar cperl-doc-buffer 1156,190620
+(defalias 'cperl-describe-perl-symbol cperl-describe-perl-symbol1158,190743
+(defvar cperl-short-docs 1579,207284
+(defalias 'cperl-switch-to-doc-buffer cperl-switch-to-doc-buffer1581,207421
+(defalias 'cperl-beautify-regexp-piece cperl-beautify-regexp-piece1582,207743
+(defalias 'cperl-make-regexp-x cperl-make-regexp-x1583,210606
+(defalias 'cperl-beautify-regexp cperl-beautify-regexp1586,211481
+(defalias 'cperl-regext-to-level-start cperl-regext-to-level-start1589,211862
+(defalias 'cperl-contract-level cperl-contract-level1593,212363
+(defalias 'cperl-contract-levels cperl-contract-levels1597,212960
+(defalias 'cperl-beautify-level cperl-beautify-level1601,213512
+(defalias 'cperl-invert-if-unless-modifiers cperl-invert-if-unless-modifiers1604,213880
+(defalias 'cperl-invert-if-unless cperl-invert-if-unless1609,215300
+(defalias 'cperl-perldoc cperl-perldoc1611,217295
+(defalias 'cperl-perldoc-at-point cperl-perldoc-at-point1613,218127
+(defalias 'cperl-pod-to-manpage cperl-pod-to-manpage1617,218446
+(defalias 'cperl-build-manpage cperl-build-manpage1619,218962
+(defalias 'cperl-pod2man-build-command cperl-pod2man-build-command1621,219289
+(defalias 'cperl-next-interpolated-REx-1 cperl-next-interpolated-REx-11626,219822
+(defalias 'cperl-next-interpolated-REx-0 cperl-next-interpolated-REx-01628,220009
+(defalias 'cperl-next-interpolated-REx cperl-next-interpolated-REx1638,220584
+(defalias 'cperl-here-doc-spell cperl-here-doc-spell1641,221184
+(defalias 'cperl-pod-spell cperl-pod-spell1645,221456
+(defalias 'cperl-map-pods-heres cperl-map-pods-heres1649,221979
+(defalias 'cperl-get-here-doc-region cperl-get-here-doc-region1653,222541
+(defalias 'cperl-narrow-to-here-doc cperl-narrow-to-here-doc1656,222957
+(defalias 'cperl-select-this-pod-or-here-doc cperl-select-this-pod-or-here-doc1659,223311
+(defalias 'cperl-facemenu-add-face-function cperl-facemenu-add-face-function1665,223823
+(defalias 'cperl-time-fontification cperl-time-fontification1674,224658
+(defalias 'cperl-emulate-lazy-lock cperl-emulate-lazy-lock1680,225596
+(defalias 'cperl-lazy-install cperl-lazy-install1681,226023
+(defalias 'cperl-lazy-unstall cperl-lazy-unstall1682,226080
+(defalias 'cperl-font-lock-unfontify-region-function cperl-font-lock-unfontify-region-function1684,227837
+(defalias 'cperl-font-lock-fontify-region-function cperl-font-lock-fontify-region-function1689,228507
+(defalias 'cperl-fontify-syntaxically cperl-fontify-syntaxically1691,229122
+(defalias 'cperl-fontify-update cperl-fontify-update1692,229816
+(defalias 'cperl-fontify-update-bad cperl-fontify-update-bad1693,230066
+(defalias 'cperl-after-change-function cperl-after-change-function1694,230378
+(defalias 'cperl-update-syntaxification cperl-update-syntaxification1695,230490
+(defvar cperl-version 1697,230794
+
 elpa-to-submit/twilight.el,36
 (defun color-theme-twilight 23,872
 
@@ -138,6 +440,9 @@ elpa-to-submit/ri.el,221
 
 elpa-to-submit/blackboard.el,38
 (defun color-theme-blackboard 20,599
+
+elpa-to-submit/twilight.elc,61
+(defalias 'color-theme-twilight color-theme-twilight19,696
 
 elpa-to-submit/oddmuse.el,1912
 (defcustom oddmuse-directory 129,4583
@@ -189,6 +494,22 @@ elpa-to-submit/oddmuse.el,1912
 (defun oddmuse-browse-page 526,18972
 (defun oddmuse-browse-this-page 534,19288
 (defun oddmuse-kill-url 540,19463
+
+elpa-to-submit/textile-mode.elc,836
+(defvar textile-mode-map 18,619
+(defvar textile-mode-hook 20,821
+(defalias 'textile-re-concat textile-re-concat23,953
+(defalias 'textile-block-matcher textile-block-matcher26,1781
+(defalias 'textile-attribute-matcher textile-attribute-matcher28,2045
+(defalias 'textile-inline-markup-matcher textile-inline-markup-matcher30,2426
+(defalias 'textile-list-bullet-matcher textile-list-bullet-matcher32,2637
+(defalias 'textile-alignments-matcher textile-alignments-matcher34,2892
+(defalias 'textile-table-matcher textile-table-matcher36,3150
+(defalias 'textile-link-matcher textile-link-matcher38,3523
+(defalias 'textile-image-matcher textile-image-matcher40,3767
+(defalias 'textile-acronym-matcher textile-acronym-matcher42,3994
+(defvar textile-font-lock-keywords 44,4130
+(defalias 'textile-mode textile-mode53,7182
 
 elpa-to-submit/cheat.el,1184
 (defvar *cheat-host* 36,1240
@@ -258,6 +579,17 @@ elpa-to-submit/moz.el,753
 (defun inferior-moz-switch-to-mozilla 134,5100
 (defun inferior-moz-process 143,5470
 (defun inferior-moz-start-process 151,5745
+
+elpa-to-submit/perl-find-library.elc,439
+(defalias 'replace-all replace-all20,737
+(defvar *perl-lib-path* 22,933
+(defvar *perl-libraries* 24,1027
+(defalias 'perl-rebuild-lib-path perl-rebuild-lib-path27,1146
+(defalias 'perl-find-all-libraries perl-find-all-libraries30,1555
+(defalias 'perldoc perldoc33,2098
+(defalias 'perl-find-file perl-find-file35,2268
+(defalias 'perl-library-path perl-library-path37,2487
+(defalias 'perl-read-library perl-read-library40,2714
 
 elpa-to-submit/markdown-mode.el,3304
 (defvar markdown-enable-itex 214,8898
@@ -338,42 +670,197 @@ elpa-to-submit/markdown-mode.el,3304
 (defun markdown-show-version 1005,37084
 (define-derived-mode markdown-mode 1011,37258
 
-elpa-to-submit/zenburn.el,1185
-(defvar zenburn-fg 54,1840
-(defvar zenburn-bg 55,1870
-(defvar zenburn-bg+1 56,1900
-(defvar zenburn-bg+2 57,1932
-(defvar zenburn-yellow 58,1964
-(defvar zenburn-yellow-1 59,1998
-(defvar zenburn-yellow-2 60,2034
-(defvar zenburn-orange 61,2070
-(defvar zenburn-red+1 62,2104
-(defvar zenburn-red 63,2137
-(defvar zenburn-red-1 64,2168
-(defvar zenburn-red-2 65,2201
-(defvar zenburn-red-3 66,2234
-(defvar zenburn-red-4 67,2267
-(defvar zenburn-green-1 68,2300
-(defvar zenburn-green 69,2335
-(defvar zenburn-green+1 70,2368
-(defvar zenburn-green+2 71,2403
-(defvar zenburn-green+3 72,2438
-(defvar zenburn-green+4 73,2473
-(defvar zenburn-blue+1 74,2508
-(defvar zenburn-blue 75,2542
-(defvar zenburn-blue-1 76,2574
-(defvar zenburn-blue-2 77,2608
-(defvar zenburn-blue-3 78,2642
-(defvar zenburn-blue-4 79,2676
-(defvar zenburn-cyan 80,2710
-(defvar font-lock-pseudo-keyword-face 82,2743
-(defvar font-lock-operator-face 83,2813
-(defun zenburn-format-spec-works-p 85,2872
-(defun zenburn-format-spec 91,3086
-(defun zenburn-define-format-spec 123,4358
-(defun zenburn-make-face-alias-clauses 167,5723
-(defun color-theme-zenburn 181,6313
-(defalias 'zenburn zenburn1046,39725
+elpa-to-submit/zenburn.el,1307
+(defvar zenburn-fg 92,3189
+(defvar zenburn-bg-1 94,3220
+(defvar zenburn-bg 95,3252
+(defvar zenburn-bg+1 96,3282
+(defvar zenburn-bg+2 97,3314
+(defvar zenburn-red+1 98,3346
+(defvar zenburn-red 99,3379
+(defvar zenburn-red-1 100,3410
+(defvar zenburn-red-2 101,3443
+(defvar zenburn-red-3 102,3476
+(defvar zenburn-red-4 103,3509
+(defvar zenburn-orange 104,3542
+(defvar zenburn-yellow 105,3576
+(defvar zenburn-yellow-1 106,3610
+(defvar zenburn-yellow-2 107,3646
+(defvar zenburn-green-1 108,3682
+(defvar zenburn-green 109,3717
+(defvar zenburn-green+1 110,3750
+(defvar zenburn-green+2 111,3785
+(defvar zenburn-green+3 112,3820
+(defvar zenburn-green+4 113,3855
+(defvar zenburn-cyan 114,3890
+(defvar zenburn-blue+1 115,3922
+(defvar zenburn-blue 116,3956
+(defvar zenburn-blue-1 117,3988
+(defvar zenburn-blue-2 118,4022
+(defvar zenburn-blue-3 119,4056
+(defvar zenburn-blue-4 120,4090
+(defvar zenburn-blue-5 121,4124
+(defvar zenburn-magenta 122,4158
+(defvar font-lock-pseudo-keyword-face 131,4396
+(defvar font-lock-operator-face 132,4466
+(defun zenburn-format-spec-works-p 134,4525
+(defun zenburn-format-spec 140,4707
+(defun zenburn-define-format-spec 172,5841
+(defun zenburn-make-face-alias-clauses 217,7035
+(defun color-theme-zenburn 231,7552
+(defalias 'zenburn zenburn1363,50672
+
+elpa-to-submit/oddmuse.elc,2037
+(defvar oddmuse-get 36,2168
+(defvar oddmuse-post 44,2340
+(defvar oddmuse-link-pattern 46,2488
+(defvar oddmuse-wiki 49,2669
+(defvar oddmuse-page-name 51,2745
+(defvar oddmuse-pages-hash 53,2823
+(defvar oddmuse-index-get 55,2949
+(defvar oddmuse-revision-check 59,3139
+(defvar oddmuse-revision-check-regexp 61,3275
+(defvar oddmuse-minor 63,3413
+(defalias 'oddmuse-mode-initialize oddmuse-mode-initialize64,3452
+(defalias 'oddmuse-mode oddmuse-mode85,4996
+(defalias 'oddmuse-toggle-minor oddmuse-toggle-minor88,6806
+(defalias 'oddmuse-format oddmuse-format93,7308
+(defalias 'oddmuse-format-url oddmuse-format-url96,7812
+(defalias 'oddmuse-read-wiki-and-pagename oddmuse-read-wiki-and-pagename98,8011
+(defalias 'oddmuse-retrieve oddmuse-retrieve102,8348
+(defalias 'oddmuse-retrieve-to-string oddmuse-retrieve-to-string105,8758
+(defalias 'oddmuse-process-response oddmuse-process-response108,9169
+(defalias 'oddmuse-edit oddmuse-edit113,9698
+(defalias 'oddmuse-follow oddmuse-follow117,10559
+(defalias 'oddmuse-current-free-link-contents oddmuse-current-free-link-contents119,10851
+(defalias 'oddmuse-pagename-at-point oddmuse-pagename-at-point121,11147
+(defalias 'oddmuse-wikiname-p oddmuse-wikiname-p123,11413
+(defalias 'oddmuse-revision-check-prompt oddmuse-revision-check-prompt124,11578
+(defalias 'oddmuse-post oddmuse-post127,12149
+(defalias 'oddmuse-make-completion-table oddmuse-make-completion-table129,12983
+(defalias 'oddmuse-compute-pagename-completion-table oddmuse-compute-pagename-completion-table132,13274
+(defalias 'oddmuse-read-pagename oddmuse-read-pagename134,13775
+(defalias 'oddmuse-revert oddmuse-revert136,13955
+(defalias 'oddmuse-insert-pagename oddmuse-insert-pagename138,14154
+(defalias 'emacswiki-post emacswiki-post144,14540
+(defalias 'oddmuse-url oddmuse-url146,14910
+(defalias 'oddmuse-browse-page oddmuse-browse-page150,15274
+(defalias 'oddmuse-browse-this-page oddmuse-browse-this-page152,15486
+(defalias 'oddmuse-kill-url oddmuse-kill-url154,15694
+
+elpa-to-submit/color-theme.elc,3804
+(defconst color-theme-maintainer-address 19,715
+(defvar color-theme-xemacs-p 22,989
+(defalias 'color-theme-alist color-theme-alist33,1890
+(defvar color-theme-mode-map 88,5568
+(defvar color-theme-buffer-name 90,6206
+(defvar color-theme-original-frame-alist 92,6337
+(defvar color-theme-history 94,6447
+(defvar color-theme-counter 102,6966
+(defalias 'color-theme-add-to-history color-theme-add-to-history104,7062
+(defvar color-themes 123,7934
+(defalias 'color-theme-backup-original-values color-theme-backup-original-values127,8095
+(defalias 'color-theme-select color-theme-select134,8727
+(defalias 'color-theme-mode color-theme-mode176,11456
+(defalias 'color-theme-describe color-theme-describe181,11958
+(defalias 'color-theme-install-at-mouse color-theme-install-at-mouse185,12238
+(defalias 'color-theme-install-at-point color-theme-install-at-point190,12578
+(defalias 'color-theme-install-at-point-for-current-frame color-theme-install-at-point-for-current-frame194,13011
+(defalias 'color-theme-filter color-theme-filter203,13547
+(defalias 'color-theme-spec-filter color-theme-spec-filter208,14097
+(defalias 'color-theme-plist-delete color-theme-plist-delete211,14411
+(defalias 'color-theme-spec-canonical-font color-theme-spec-canonical-font214,15495
+(defalias 'color-theme-spec-resolve-height color-theme-spec-resolve-height217,15892
+(defalias 'color-theme-spec-resolve-inheritance color-theme-spec-resolve-inheritance219,16397
+(defalias 'color-theme-spec-maybe-invert color-theme-spec-maybe-invert223,17005
+(defalias 'color-theme-spec color-theme-spec234,17888
+(defalias 'color-theme-get-params color-theme-get-params238,18407
+(defalias 'color-theme-get-vars color-theme-get-vars243,18923
+(defalias 'color-theme-print-alist color-theme-print-alist245,19296
+(defalias 'color-theme-get-faces color-theme-get-faces249,19753
+(defalias 'color-theme-get-face-definitions color-theme-get-face-definitions251,20007
+(defalias 'color-theme-print-faces color-theme-print-faces253,20230
+(defalias 'color-theme-reset-faces color-theme-reset-faces255,20525
+(defalias 'color-theme-print-theme color-theme-print-theme260,21116
+(defalias 'color-theme-print color-theme-print286,22115
+(defalias 'color-theme-analyze-find-theme color-theme-analyze-find-theme288,22883
+(defalias 'color-theme-analyze-add-face color-theme-analyze-add-face291,23251
+(defalias 'color-theme-analyze-add-faces color-theme-analyze-add-faces293,23722
+(defalias 'color-theme-analyze-remove-heights color-theme-analyze-remove-heights295,25005
+(defalias 'color-theme-analyze-defun color-theme-analyze-defun300,25546
+(defalias 'color-theme-snapshot color-theme-snapshot301,26431
+(defalias 'color-theme-make-snapshot color-theme-make-snapshot304,26621
+(defvar color-theme-frame-param-frobbing-rules 308,27365
+(defalias 'color-theme-frob-faces color-theme-frob-faces311,27605
+(defalias 'color-theme-alist-reduce color-theme-alist-reduce316,28156
+(defalias 'color-theme-install-frame-params color-theme-install-frame-params331,29010
+(defalias 'color-theme-install-variables color-theme-install-variables342,30404
+(defalias 'color-theme-install-faces color-theme-install-faces364,31587
+(defalias 'color-theme-canonic color-theme-canonic367,32488
+(defalias 'color-theme-function color-theme-function369,32746
+(defalias 'color-theme-frame-params color-theme-frame-params371,32870
+(defalias 'color-theme-variables color-theme-variables373,32988
+(defalias 'color-theme-faces color-theme-faces375,33108
+(defalias 'color-theme-merge-alists color-theme-merge-alists379,33356
+(defalias 'color-theme-compare color-theme-compare387,34006
+(defalias 'color-theme-install color-theme-install419,36161
+(defalias 'color-theme-standard color-theme-standard423,36663
+
+elpa-to-submit/moz.elc,999
+(defvar moz-minor-mode 20,688
+(defalias 'moz-minor-mode moz-minor-mode31,1143
+(defvar moz-minor-mode-map 33,1809
+(defvar moz-repl-name 36,2332
+(defalias 'moz-temporary-file moz-temporary-file38,2656
+(defalias 'moz-send-region moz-send-region39,2811
+(defalias 'moz-send-defun moz-send-defun40,3346
+(defalias 'moz-send-defun-and-go moz-send-defun-and-go41,3462
+(defalias 'moz-save-buffer-and-send moz-save-buffer-and-send42,3582
+(defvar inferior-moz-buffer 44,4121
+(defalias 'inferior-moz-mode inferior-moz-mode53,5203
+(defalias 'inferior-moz-track-repl-name inferior-moz-track-repl-name54,6119
+(defalias 'inferior-moz-self-insert-or-repl-name inferior-moz-self-insert-or-repl-name55,6295
+(defalias 'inferior-moz-input-sender inferior-moz-input-sender61,6731
+(defalias 'inferior-moz-switch-to-mozilla inferior-moz-switch-to-mozilla63,6928
+(defalias 'inferior-moz-process inferior-moz-process65,7291
+(defalias 'inferior-moz-start-process inferior-moz-start-process69,7644
+
+elpa-to-submit/scpaste.elc,280
+(defvar scpaste-http-destination 19,705
+(defvar scpaste-scp-destination 22,905
+(defvar scpaste-footer 24,1033
+(defvar scpaste-tmp-dir 26,1364
+(defalias 'scpaste scpaste28,1480
+(defalias 'scpaste-region scpaste-region30,2356
+(defalias 'scpaste-index scpaste-index32,2761
+
+elpa-to-submit/graphviz-dot-mode.elc,1789
+(defconst graphviz-dot-mode-version 18,637
+(defalias 'graphviz-dot-customize graphviz-dot-customize21,843
+(defvar graphviz-dot-mode-abbrev-table 23,1001
+(define-abbrev-table 'graphviz-dot-mode-abbrev-table graphviz-dot-mode-abbrev-table24,1056
+(defvar graphviz-dot-colors-list 65,6090
+(defvar graphviz-dot-mode-map 68,12683
+(defvar graphviz-dot-mode-syntax-table 71,13403
+(defvar graphviz-dot-font-lock-keywords 74,13894
+(defalias 'graphviz-dot-mode graphviz-dot-mode119,16387
+(defvar dot-menu 123,17494
+(defalias 'graphviz-dot-compilation-parse-errors graphviz-dot-compilation-parse-errors127,18355
+(defalias 'graphviz-dot-uncomment-region graphviz-dot-uncomment-region129,18985
+(defalias 'graphviz-dot-indent-line graphviz-dot-indent-line131,19149
+(defalias 'graphviz-dot-real-indent-line graphviz-dot-real-indent-line133,19316
+(defalias 'graphviz-dot-indent-graph graphviz-dot-indent-graph137,20014
+(defalias 'graphviz-dot-comment-or-string-p graphviz-dot-comment-or-string-p138,20312
+(defalias 'graphviz-dot-newline-and-indent graphviz-dot-newline-and-indent139,20432
+(defalias 'electric-graphviz-dot-terminate-line electric-graphviz-dot-terminate-line141,20680
+(defalias 'electric-graphviz-dot-open-brace electric-graphviz-dot-open-brace143,20904
+(defalias 'electric-graphviz-dot-close-brace electric-graphviz-dot-close-brace145,21164
+(defalias 'electric-graphviz-dot-semi electric-graphviz-dot-semi147,21498
+(defalias 'graphviz-dot-preview graphviz-dot-preview152,21984
+(defalias 'graphviz-dot-view graphviz-dot-view156,22841
+(defalias 'graphviz-dot-get-state graphviz-dot-get-state159,23778
+(defalias 'graphviz-dot-get-keywords graphviz-dot-get-keywords161,24218
+(defalias 'graphviz-dot-complete-word graphviz-dot-complete-word164,24905
 
 elpa-to-submit/scpaste.el,233
 (defvar scpaste-http-destination80,2948
@@ -384,11 +871,116 @@ elpa-to-submit/scpaste.el,233
 (defun scpaste-region 132,5136
 (defun scpaste-index 141,5473
 
+elpa-to-submit/zenburn.elc,354
+(defalias 'zenburn-format-spec-works-p zenburn-format-spec-works-p18,3001
+(defalias 'zenburn-format-spec zenburn-format-spec23,3409
+(defalias 'zenburn-define-format-spec zenburn-define-format-spec24,4158
+(defalias 'zenburn-make-face-alias-clauses zenburn-make-face-alias-clauses26,5355
+(defalias 'color-theme-zenburn color-theme-zenburn28,5855
+
+elpa-to-submit/cheat.elc,1450
+(defvar *cheat-last-sheet* 19,1037
+(defvar *cheat-sheet-history* 21,1133
+(defvar *cheat-cache-ttl* 24,1384
+(defalias 'cheat cheat29,1567
+(defalias 'cheat-sheets cheat-sheets31,1765
+(defalias 'cheat-recent cheat-recent33,1896
+(defalias 'cheat-clear-cache cheat-clear-cache35,2043
+(defalias 'cheat-versions cheat-versions37,2241
+(defalias 'cheat-diff cheat-diff41,2543
+(defalias 'cheat-add-current-buffer cheat-add-current-buffer43,2802
+(defalias 'cheat-edit cheat-edit46,3114
+(defalias 'cheat-save-current-buffer cheat-save-current-buffer49,3505
+(defalias 'string-join string-join51,3794
+(defalias 'blank blank53,3978
+(defalias 'cheat-command cheat-command55,4135
+(defalias 'cheat-command-to-string cheat-command-to-string58,4467
+(defalias 'cheat-command-silent cheat-command-silent59,4617
+(defalias 'cheat-read-sheet-name cheat-read-sheet-name64,4845
+(defalias 'cheat-sheets-list cheat-sheets-list75,5473
+(defalias 'cheat-fetch-list cheat-fetch-list77,5894
+(defalias 'cheat-cache-list cheat-cache-list80,6110
+(defalias 'cheat-cache-stale-p cheat-cache-stale-p87,6608
+(defalias 'cheat-body cheat-body89,6907
+(defalias 'url-http-post url-http-post91,7147
+(defalias 'kill-url-buffer kill-url-buffer93,7552
+(defalias 'switch-to-url-buffer switch-to-url-buffer96,7755
+(defalias 'post-cheat post-cheat97,7846
+(defalias 'buffer->cheat buffer->cheat98,8081
+(defalias 'cheat->buffer cheat->buffer99,8144
+
+elpa-to-submit/javadoc-help.elc,3255
+(defalias 'javadoc-lookup javadoc-lookup25,1321
+(defalias 'javadoc-set-predefined-urls javadoc-set-predefined-urls27,1807
+(defvar *jdh-javadocs* 29,2113
+(defvar *jdh-predefined-urls* 31,2181
+(defvar *jdh-url-input-history* 33,2261
+(defvar *jdh-dir-input-history* 35,2344
+(defvar *jdh-search-input-history* 37,2426
+(defvar *jdh-matched-search* 39,2517
+(defalias 'jdh-javadoc-new jdh-javadoc-new42,3623
+(defalias 'jdh-javadoc-url jdh-javadoc-url44,3832
+(defalias 'jdh-javadoc-set-url jdh-javadoc-set-url46,3937
+(defalias 'jdh-javadoc-refreshed jdh-javadoc-refreshed48,4074
+(defalias 'jdh-javadoc-set-refreshed jdh-javadoc-set-refreshed50,4198
+(defalias 'jdh-javadoc-enabled jdh-javadoc-enabled52,4389
+(defalias 'jdh-javadoc-set-enabled jdh-javadoc-set-enabled54,4510
+(defalias 'jdh-javadoc-predefined jdh-javadoc-predefined56,4696
+(defalias 'jdh-javadoc-set-predefined jdh-javadoc-set-predefined58,4831
+(defalias 'jdh-javadocs-add jdh-javadocs-add60,5026
+(defalias 'jdh-javadocs-get jdh-javadocs-get62,5308
+(defalias 'jdh-javadocs-find-by-url jdh-javadocs-find-by-url64,5459
+(defalias 'jdh-javadocs-remove jdh-javadocs-remove66,5756
+(defalias 'jdh-javadocs-remove-at jdh-javadocs-remove-at68,5941
+(defalias 'jdh-javadoc-to-str jdh-javadoc-to-str70,6141
+(defalias 'jdh-get-search-input jdh-get-search-input72,6565
+(defalias 'jdh-search-in-files jdh-search-in-files74,6843
+(defalias 'jdh-search-file jdh-search-file76,7247
+(defalias 'jdh-get-allclasses-files jdh-get-allclasses-files78,7825
+(defalias 'jdh-get-allclasses-url-file jdh-get-allclasses-url-file80,8167
+(defalias 'jdh-get-allclasses-local-file jdh-get-allclasses-local-file82,8359
+(defalias 'jdh-convert-url-to-file jdh-convert-url-to-file84,8662
+(defalias 'jdh-select-result jdh-select-result86,8965
+(defalias 'jdh-present-matches jdh-present-matches88,9210
+(defalias 'jdh-get-match-url jdh-get-match-url90,9537
+(defalias 'jdh-get-match-base-url jdh-get-match-base-url92,9746
+(defalias 'jdh-normalize-url jdh-normalize-url94,9865
+(defalias 'jdh-refresh-url jdh-refresh-url97,10440
+(defalias 'jdh-download-url jdh-download-url99,10813
+(defalias 'jdh-smenu-redraw jdh-smenu-redraw102,11490
+(defalias 'jdh-matched-to-str jdh-matched-to-str103,12052
+(defalias 'jdh-file-to-class jdh-file-to-class105,12260
+(defalias 'jdh-smenu-get-javadoc-index jdh-smenu-get-javadoc-index107,12504
+(defalias 'jdh-smenu-valid-javadoc jdh-smenu-valid-javadoc109,12679
+(defalias 'jdh-smenu-advance-cursor jdh-smenu-advance-cursor110,12862
+(defalias 'jdh-smenu-launch-url jdh-smenu-launch-url112,13059
+(defalias 'jdh-smenu-open-url jdh-smenu-open-url114,13407
+(defalias 'jdh-smenu-visit-url jdh-smenu-visit-url116,13569
+(defalias 'jdh-smenu-open-main jdh-smenu-open-main118,13733
+(defalias 'jdh-smenu-open-parent jdh-smenu-open-parent120,14107
+(defalias 'path-parent path-parent121,14477
+(defalias 'jdh-smenu-mode jdh-smenu-mode133,15744
+(defalias 'jdh-close-buffer jdh-close-buffer136,16393
+(defalias 'string-ltrim string-ltrim137,16565
+(defalias 'string-rtrim string-rtrim138,16684
+(defalias 'string-trim string-trim139,16805
+(defalias 'concat-path concat-path140,16890
+(defalias 'jdh-http-p jdh-http-p141,17054
+
 elpa-to-submit/tt-mode.el,122
 (defvar tt-mode-hook 55,1517
 (defvar tt-keywords 58,1596
 (defvar tt-font-lock-keywords 60,2085
 (defun tt-mode 79,2600
+
+elpa-to-submit/erc-highlight-nicknames.elc,457
+(defvar erc-highlight-face-table 19,925
+(defalias 'hexcolor-luminance hexcolor-luminance24,1207
+(defalias 'invert-color invert-color26,1437
+(defalias 'erc-highlight-nicknames erc-highlight-nicknames30,1759
+(defalias 'erc-highlight-nicknames-mode erc-highlight-nicknames-mode40,3495
+(defalias 'erc-highlight-nicknames-enable erc-highlight-nicknames-enable43,4527
+(defalias 'erc-highlight-nicknames-disable erc-highlight-nicknames-disable45,4819
 
 elpa-to-submit/espresso.el,8062
 (defconst espresso--name-start-re 84,2680
@@ -565,9 +1157,192 @@ elpa-to-submit/espresso.el,8062
 (defun* espresso-eval-defun 3219,117592
 (defun espresso-mode 3322,121563
 
+elpa-to-submit/pod-mode.elc,397
+(defvar pod-mode-map 19,741
+(defconst pod-font-lock-keywords-1 22,914
+(defconst pod-font-lock-keywords-2 24,1189
+(defconst pod-font-lock-keywords-3 26,1444
+(defvar pod-font-lock-keywords 28,1956
+(defalias 'pod-indent-line pod-indent-line30,2082
+(defvar pod-mode-syntax-table 32,2185
+(defalias 'pod-create-syntax-table pod-create-syntax-table33,2232
+(defalias 'pod-mode pod-mode35,2438
+
 elpa-to-submit/pcmpl-rake.el,64
 (defun pcomplete/rake 45,1339
 (defun pcmpl-rake-tasks 49,1448
+
+elpa-to-submit/notify.elc,202
+(defalias 'notify-next-id notify-next-id19,1219
+(defalias 'notify-via-dbus notify-via-dbus21,1327
+(defalias 'notify notify23,1766
+(defalias 'keywords-to-properties keywords-to-properties27,2203
+
+elpa-to-submit/espresso.elc,10994
+(defconst espresso--name-start-re 20,885
+(defconst espresso--name-re 23,1164
+(defconst espresso--objfield-re 25,1307
+(defconst espresso--dotted-name-re 27,1442
+(defconst espresso--cpp-name-re 29,1589
+(defconst espresso--opt-cpp-start 33,1835
+(defconst espresso--plain-method-re 37,2108
+(defconst espresso--plain-class-re 40,2409
+(defconst espresso--mp-class-decl-re 42,2575
+(defconst espresso--prototype-obsolete-class-decl-re 44,2811
+(defconst espresso--prototype-class-decl-re 47,3551
+(defconst espresso--extjs-class-decl-re-1 50,4045
+(defconst espresso--extjs-class-decl-re-2 52,4267
+(defconst espresso--mochikit-class-re 54,4497
+(defconst espresso--class-styles 76,5608
+(defconst espresso--available-frameworks 78,6978
+(defconst espresso--function-heading-1-re 81,7351
+(defconst espresso--function-heading-2-re 84,7599
+(defconst espresso--function-heading-3-re 87,7805
+(defconst espresso--macro-decl-re 90,8087
+(defalias 'espresso--regexp-opt-symbol espresso--regexp-opt-symbol93,8299
+(defconst espresso--keyword-re 95,8482
+(defconst espresso--basic-type-re 97,9059
+(defconst espresso--constant-re 99,9283
+(defconst espresso--font-lock-keywords-1 101,9458
+(defconst espresso--font-lock-keywords-2 103,9694
+(defalias 'espresso--pitem-children espresso--pitem-children105,10398
+(defalias 'espresso--pitem-paren-depth espresso--pitem-paren-depth107,10971
+(defalias 'espresso--pitem-type espresso--pitem-type109,11545
+(defalias 'espresso--pitem-h-begin espresso--pitem-h-begin111,12104
+(defalias 'espresso--pitem-name espresso--pitem-name113,12666
+(defalias 'espresso--pitem-b-end espresso--pitem-b-end115,13221
+(defalias 'copy-espresso--pitem copy-espresso--pitem117,13485
+(defalias 'make-espresso--pitem make-espresso--pitem122,14669
+(defconst espresso--initial-pitem 125,16036
+(defvar espresso-mode-map 159,18569
+(defalias 'espresso-insert-and-indent espresso-insert-and-indent162,19546
+(defvar espresso-mode-syntax-table 164,19924
+(defvar espresso--quick-match-re 166,20173
+(defvar espresso--quick-match-re-func 169,20304
+(defvar espresso--cache-end 172,20546
+(defvar espresso--last-parse-pos 175,20699
+(defvar espresso--state-at-last-parse-pos 178,20846
+(defalias 'espresso--flatten-list espresso--flatten-list180,20970
+(defalias 'espresso--maybe-join espresso--maybe-join186,21484
+(defalias 'espresso--update-quick-match-re espresso--update-quick-match-re189,21766
+(defalias 'espresso--forward-text-property espresso--forward-text-property193,22756
+(defalias 'espresso--backward-text-property espresso--backward-text-property197,23188
+(defalias 'espresso--forward-pstate espresso--forward-pstate198,23447
+(defalias 'espresso--backward-pstate espresso--backward-pstate200,23636
+(defalias 'espresso--pitem-goto-h-end espresso--pitem-goto-h-end202,23828
+(defalias 'espresso--re-search-forward-inner espresso--re-search-forward-inner204,23998
+(defalias 'espresso--re-search-forward espresso--re-search-forward213,24852
+(defalias 'espresso--re-search-backward-inner espresso--re-search-backward-inner215,25448
+(defalias 'espresso--re-search-backward espresso--re-search-backward222,26365
+(defalias 'espresso--forward-expression espresso--forward-expression225,27028
+(defalias 'espresso--forward-function-decl espresso--forward-function-decl231,27661
+(defalias 'espresso--function-prologue-beginning espresso--function-prologue-beginning236,28384
+(defalias 'espresso--beginning-of-defun-raw espresso--beginning-of-defun-raw240,29216
+(defalias 'espresso--pstate-is-toplevel-defun espresso--pstate-is-toplevel-defun243,29535
+(defalias 'espresso--beginning-of-defun-nested espresso--beginning-of-defun-nested246,29922
+(defalias 'espresso--beginning-of-defun-flat espresso--beginning-of-defun-flat248,30587
+(defalias 'espresso--beginning-of-defun espresso--beginning-of-defun250,30771
+(defalias 'espresso--flush-caches espresso--flush-caches253,31478
+(defalias 'espresso--debug espresso--debug254,31619
+(defalias 'espresso--ensure-cache--pop-if-ended espresso--ensure-cache--pop-if-ended255,31698
+(defalias 'espresso--ensure-cache--update-parse espresso--ensure-cache--update-parse260,32326
+(defalias 'espresso--show-cache-at-point espresso--show-cache-at-point261,32908
+(defalias 'espresso--split-name espresso--split-name265,33246
+(defvar espresso--guess-function-name-start 267,33648
+(defalias 'espresso--guess-function-name espresso--guess-function-name274,34098
+(defalias 'espresso--clear-stale-cache espresso--clear-stale-cache275,34477
+(defalias 'espresso--ensure-cache espresso--ensure-cache280,34977
+(defalias 'espresso--end-of-defun-flat espresso--end-of-defun-flat282,38940
+(defalias 'espresso--end-of-defun-nested espresso--end-of-defun-nested284,39410
+(defalias 'espresso--end-of-defun espresso--end-of-defun286,39902
+(defalias 'espresso--beginning-of-macro espresso--beginning-of-macro287,40498
+(defalias 'espresso--backward-syntactic-ws espresso--backward-syntactic-ws289,40830
+(defalias 'espresso--forward-syntactic-ws espresso--forward-syntactic-ws291,41138
+(defalias 'espresso--up-nearby-list espresso--up-nearby-list293,41433
+(defalias 'espresso--inside-param-list-p espresso--inside-param-list-p295,41612
+(defalias 'espresso--inside-dojo-class-list-p espresso--inside-dojo-class-list-p298,41968
+(defalias 'espresso--syntax-begin-function espresso--syntax-begin-function299,42275
+(defalias 'espresso--make-framework-matcher espresso--make-framework-matcher303,42643
+(defalias 'espresso--forward-destructuring-spec espresso--forward-destructuring-spec309,43315
+(defalias 'espresso--variable-decl-matcher espresso--variable-decl-matcher314,44264
+(defconst espresso--font-lock-keywords-3 316,44981
+(defalias 'espresso--inside-pitem-p espresso--inside-pitem-p318,47089
+(defalias 'espresso--parse-state-at-point espresso--parse-state-at-point322,47553
+(defalias 'espresso--syntactic-context-from-pstate espresso--syntactic-context-from-pstate324,47988
+(defalias 'espresso-syntactic-context espresso-syntactic-context327,48282
+(defalias 'espresso--class-decl-matcher espresso--class-decl-matcher329,48564
+(defconst espresso--font-lock-keywords 331,49363
+(defconst espresso--regexp-literal 334,49671
+(defconst espresso--font-lock-syntactic-keywords 337,49892
+(defconst espresso--possibly-braceless-keyword-re 340,50123
+(defconst espresso--indent-operator-re 343,50385
+(defalias 'espresso--looking-at-operator-p espresso--looking-at-operator-p346,50641
+(defalias 'espresso--continued-expression-p espresso--continued-expression-p348,51092
+(defalias 'espresso--end-of-do-while-loop-p espresso--end-of-do-while-loop-p353,51690
+(defalias 'espresso--ctrl-statement-indentation espresso--ctrl-statement-indentation357,52531
+(defalias 'espresso--get-c-offset espresso--get-c-offset358,53059
+(defalias 'espresso--proper-indentation espresso--proper-indentation360,53290
+(defalias 'espresso-indent-line espresso-indent-line362,54204
+(defalias 'espresso-c-fill-paragraph espresso-c-fill-paragraph364,54494
+(defalias 'espresso--pitem-format espresso--pitem-format365,55510
+(defalias 'espresso--make-merged-item espresso--make-merged-item370,55883
+(defalias 'espresso--pitem-strname espresso--pitem-strname372,56322
+(defalias 'espresso--splice-into-items espresso--splice-into-items378,56713
+(defalias 'espresso--pitem-add-child espresso--pitem-add-child381,57510
+(defalias 'espresso--maybe-make-marker espresso--maybe-make-marker383,58284
+(defalias 'espresso--pitems-to-imenu espresso--pitems-to-imenu385,58486
+(defalias 'espresso--imenu-create-index espresso--imenu-create-index387,59292
+(defalias 'espresso--which-func-joiner espresso--which-func-joiner388,59820
+(defalias 'espresso--imenu-to-flat espresso--imenu-to-flat389,59925
+(defalias 'espresso--get-all-known-symbols espresso--get-all-known-symbols394,60563
+(defvar espresso--symbol-history 396,61012
+(defalias 'espresso--read-symbol espresso--read-symbol405,61364
+(defalias 'espresso--guess-symbol-at-point espresso--guess-symbol-at-point406,61813
+(defalias 'espresso-find-symbol espresso-find-symbol410,62177
+(defalias 'espresso--wait-for-matching-output espresso--wait-for-matching-output416,63180
+(defalias 'espresso--js-handle-id espresso--js-handle-id418,64352
+(defalias 'espresso--js-handle-process espresso--js-handle-process420,65267
+(defalias 'espresso--js-handle-p espresso--js-handle-p422,66099
+(defalias 'copy-espresso--js-handle copy-espresso--js-handle423,66251
+(defalias 'make-espresso--js-handle make-espresso--js-handle428,67110
+(defalias 'espresso--js-handle-expired-p espresso--js-handle-expired-p430,68666
+(defvar espresso--js-references 432,69002
+(defvar espresso--js-process 434,69097
+(defvar espresso--js-gc-idle-timer 436,69198
+(defvar espresso--js-last-gcs-done 438,69289
+(defconst espresso--moz-interactor 440,69410
+(defalias 'espresso--js-encode-value espresso--js-encode-value445,78002
+(defalias 'espresso--js-wait-for-eval-prompt espresso--js-wait-for-eval-prompt447,79208
+(defalias 'espresso--js-enter-repl espresso--js-enter-repl448,79409
+(defalias 'espresso--js-leave-repl espresso--js-leave-repl449,80175
+(defalias 'espresso--js-not espresso--js-not450,80613
+(defalias 'espresso--js-true espresso--js-true452,80766
+(defalias 'espresso--optimize-arglist espresso--optimize-arglist455,80981
+(defalias 'espresso--js-get-service espresso--js-get-service456,81791
+(defalias 'espresso--js-create-instance espresso--js-create-instance457,82001
+(defalias 'espresso--js-qi espresso--js-qi458,82219
+(defalias 'with-espresso-js with-espresso-js463,82639
+(defvar espresso--js-array-as-list 467,84109
+(defalias 'espresso--js-decode-retval espresso--js-decode-retval468,84162
+(defalias 'espresso--js-funcall espresso--js-funcall477,85251
+(defalias 'espresso--js-new espresso--js-new481,85976
+(defalias 'espresso--js-eval espresso--js-eval482,86150
+(defalias 'espresso--js-list espresso--js-list485,86370
+(defalias 'espresso--js-get espresso--js-get486,86555
+(defalias 'espresso--js-put espresso--js-put487,86683
+(defalias 'espresso-js-gc espresso-js-gc490,86934
+(defalias 'espresso-js-eval espresso-js-eval495,87813
+(defalias 'espresso--get-tabs espresso--get-tabs505,88501
+(defalias 'espresso--read-tab espresso--read-tab510,90460
+(defalias 'espresso--guess-eval-defun-info espresso--guess-eval-defun-info514,94631
+(defvar espresso--js-context 518,95126
+(defalias 'espresso-set-js-context espresso-set-js-context522,96137
+(defalias 'espresso--get-js-context espresso--get-js-context525,96399
+(defalias 'espresso--js-content-window espresso--js-content-window526,96894
+(defalias 'espresso--make-nsilocalfile espresso--make-nsilocalfile527,97232
+(defalias 'espresso--js-add-resource-alias espresso--js-add-resource-alias528,97618
+(defalias 'espresso-eval-defun espresso-eval-defun531,98326
+(defalias 'espresso-mode espresso-mode537,100747
 
 elpa-to-submit/php-mode.el,2235
 (defconst php-mode-version-number 13,383
@@ -629,6 +1404,69 @@ elpa-to-submit/php-mode.el,2235
 (defconst php-font-lock-keywords-21005,44757
 (defconst php-font-lock-keywords-31042,45996
 
+elpa-to-submit/pcmpl-rake.elc,102
+(defalias 'pcomplete/rake pcomplete/rake19,649
+(defalias 'pcmpl-rake-tasks pcmpl-rake-tasks23,944
+
+elpa-to-submit/markdown-mode.elc,3271
+(defconst markdown-regex-link-inline 48,3459
+(defconst markdown-regex-link-reference 50,3604
+(defconst markdown-regex-reference-definition 52,3759
+(defconst markdown-regex-header-atx 54,3948
+(defconst markdown-regex-header-setext 56,4095
+(defconst markdown-regex-hr 58,4243
+(defconst markdown-regex-code 60,4404
+(defconst markdown-regex-pre 62,4583
+(defconst markdown-regex-list 64,4687
+(defconst markdown-regex-bold 66,4815
+(defconst markdown-regex-italic 68,4972
+(defconst markdown-regex-blockquote 70,5151
+(defconst markdown-regex-line-break 72,5258
+(defconst markdown-regex-wiki-link 74,5362
+(defconst markdown-regex-uri 76,5480
+(defconst markdown-regex-email 78,5807
+(defconst markdown-regex-latex-expression 80,5978
+(defconst markdown-regex-latex-display 82,6182
+(defconst markdown-mode-font-lock-keywords-basic 84,6313
+(defconst markdown-mode-font-lock-keywords-itex 86,7265
+(defvar markdown-mode-font-lock-keywords 88,7640
+(defvar markdown-mode-syntax-table 90,7866
+(defalias 'markdown-wrap-or-insert markdown-wrap-or-insert94,8171
+(defalias 'markdown-insert-hr markdown-insert-hr96,8412
+(defalias 'markdown-insert-bold markdown-insert-bold99,8729
+(defalias 'markdown-insert-italic markdown-insert-italic102,9037
+(defalias 'markdown-insert-code markdown-insert-code106,9356
+(defalias 'markdown-insert-link markdown-insert-link110,9607
+(defalias 'markdown-insert-wiki-link markdown-insert-wiki-link114,9881
+(defalias 'markdown-insert-image markdown-insert-image118,10161
+(defalias 'markdown-insert-header-1 markdown-insert-header-1122,10446
+(defalias 'markdown-insert-header-2 markdown-insert-header-2126,10696
+(defalias 'markdown-insert-header-3 markdown-insert-header-3130,10945
+(defalias 'markdown-insert-header-4 markdown-insert-header-4134,11195
+(defalias 'markdown-insert-header-5 markdown-insert-header-5138,11444
+(defalias 'markdown-insert-header markdown-insert-header143,11776
+(defalias 'markdown-insert-title markdown-insert-title147,12171
+(defalias 'markdown-insert-section markdown-insert-section151,12662
+(defalias 'markdown-insert-blockquote markdown-insert-blockquote155,13159
+(defalias 'markdown-blockquote-region markdown-blockquote-region157,13376
+(defalias 'markdown-insert-pre markdown-insert-pre161,13720
+(defalias 'markdown-pre-region markdown-pre-region163,13942
+(defvar markdown-mode-map 165,14168
+(defvar markdown-mode-menu 167,15439
+(defconst markdown-refcheck-buffer 171,16607
+(defalias 'markdown-has-reference-definition markdown-has-reference-definition175,16809
+(defalias 'markdown-get-undefined-refs markdown-get-undefined-refs185,17554
+(defalias 'markdown-add-missing-ref-definition markdown-add-missing-ref-definition192,18282
+(defalias 'markdown-check-refs markdown-check-refs201,19487
+(defalias 'markdown-end-of-subtree markdown-end-of-subtree203,20919
+(defalias 'markdown-cycle markdown-cycle205,21254
+(defalias 'markdown-shifttab markdown-shifttab208,22522
+(defalias 'markdown markdown210,22708
+(defalias 'markdown-preview markdown-preview212,23049
+(defalias 'markdown-line-number-at-pos markdown-line-number-at-pos216,23350
+(defalias 'markdown-show-version markdown-show-version218,23569
+(defalias 'markdown-mode markdown-mode227,24697
+
 elpa-to-submit/graphviz-dot-mode.el,2426
 (defconst graphviz-dot-mode-version 126,5900
 (defgroup graphviz 129,5985
@@ -682,6 +1520,21 @@ elpa-to-submit/graphviz-dot-mode.el,2426
 (defvar graphviz-dot-last-word-shown 852,36439
 (defvar graphviz-dot-last-completions 853,36481
 (defun graphviz-dot-complete-word 855,36525
+
+elpa-to-submit/tt-mode.elc,104
+(defvar tt-mode-hook 19,651
+(defvar tt-font-lock-keywords 22,1322
+(defalias 'tt-mode tt-mode24,1720
+
+elpa-to-submit/ri.elc,307
+(defvar ri-mode-hook 19,734
+(defvar ri-names 21,804
+(defalias 'ri ri23,871
+(defalias 'ri-mode ri-mode25,1291
+(defalias 'ri-completing-read ri-completing-read27,1651
+(defalias 'ri-names ri-names29,1877
+(defalias 'ri-symbol-at-point ri-symbol-at-point30,2288
+(defalias 'ri-query ri-query32,2483
 
 elpa-to-submit/textile-mode.el,1747
 (defvar textile-mode-map44,1290
@@ -797,12 +1650,140 @@ elpa-to-submit/color-theme.el,2894
 (defun color-theme-install 1501,60376
 (defun color-theme-standard 1549,62199
 
+elpa-to-submit/paredit.elc,8193
+(defalias 'paredit-xemacs-p paredit-xemacs-p18,816
+(defalias 'paredit-gnu-emacs-p paredit-gnu-emacs-p19,871
+(defalias 'xcond xcond22,1005
+(defalias 'paredit-handle-sexp-errors paredit-handle-sexp-errors24,1840
+(defalias 'paredit-ignore-sexp-errors paredit-ignore-sexp-errors26,2053
+(defvar paredit-mode-map 29,2289
+(defvar paredit-mode 32,2446
+(defalias 'paredit-mode paredit-mode41,2880
+(defalias 'enable-paredit-mode enable-paredit-mode46,4024
+(defalias 'disable-paredit-mode disable-paredit-mode50,4210
+(defvar paredit-commands 53,4769
+(defalias 'paredit-do-commands paredit-do-commands55,9336
+(defalias 'paredit-define-keys paredit-define-keys57,9784
+(defalias 'paredit-function-documentation paredit-function-documentation58,10199
+(defalias 'paredit-annotate-mode-with-examples paredit-annotate-mode-with-examples59,10399
+(defalias 'paredit-annotate-functions-with-examples paredit-annotate-functions-with-examples60,11145
+(defalias 'paredit-insert-html-examples paredit-insert-html-examples62,11768
+(defalias 'paredit-html-quote paredit-html-quote63,13039
+(defvar paredit-space-delimiter-chars 67,13680
+(defalias 'paredit-conc-name paredit-conc-name68,13749
+(defalias 'define-paredit-pair define-paredit-pair69,13853
+(defvar paredit-wrap-commands 72,15630
+(defalias 'paredit-open-round paredit-open-round82,16176
+(defalias 'paredit-close-round paredit-close-round88,16710
+(defalias 'paredit-close-round-and-newline paredit-close-round-and-newline92,16973
+(defalias 'paredit-wrap-round paredit-wrap-round95,17181
+(defalias 'paredit-open-square paredit-open-square106,17853
+(defalias 'paredit-close-square paredit-close-square112,18389
+(defalias 'paredit-close-square-and-newline paredit-close-square-and-newline116,18653
+(defalias 'paredit-wrap-square paredit-wrap-square119,18862
+(defalias 'paredit-open-curly paredit-open-curly130,19532
+(defalias 'paredit-close-curly paredit-close-curly136,20068
+(defalias 'paredit-close-curly-and-newline paredit-close-curly-and-newline140,20332
+(defalias 'paredit-wrap-curly paredit-wrap-curly143,20541
+(defalias 'paredit-open-angled paredit-open-angled154,21215
+(defalias 'paredit-close-angled paredit-close-angled160,21751
+(defalias 'paredit-close-angled-and-newline paredit-close-angled-and-newline164,22015
+(defalias 'paredit-wrap-angled paredit-wrap-angled167,22224
+(defalias 'paredit-move-past-close paredit-move-past-close169,22874
+(defalias 'paredit-move-past-close-and-newline paredit-move-past-close-and-newline170,23124
+(defalias 'paredit-find-comment-on-line paredit-find-comment-on-line178,23977
+(defalias 'paredit-insert-pair paredit-insert-pair179,24303
+(defalias 'paredit-region-safe-for-insert-p paredit-region-safe-for-insert-p180,24777
+(defalias 'paredit-space-for-delimiter-p paredit-space-for-delimiter-p181,25081
+(defalias 'paredit-move-past-close-and-reindent paredit-move-past-close-and-reindent182,25308
+(defalias 'paredit-missing-close paredit-missing-close183,25955
+(defalias 'paredit-delete-leading-whitespace paredit-delete-leading-whitespace184,26199
+(defalias 'paredit-blink-paren-match paredit-blink-paren-match185,26397
+(defalias 'paredit-doublequote paredit-doublequote199,27444
+(defalias 'paredit-meta-doublequote paredit-meta-doublequote205,28057
+(defalias 'paredit-forward-for-quote paredit-forward-for-quote206,28402
+(defalias 'paredit-backslash paredit-backslash208,28801
+(defalias 'paredit-escape paredit-escape209,29088
+(defalias 'paredit-newline paredit-newline216,29514
+(defalias 'paredit-reindent-defun paredit-reindent-defun220,29942
+(defalias 'paredit-initialize-comment-dwim paredit-initialize-comment-dwim222,30424
+(defalias 'paredit-comment-dwim paredit-comment-dwim239,31835
+(defalias 'paredit-comment-on-line-p paredit-comment-on-line-p243,32366
+(defalias 'paredit-insert-comment paredit-insert-comment244,32630
+(defalias 'paredit-forward-delete paredit-forward-delete253,33593
+(defalias 'paredit-forward-delete-in-string paredit-forward-delete-in-string254,34436
+(defalias 'paredit-backward-delete paredit-backward-delete263,35194
+(defalias 'paredit-backward-delete-in-string paredit-backward-delete-in-string264,36046
+(defalias 'paredit-kill paredit-kill273,36796
+(defalias 'paredit-kill-line-in-string paredit-kill-line-in-string274,37166
+(defalias 'paredit-kill-sexps-on-line paredit-kill-sexps-on-line275,37471
+(defalias 'paredit-forward-sexps-to-kill paredit-forward-sexps-to-kill276,37813
+(defalias 'paredit-kill-sexps-on-whole-line paredit-kill-sexps-on-whole-line277,38438
+(defalias 'paredit-forward-kill-word paredit-forward-kill-word279,38932
+(defalias 'paredit-backward-kill-word paredit-backward-kill-word281,39399
+(defalias 'paredit-kill-word-state paredit-kill-word-state282,39809
+(defalias 'paredit-kill-word-hack paredit-kill-word-hack283,40065
+(defalias 'paredit-copy-as-kill paredit-copy-as-kill285,40479
+(defalias 'defun-saving-mark defun-saving-mark286,40885
+(defalias 'paredit-forward paredit-forward291,41394
+(defalias 'paredit-backward paredit-backward296,41854
+(defalias 'backward-down-list backward-down-list300,42222
+(defalias 'paredit-recentre-on-sexp paredit-recentre-on-sexp303,42466
+(defalias 'paredit-focus-on-defun paredit-focus-on-defun305,42792
+(defalias 'paredit-wrap-sexp paredit-wrap-sexp316,43465
+(defalias 'paredit-count-sexps-forward paredit-count-sexps-forward317,44007
+(defalias 'paredit-yank-pop paredit-yank-pop328,44660
+(defalias 'paredit-splice-sexp paredit-splice-sexp341,45757
+(defalias 'paredit-kill-surrounding-sexps-for-splice paredit-kill-surrounding-sexps-for-splice342,46185
+(defalias 'paredit-splice-sexp-killing-backward paredit-splice-sexp-killing-backward346,47163
+(defalias 'paredit-splice-sexp-killing-forward paredit-splice-sexp-killing-forward350,47538
+(defalias 'paredit-raise-sexp paredit-raise-sexp356,48043
+(defalias 'paredit-convolute-sexp paredit-convolute-sexp362,48900
+(defalias 'paredit-splice-string paredit-splice-string363,49417
+(defalias 'paredit-unescape-string paredit-unescape-string364,49791
+(defalias 'paredit-forward-slurp-sexp paredit-forward-slurp-sexp372,50600
+(defalias 'paredit-forward-slurp-into-list paredit-forward-slurp-into-list373,50920
+(defalias 'paredit-forward-slurp-into-string paredit-forward-slurp-into-string374,51321
+(defalias 'paredit-forward-barf-sexp paredit-forward-barf-sexp379,51756
+(defalias 'paredit-backward-slurp-sexp paredit-backward-slurp-sexp387,52601
+(defalias 'paredit-backward-slurp-into-list paredit-backward-slurp-into-list388,52924
+(defalias 'paredit-backward-slurp-into-string paredit-backward-slurp-into-string389,53384
+(defalias 'paredit-backward-barf-sexp paredit-backward-barf-sexp394,53849
+(defalias 'paredit-split-sexp paredit-split-sexp396,54419
+(defalias 'paredit-join-sexps paredit-join-sexps399,54982
+(defalias 'paredit-add-to-previous-list paredit-add-to-previous-list401,55853
+(defalias 'paredit-add-to-next-list paredit-add-to-next-list404,56205
+(defalias 'paredit-join-with-previous-list paredit-join-with-previous-list406,56474
+(defalias 'paredit-join-with-next-list paredit-join-with-next-list408,56846
+(defalias 'paredit-in-string-escape-p paredit-in-string-escape-p413,57342
+(defalias 'paredit-in-char-p paredit-in-char-p422,57938
+(defalias 'paredit-forward-and-indent paredit-forward-and-indent425,58177
+(defalias 'paredit-skip-whitespace paredit-skip-whitespace429,58496
+(defalias 'paredit-hack-kill-region paredit-hack-kill-region434,59060
+(defalias 'paredit-current-parse-state paredit-current-parse-state436,59271
+(defalias 'paredit-in-string-p paredit-in-string-p440,59571
+(defalias 'paredit-string-start+end-points paredit-string-start+end-points446,60026
+(defalias 'paredit-in-comment-p paredit-in-comment-p450,60366
+(defalias 'paredit-point-at-sexp-boundary paredit-point-at-sexp-boundary451,60510
+(defalias 'paredit-point-at-sexp-start paredit-point-at-sexp-start452,60684
+(defalias 'paredit-point-at-sexp-end paredit-point-at-sexp-end453,60793
+(defalias 'paredit-lose-if-not-in-sexp paredit-lose-if-not-in-sexp454,60900
+
 elpa-to-submit/eshell-vc.el,183
 (defvar eshell-vc-dirty44,1497
 (defun eshell-vc-prompt 47,1600
 (defun eshell-vc-skip-prompt 57,2024
 (defalias 'eshell/branch eshell/branch63,2260
 (defun eshell/vc-dirty 64,2312
+
+elpa-to-submit/eshell-vc.elc,201
+(defvar eshell-vc-dirty 19,651
+(defalias 'eshell-vc-prompt eshell-vc-prompt21,749
+(defalias 'eshell-vc-skip-prompt eshell-vc-skip-prompt23,1086
+(defalias 'eshell/vc-dirty eshell/vc-dirty25,1299
+
+elpa-to-submit/blackboard.elc,65
+(defalias 'color-theme-blackboard color-theme-blackboard19,701
 
 elpa-to-submit/erc-highlight-nicknames.el,242
 (defface erc-highlight-nick-base-face84,3135
@@ -811,100 +1792,6 @@ elpa-to-submit/erc-highlight-nicknames.el,242
 (defun invert-color 105,3859
 (defun erc-highlight-nicknames 115,4161
 (define-erc-module highlight-nicknames 143,5624
-
-elpa-to-submit/htmlize.el,3091
-(defconst htmlize-version 99,4323
-(defgroup htmlize 118,5063
-(defcustom htmlize-head-tags 122,5151
-(defcustom htmlize-output-type 127,5289
-(defcustom htmlize-generate-hyperlinks 148,6239
-(defcustom htmlize-hyperlink-style 156,6583
-(defcustom htmlize-replace-form-feeds 171,6909
-(defcustom htmlize-html-charset 187,7672
-(defcustom htmlize-convert-nonascii-to-entities 212,8762
-(defcustom htmlize-ignore-face-size 247,10509
-(defcustom htmlize-css-name-prefix 257,10967
-(defcustom htmlize-use-rgb-txt 266,11349
-(defcustom htmlize-html-major-mode 284,12110
-(defvar htmlize-before-hook 292,12422
-(defvar htmlize-after-hook 297,12577
-(defvar htmlize-file-hook 303,12799
-(defvar htmlize-buffer-places)306,12908
-(defconst htmlize-running-xemacs 312,13110
-(defvar htmlize-basic-character-table400,16709
-(defvar htmlize-extended-character-cache 436,18210
-(defun htmlize-protect-string 438,18281
-(defconst htmlize-ellipsis 475,19736
-(defun htmlize-buffer-substring-no-invisible 478,19856
-(defun htmlize-trim-ellipsis 533,22109
-(defconst htmlize-tab-spaces542,22470
-(defun htmlize-untabify 550,22739
-(defun htmlize-despam-address 586,24151
-(defun htmlize-make-hyperlinks 595,24480
-(defun htmlize-defang-local-variables 628,25690
-(defvar htmlize-x-library-search-path647,26392
-(defun htmlize-get-color-rgb-hash 669,26998
-(defvar htmlize-color-rgb-hash 708,28352
-(defun htmlize-face-specifies-property 712,28435
-(defun htmlize-face-color-internal 723,28997
-(defun htmlize-face-foreground 756,30401
-(defun htmlize-face-background 767,30785
-(defun htmlize-color-to-rgb 781,31273
-(defstruct htmlize-fstruct826,33066
-(defun htmlize-face-emacs21-attr 838,33444
-(defun htmlize-face-size 864,34401
-(defun htmlize-face-to-fstruct 875,34795
-(defmacro htmlize-copy-attr-if-set 953,38250
-(defun htmlize-merge-size 964,38713
-(defun htmlize-merge-two-faces 972,38982
-(defun htmlize-merge-faces 981,39278
-(defun htmlize-attrlist-to-fstruct 1001,39964
-(defun htmlize-face-list-p 1022,40784
-(defun htmlize-make-face-map 1049,41741
-(defun htmlize-unstringify-face 1075,42704
-(defun htmlize-faces-in-buffer 1081,42872
-(defmacro htmlize-method 1222,48671
-(defun htmlize-method-function 1227,48884
-(defvar htmlize-memoization-table 1239,49326
-(defmacro htmlize-memoize 1241,49393
-(defun htmlize-default-doctype 1255,49900
-(defun htmlize-default-body-tag 1283,51261
-(defun htmlize-css-specs 1290,51411
-(defun htmlize-css-insert-head 1317,52549
-(defun htmlize-css-insert-text 1350,53805
-(defun htmlize-inline-css-body-tag 1365,54349
-(defun htmlize-inline-css-insert-text 1370,54515
-(defun htmlize-font-body-tag 1387,55015
-(defun htmlize-font-insert-text 1393,55245
-(defun htmlize-buffer-1 1417,56310
-(defmacro htmlize-with-fontify-message 1550,61642
-(defun htmlize-ensure-fontified 1563,62116
-(defun htmlize-buffer 1593,63385
-(defun htmlize-region 1614,64292
-(defun htmlize-region-for-paste 1628,64745
-(defun htmlize-make-file-name 1641,65305
-(defun htmlize-file 1665,66213
-(defun htmlize-many-files 1728,68885
-(defun htmlize-many-files-dired 1762,70199
-
-elpa-to-submit/ruby-electric.el,826
-(defgroup ruby-electric 53,1604
-(defconst ruby-electric-expandable-do-re57,1716
-(defconst ruby-electric-expandable-bar60,1771
-(defvar ruby-electric-matching-delimeter-alist63,1839
-(defcustom ruby-electric-simple-keywords-re70,1969
-(defcustom ruby-electric-expand-delimiters-list 76,2236
-(defcustom ruby-electric-newline-before-closing-bracket 90,2818
-(define-minor-mode ruby-electric-mode96,3020
-(defun ruby-electric-setup-keymap(116,3721
-(defun ruby-electric-space 125,4171
-(defun ruby-electric-code-at-point-p(135,4446
-(defun ruby-electric-string-at-point-p(141,4698
-(defun ruby-electric-is-last-command-char-expandable-punct-p(145,4842
-(defun ruby-electric-space-can-be-expanded-p(149,5032
-(defun ruby-electric-curlies(165,5712
-(defun ruby-electric-matching-char(182,6338
-(defun ruby-electric-bar(191,6697
 
 elpa-to-submit/paredit.el,4909
 (defconst paredit-version 181,9053
@@ -1111,6 +1998,36 @@ elpa-to-submit/pod-mode.el,371
 (defvar pod-mode-syntax-table 118,3866
 (defun pod-create-syntax-table 122,3969
 (defun pod-mode 131,4169
+
+elpa-to-submit/php-mode.elc,1472
+(defconst php-mode-version-number 18,609
+(defvar php-imenu-generic-expression 29,1899
+(defconst php-mode-modified 49,4251
+(defalias 'php-mode-version php-mode-version51,4362
+(defconst php-beginning-of-defun-regexp 53,4551
+(defalias 'php-beginning-of-defun php-beginning-of-defun56,4862
+(defalias 'php-end-of-defun php-end-of-defun61,5365
+(defalias 'php-check-html-for-indentation php-check-html-for-indentation63,5656
+(defalias 'php-cautious-indent-region php-cautious-indent-region64,6179
+(defalias 'php-cautious-indent-line php-cautious-indent-line65,6372
+(defalias 'php-mode php-mode74,8752
+(defvar php-completion-table 77,11547
+(defalias 'php-complete-function php-complete-function83,11843
+(defalias 'php-completion-table php-completion-table87,12566
+(defalias 'php-build-table-from-file php-build-table-from-file88,13224
+(defalias 'php-build-table-from-path php-build-table-from-path89,13526
+(defalias 'php-get-pattern php-get-pattern90,13899
+(defalias 'php-show-arglist php-show-arglist91,14277
+(defalias 'php-search-documentation php-search-documentation93,14726
+(defalias 'php-browse-manual php-browse-manual95,14886
+(defconst php-constants 98,15239
+(defconst php-keywords 100,17219
+(defconst php-identifier 102,17724
+(defconst php-types 104,17817
+(defconst php-superglobals 106,18017
+(defconst php-font-lock-keywords-1 108,18203
+(defconst php-font-lock-keywords-2 110,18927
+(defconst php-font-lock-keywords-3 112,19749
 
 elpa-to-submit/cperl-mode.el,13809
 (defconst cperl-xemacs-p 1647,72863
@@ -1531,6 +2448,85 @@ elpa/inf-ruby-2.1/inf-ruby.el,1214
 elpa/inf-ruby-2.1/inf-ruby-pkg.el,32
 (define-package "inf-ruby" 1,0
 
+elpa/findr-0.7/findr.elc,620
+(defalias 'findr-read-search-regexp findr-read-search-regexp23,1587
+(defalias 'findr-read-file-regexp findr-read-file-regexp24,1787
+(defalias 'findr-read-starting-directory findr-read-starting-directory25,1981
+(defalias 'findr findr31,2422
+(defalias 'findr-query-replace findr-query-replace35,4040
+(defalias 'findr-search findr-search39,4635
+(defalias 'findr-find-files findr-find-files41,4917
+(defalias 'findr-make-queue findr-make-queue43,5140
+(defalias 'findr-enqueue findr-enqueue45,5276
+(defalias 'findr-dequeue findr-dequeue47,5423
+(defalias 'findr-queue-contents findr-queue-contents48,5520
+
+elpa/findr-0.7/findr-pkg.el,29
+(define-package "findr" 1,0
+
+elpa/findr-0.7/findr-pkg.elc,32
+(define-package "findr" 17,580
+
+elpa/findr-0.7/findr.el,699
+(defgroup findr 110,4263
+(defcustom findr-skip-directory-regexp 124,4670
+(defcustom findr-skip-file-regexp 129,4919
+(defvar findr-search-regexp-history 134,5124
+(defvar findr-search-replacement-history 135,5165
+(defvar findr-file-name-regexp-history 136,5211
+(defvar findr-directory-history 137,5255
+(defun findr-read-search-regexp 139,5293
+(defun findr-read-file-regexp 144,5468
+(defun findr-read-starting-directory 150,5677
+(defun* findr 160,6009
+(defun findr-query-replace 205,8161
+(defun findr-search 217,8877
+(defun findr-find-files 227,9285
+(defun findr-make-queue 236,9605
+(defun findr-enqueue 242,9731
+(defun findr-dequeue 249,9885
+(defsubst findr-queue-contents 255,10033
+
+elpa/jump-2.0/jump.el,542
+(defvar jump-ignore-file-regexp 70,2778
+(defun jump-completing-read 74,2970
+(defun jump-find-file-in-dir 80,3332
+(defun jump-method 86,3593
+(defun jump-uniqueify 93,3812
+(defun jump-select-and-find-file 99,4039
+(defun jump-remove-unwanted-files 109,4394
+(defun jump-to-file 115,4584
+(defun jump-to-method 140,5595
+(defun jump-to-path 152,6043
+(defun jump-insert-matches 164,6482
+(defun jump-inflections 176,6824
+(defun jump-to-all-inflections 197,7468
+(defun jump-to 205,7758
+(defun jump-from 225,8716
+(defun defjump 246,9442
+
+elpa/jump-2.0/jump-pkg.el,28
+(define-package "jump" 1,0
+
+elpa/jump-2.0/jump-pkg.elc,31
+(define-package "jump" 17,577
+
+elpa/inflections-1.0/inflections.el,287
+(defvar inflection-singulars 31,1148
+(defvar inflection-plurals 32,1186
+(defvar inflection-irregulars 33,1224
+(defvar inflection-uncountables 34,1262
+(defmacro define-inflectors 36,1302
+(defmacro string=45,1701
+(defun singularize-string 131,5265
+(defun pluralize-string 141,5657
+
+elpa/inflections-1.0/inflections-pkg.el,35
+(define-package "inflections" 1,0
+
+elpa/inflections-1.0/inflections-pkg.elc,38
+(define-package "inflections" 17,598
+
 elpa/ruby-mode-1.1/ruby-mode.elc,3362
 (defconst ruby-block-beg-keywords 19,825
 (defconst ruby-block-beg-re 21,1000
@@ -1758,187 +2754,849 @@ elpa/idle-highlight-1.0/idle-highlight-pkg.elc,41
 elpa/idle-highlight-1.0/idle-highlight-pkg.el,38
 (define-package "idle-highlight" 1,0
 
-elpa/xml-rpc-1.6.7/xml-rpc-pkg.el,31
-(define-package "xml-rpc" 1,0
+elpa/ruby-electric-1.1/ruby-electric-pkg.elc,40
+(define-package "ruby-electric" 17,594
 
-elpa/xml-rpc-1.6.7/xml-rpc.elc,1885
-(defconst xml-rpc-version 19,704
-(defvar xml-rpc-fault-string 38,2066
-(defvar xml-rpc-fault-code 40,2165
-(defalias 'xml-rpc-value-intp xml-rpc-value-intp42,2248
-(defalias 'xml-rpc-value-doublep xml-rpc-value-doublep45,2448
-(defalias 'xml-rpc-value-stringp xml-rpc-value-stringp48,2645
-(defalias 'xml-rpc-value-structp xml-rpc-value-structp51,2840
-(defalias 'xml-rpc-value-arrayp xml-rpc-value-arrayp54,3148
-(defalias 'xml-rpc-value-booleanp xml-rpc-value-booleanp57,3496
-(defalias 'xml-rpc-value-datetimep xml-rpc-value-datetimep61,3758
-(defalias 'xml-rpc-string-to-boolean xml-rpc-string-to-boolean63,3896
-(defalias 'xml-rpc-caddar-safe xml-rpc-caddar-safe64,4009
-(defalias 'xml-rpc-xml-list-to-value xml-rpc-xml-list-to-value66,4229
-(defalias 'xml-rpc-boolean-to-string xml-rpc-boolean-to-string68,5407
-(defalias 'xml-rpc-datetime-to-string xml-rpc-datetime-to-string70,5562
-(defalias 'xml-rpc-value-to-xml-list xml-rpc-value-to-xml-list72,5798
-(defalias 'xml-rpc-xml-to-string xml-rpc-xml-to-string74,7209
-(defalias 'xml-rpc-response-errorp xml-rpc-response-errorp76,7714
-(defalias 'xml-rpc-response-error-code xml-rpc-response-error-code79,7942
-(defalias 'xml-rpc-response-error-string xml-rpc-response-error-string82,8224
-(defalias 'xml-rpc-xml-to-response xml-rpc-xml-to-response88,8704
-(defalias 'xml-rpc-get-temp-buffer-name xml-rpc-get-temp-buffer-name90,9168
-(defalias 'xml-rpc-request xml-rpc-request100,9863
-(defalias 'xml-rpc-clean-string xml-rpc-clean-string101,11429
-(defalias 'xml-rpc-clean xml-rpc-clean102,11531
-(defalias 'xml-rpc-request-process-buffer xml-rpc-request-process-buffer104,11941
-(defalias 'xml-rpc-request-callback-handler xml-rpc-request-callback-handler106,12714
-(defalias 'xml-rpc-method-call-async xml-rpc-method-call-async108,13160
-(defalias 'xml-rpc-method-call xml-rpc-method-call110,13771
+elpa/ruby-electric-1.1/ruby-electric.elc,1188
+(defvar ruby-electric-mode 29,2365
+(defalias 'ruby-electric-mode ruby-electric-mode42,2996
+(defalias 'ruby-electric-setup-keymap ruby-electric-setup-keymap44,3746
+(defalias 'ruby-electric-space ruby-electric-space45,4251
+(defalias 'ruby-electric-code-at-point-p ruby-electric-code-at-point-p46,4495
+(defalias 'ruby-electric-string-at-point-p ruby-electric-string-at-point-p47,4684
+(defalias 'ruby-electric-is-last-command-char-expandable-punct-p ruby-electric-is-last-command-char-expandable-punct-p48,4826
+(defalias 'ruby-electric-space-can-be-expanded-p ruby-electric-space-can-be-expanded-p49,4984
+(defalias 'ruby-electric-curlies ruby-electric-curlies50,5403
+(defalias 'ruby-electric-close-curlies ruby-electric-close-curlies51,5825
+(defalias 'ruby-electric-matching-char ruby-electric-matching-char52,5990
+(defalias 'ruby-electric-close-matching-char ruby-electric-close-matching-char53,6303
+(defalias 'ruby-electric-bar ruby-electric-bar54,6497
+(defalias 'ruby-electric-return-can-be-expanded-p ruby-electric-return-can-be-expanded-p55,6832
+(defalias 'ruby-electric-return ruby-electric-return56,7068
+(defalias 'ruby-insert-end ruby-insert-end57,7262
 
-elpa/xml-rpc-1.6.7/xml-rpc-pkg.elc,34
-(define-package "xml-rpc" 17,588
+elpa/ruby-electric-1.1/ruby-electric-pkg.el,37
+(define-package "ruby-electric" 1,0
 
-elpa/xml-rpc-1.6.7/xml-rpc.el,1489
-(defconst xml-rpc-version 175,6047
-(defcustom xml-rpc-load-hook 178,6117
-(defcustom xml-rpc-allow-unicode-string 182,6219
-(defcustom xml-rpc-base64-encode-unicode 188,6507
-(defcustom xml-rpc-use-coding-system 193,6691
-(defcustom xml-rpc-base64-decode-unicode 197,6841
-(defcustom xml-rpc-debug 202,7025
-(defvar xml-rpc-fault-string 207,7209
-(defvar xml-rpc-fault-code 210,7297
-(defsubst xml-rpc-value-intp 217,7421
-(defsubst xml-rpc-value-doublep 221,7516
-(defsubst xml-rpc-value-stringp 225,7627
-(defsubst xml-rpc-value-structp 231,7833
-(defsubst xml-rpc-value-arrayp 246,8280
-(defun xml-rpc-value-booleanp 252,8475
-(defun xml-rpc-value-datetimep 257,8592
-(defun xml-rpc-string-to-boolean 264,8849
-(defun xml-rpc-caddar-safe 268,8987
-(defun xml-rpc-xml-list-to-value 271,9074
-(defun xml-rpc-boolean-to-string 323,11052
-(defun xml-rpc-datetime-to-string 329,11166
-(defun xml-rpc-value-to-xml-list 333,11312
-(defun xml-rpc-xml-to-string 383,13300
-(defsubst xml-rpc-response-errorp 403,13891
-(defsubst xml-rpc-response-error-code 409,14175
-(defsubst xml-rpc-response-error-string 414,14362
-(defun xml-rpc-xml-to-response 419,14551
-(defun xml-rpc-get-temp-buffer-name 445,15419
-(defun xml-rpc-request 464,15848
-(defun xml-rpc-clean-string 537,18968
-(defun xml-rpc-clean 543,19083
-(defun xml-rpc-request-process-buffer 577,19850
-(defun xml-rpc-request-callback-handler 617,21098
-(defun xml-rpc-method-call-async 626,21467
-(defun xml-rpc-method-call 646,22272
+elpa/ruby-electric-1.1/ruby-electric.el,1042
+(defgroup ruby-electric 15,368
+(defconst ruby-electric-expandable-do-re19,479
+(defconst ruby-electric-expandable-bar22,534
+(defvar ruby-electric-matching-delimeter-alist25,607
+(defcustom ruby-electric-simple-keywords-re32,737
+(defcustom ruby-electric-expand-delimiters-list 38,1004
+(defcustom ruby-electric-newline-before-closing-bracket 52,1585
+(define-minor-mode ruby-electric-mode58,1787
+(defun ruby-electric-setup-keymap(78,2488
+(defun ruby-electric-space 93,3331
+(defun ruby-electric-code-at-point-p(102,3580
+(defun ruby-electric-string-at-point-p(108,3832
+(defun ruby-electric-is-last-command-char-expandable-punct-p(112,3976
+(defun ruby-electric-space-can-be-expanded-p(116,4165
+(defun ruby-electric-curlies(132,4848
+(defun ruby-electric-close-curlies(148,5448
+(defun ruby-electric-matching-char(154,5610
+(defun ruby-electric-close-matching-char(163,5968
+(defun ruby-electric-bar(169,6159
+(defun ruby-electric-return-can-be-expanded-p(179,6570
+(defun ruby-electric-return 187,6869
+(defun ruby-insert-end 196,7140
 
-elpa/weblogger-1.4.3/weblogger-pkg.elc,36
-(define-package "weblogger" 17,594
+elpa/company-0.5/company-semantic.elc,670
+(defvar company-semantic--current-tags 22,1142
+(defalias 'company-semantic-doc-or-summary company-semantic-doc-or-summary23,1198
+(defalias 'company-semantic-summary-and-doc company-semantic-summary-and-doc24,1439
+(defalias 'company-semantic-doc-buffer company-semantic-doc-buffer25,1780
+(defalias 'company-semantic-completions company-semantic-completions26,1997
+(defalias 'company-semantic-completions-raw company-semantic-completions-raw28,2382
+(defalias 'company-semantic--pre-prefix-length company-semantic--pre-prefix-length31,2804
+(defalias 'company-semantic--grab company-semantic--grab33,3109
+(defalias 'company-semantic company-semantic35,3328
 
-elpa/weblogger-1.4.3/weblogger-pkg.el,33
-(define-package "weblogger" 1,0
+elpa/company-0.5/company.elc,8437
+(defalias 'company-frontends-set company-frontends-set18,2730
+(defalias 'company-safe-backends-p company-safe-backends-p45,5990
+(defvar company-end-of-buffer-workaround 149,13923
+(defvar company-mode-map 151,14018
+(defvar company-active-map 153,14136
+(defalias 'company-init-backend company-init-backend155,15303
+(defvar company-mode 159,16193
+(defalias 'company-mode company-mode184,17204
+(defalias 'global-company-mode global-company-mode196,19141
+(defalias 'global-company-mode-enable-in-buffers global-company-mode-enable-in-buffers198,20566
+(defalias 'global-company-mode-check-buffers global-company-mode-check-buffers200,20970
+(defalias 'global-company-mode-cmhh global-company-mode-cmhh202,21275
+(defalias 'company-assert-enabled company-assert-enabled204,21530
+(defalias 'company-enable-overriding-keymap company-enable-overriding-keymap206,22085
+(defalias 'company-install-map company-install-map208,22331
+(defalias 'company-uninstall-map company-uninstall-map209,22512
+(defalias 'company-ignore company-ignore210,22688
+(defalias 'company-input-noop company-input-noop212,22817
+(defalias 'company--col-row company--col-row213,22908
+(defalias 'company--column company--column214,23046
+(defalias 'company--row company--row216,23214
+(defalias 'company-grab company-grab218,23383
+(defalias 'company-grab-line company-grab-line219,23568
+(defalias 'company-grab-symbol company-grab-symbol220,23698
+(defalias 'company-grab-word company-grab-word221,23881
+(defalias 'company-in-string-or-comment company-in-string-or-comment222,24055
+(defalias 'company-call-backend company-call-backend224,24602
+(defalias 'company--multi-backend-adapter company--multi-backend-adapter225,24765
+(defvar company--explicit-action 228,26140
+(defalias 'company-strip-prefix company-strip-prefix230,26592
+(defalias 'company-with-candidate-inserted company-with-candidate-inserted235,27047
+(defalias 'company-explicit-action-p company-explicit-action-p237,27464
+(defalias 'company-reformat company-reformat238,27592
+(defalias 'company--should-complete company--should-complete240,27754
+(defalias 'company-call-frontends company-call-frontends241,28159
+(defalias 'company-set-selection company-set-selection243,28588
+(defalias 'company-apply-predicate company-apply-predicate245,29200
+(defalias 'company-update-candidates company-update-candidates246,29390
+(defalias 'company-calculate-candidates company-calculate-candidates247,29826
+(defalias 'company-idle-begin company-idle-begin248,30617
+(defalias 'company-auto-begin company-auto-begin249,31004
+(defalias 'company-manual-begin company-manual-begin250,31294
+(defalias 'company-other-backend company-other-backend251,31409
+(defalias 'company-require-match-p company-require-match-p252,32110
+(defalias 'company-punctuation-p company-punctuation-p254,32389
+(defalias 'company-auto-complete-p company-auto-complete-p256,32573
+(defalias 'company--incremental-p company--incremental-p257,32830
+(defalias 'company--string-incremental-p company--string-incremental-p258,33017
+(defalias 'company--continue-failed company--continue-failed260,33226
+(defalias 'company--good-prefix-p company--good-prefix-p261,33761
+(defalias 'company--continue company--continue262,33928
+(defalias 'company--begin-new company--begin-new263,34395
+(defalias 'company-begin company-begin264,35608
+(defalias 'company-cancel company-cancel265,36383
+(defalias 'company-abort company-abort266,37680
+(defalias 'company-finish company-finish267,37782
+(defalias 'company-keep company-keep268,37927
+(defalias 'company-pre-command company-pre-command270,38075
+(defalias 'company-post-command company-post-command271,38831
+(defalias 'company-search company-search273,40222
+(defalias 'company-search-printing-char company-search-printing-char274,40543
+(defalias 'company-search-repeat-forward company-search-repeat-forward276,41540
+(defalias 'company-search-repeat-backward company-search-repeat-backward278,42451
+(defalias 'company-create-match-predicate company-create-match-predicate279,43307
+(defalias 'company-filter-printing-char company-filter-printing-char280,43696
+(defalias 'company-search-kill-others company-search-kill-others282,44403
+(defalias 'company-search-abort company-search-abort284,45065
+(defalias 'company-search-other-char company-search-other-char285,45807
+(defvar company-search-map 287,46223
+(defvar company-search-mode 290,47248
+(defalias 'company-search-mode company-search-mode295,47481
+(defalias 'company-search-assert-enabled company-search-assert-enabled297,48962
+(defalias 'company-search-candidates company-search-candidates310,49780
+(defvar company-filter-map 312,50079
+(defalias 'company-filter-candidates company-filter-candidates316,50504
+(defalias 'company-select-next company-select-next318,50775
+(defalias 'company-select-previous company-select-previous320,51390
+(defalias 'company-select-mouse company-select-mouse322,52008
+(defalias 'company-complete-mouse company-complete-mouse324,52789
+(defalias 'company-complete-selection company-complete-selection326,52973
+(defalias 'company-complete-common company-complete-common328,53190
+(defalias 'company-complete company-complete332,53653
+(defalias 'company-complete-number company-complete-number336,54052
+(defalias 'company-space-string company-space-string338,54707
+(defalias 'company-safe-substring company-safe-substring340,54930
+(defalias 'company-fetch-metadata company-fetch-metadata342,55449
+(defalias 'company-doc-buffer company-doc-buffer343,55635
+(defvar company--electric-commands 345,55844
+(defalias 'company--electric-do company--electric-do346,56077
+(defalias 'company-show-doc-buffer company-show-doc-buffer348,56734
+(defalias 'company-show-location company-show-location351,57607
+(defalias 'company-remove-callback company-remove-callback353,59343
+(defalias 'company-begin-backend company-begin-backend355,59694
+(defalias 'company-begin-with company-begin-with365,60598
+(defalias 'company-pseudo-tooltip-update-offset company-pseudo-tooltip-update-offset367,61427
+(defalias 'company-round-tab company-round-tab368,61686
+(defalias 'company-untabify company-untabify370,61830
+(defalias 'company-fill-propertize company-fill-propertize371,62254
+(defalias 'company-buffer-lines company-buffer-lines372,63201
+(defalias 'company-modify-line company-modify-line373,63445
+(defalias 'company--length-limit company--length-limit375,63934
+(defalias 'company--replacement-string company--replacement-string377,64096
+(defalias 'company--create-lines company--create-lines378,64939
+(defalias 'company--window-inner-height company--window-inner-height379,66376
+(defalias 'company--pseudo-tooltip-height company--pseudo-tooltip-height383,66704
+(defalias 'company-pseudo-tooltip-show company-pseudo-tooltip-show385,67130
+(defalias 'company-pseudo-tooltip-show-at-point company-pseudo-tooltip-show-at-point386,68115
+(defalias 'company-pseudo-tooltip-edit company-pseudo-tooltip-edit387,68289
+(defalias 'company-pseudo-tooltip-hide company-pseudo-tooltip-hide388,68629
+(defalias 'company-pseudo-tooltip-hide-temporarily company-pseudo-tooltip-hide-temporarily389,68763
+(defalias 'company-pseudo-tooltip-unhide company-pseudo-tooltip-unhide390,68957
+(defalias 'company-pseudo-tooltip-frontend company-pseudo-tooltip-frontend392,69279
+(defalias 'company-pseudo-tooltip-unless-just-one-frontend company-pseudo-tooltip-unless-just-one-frontend394,70334
+(defalias 'company-preview-show-at-point company-preview-show-at-point396,70703
+(defalias 'company-preview-hide company-preview-hide397,71363
+(defalias 'company-preview-frontend company-preview-frontend399,71566
+(defalias 'company-preview-if-just-one-frontend company-preview-if-just-one-frontend401,71886
+(defalias 'company-echo-show company-echo-show403,72366
+(defalias 'company-echo-show-soon company-echo-show-soon404,72543
+(defalias 'company-echo-format company-echo-format406,72818
+(defalias 'company-echo-strip-common-format company-echo-strip-common-format407,73489
+(defalias 'company-echo-hide company-echo-hide408,74056
+(defalias 'company-echo-frontend company-echo-frontend410,74296
+(defalias 'company-echo-strip-common-frontend company-echo-strip-common-frontend412,74775
+(defalias 'company-echo-metadata-frontend company-echo-metadata-frontend414,75283
 
-elpa/weblogger-1.4.3/weblogger.el,4516
-(defgroup weblogger 158,5658
-(defcustom weblogger-server-username 162,5729
-(defcustom weblogger-server-password 167,5884
-(defcustom weblogger-server-url172,6025
-(defcustom weblogger-weblog-id 179,6275
-(defcustom weblogger-max-entries-in-ring 186,6533
-(defcustom weblogger-ping-urls 192,6741
-(defcustom weblogger-save-password 198,6942
-(defcustom weblogger-config-alist 203,7064
-(defcustom weblogger-blogger-firstline-title 214,7547
-(defcustom weblogger-config-name 220,7731
-(defcustom weblogger-start-edit-entry-hook225,7851
-(defcustom weblogger-edit-entry-hook 234,8126
-(defcustom weblogger-pre-struct-hook 239,8244
-(defvar weblogger-entry-list 245,8408
-(defvar weblogger-category-list 249,8530
-(defvar weblogger-server-userid 252,8611
-(defvar *weblogger-entry* 255,8687
-(defvar weblogger-entry-mode-hook 258,8759
-(defvar weblogger-new-entry-hook 261,8849
-(defvar weblogger-entry-mode-map 266,9070
-(defvar weblogger-template-type)269,9146
-(defvar weblogger-template-mode-map 270,9179
-(defvar weblogger-entry-ring 273,9261
-(defvar weblogger-category-ring 276,9333
-(defvar weblogger-ring-index 279,9411
-(defvar weblogger-capabilities 282,9481
-(defvar weblogger-default-title 285,9560
-(defvar weblogger-default-categories 290,9764
-(defvar weblogger-api-new-entry 295,9986
-(defvar weblogger-api-send-edits 296,10023
-(defvar weblogger-api-list-entries 297,10061
-(defvar weblogger-api-list-categories 298,10101
-(defvar weblogger-api-delete-entry 299,10144
-(defvar weblogger-weblog-alist 301,10217
-(defvar weblogger-texttype-alist 303,10297
-(defvar menu-bar-weblogger-menu 306,10375
-(defconst weblogger-blogger-app-key308,10413
-(defconst weblogger-version 313,10585
-(defconst weblogger-no-capabilities 316,10659
-(defun weblogger-select-configuration 428,17057
-(defun weblogger-setup-weblog 449,17883
-(defun weblogger-save-configuration 474,18860
-(defun weblogger-change-server 480,19086
-(defun weblogger-change-user 490,19438
-(defun weblogger-change-weblog 496,19586
-(defun weblogger-change-texttype 507,19900
-(defun weblogger-entry-mode 517,20197
-(defun weblogger-template-mode 529,20634
-(defun weblogger-edit-main-template 537,20903
-(defun weblogger-edit-archive-template 542,21034
-(defun weblogger-start-entry 548,21202
-(defun weblogger-entry-setup-headers 563,21873
-(defun weblogger-send-entry 619,23840
-(defun weblogger-publish-entry 626,24051
-(defun weblogger-save-entry 635,24279
-(defun weblogger-update-ring 657,25143
-(defun weblogger-server-username 668,25457
-(defun weblogger-server-password 691,26503
-(defun weblogger-weblog-id 712,27423
-(defun weblogger-select-weblog 724,27819
-(defun weblogger-weblog-id-from-weblog-name 741,28495
-(defun weblogger-weblog-name-from-id 750,28829
-(defun weblogger-texttype-name-from-id 759,29152
-(defun weblogger-texttype-id-from-name 768,29469
-(defun weblogger-list-texttype-names 777,29790
-(defun weblogger-texttype-alist 784,29992
-(defun weblogger-select-texttype 794,30380
-(defun weblogger-server-url-from-id 808,30806
-(defun weblogger-list-weblog-names 817,31072
-(defun weblogger-ping-weblogs 824,31275
-(defun weblogger-handle-weblog-ping-response 838,31702
-(defun weblogger-goto-entry 852,32181
-(defun weblogger-next-entry 870,32948
-(defun weblogger-prev-entry 875,33068
-(defun weblogger-delete-entry 880,33192
-(defun weblogger-api-new-entry 895,33752
-(defun weblogger-api-send-edits 908,34212
-(defun weblogger-api-list-entries 915,34498
-(defun weblogger-api-list-categories 921,34701
-(defun weblogger-api-meta-list-categories 927,34895
-(defun weblogger-api-meta-list-entries 944,35387
-(defun weblogger-api-meta-send-edits 962,36026
-(defun weblogger-api-meta-new-entry 974,36440
-(defun weblogger-api-blogger-edit-template 986,36791
-(defun weblogger-api-blogger-save-template 1003,37286
-(defun weblogger-api-blogger-weblog-alist 1018,37778
-(defun weblogger-api-blogger-new-entry 1030,38192
-(defun weblogger-api-blogger-get-content 1043,38581
-(defun weblogger-api-blogger-send-edits 1054,38959
-(defun weblogger-api-blogger-list-categories 1067,39406
-(defun weblogger-api-blogger-list-entries 1072,39573
-(defun weblogger-api-blogger-delete-entry 1090,40226
-(defun weblogger-edit-entry 1100,40454
-(defun weblogger-response-to-struct 1123,41508
-(defun weblogger-struct-to-request 1203,44620
-(defun weblogger-server-userid 1226,45612
-(defun weblogger-fetch-entries 1239,45967
-(defun weblogger-determine-capabilities 1250,46406
-(defun weblogger-entry-buffer-to-struct 1288,47884
+elpa/company-0.5/company-files.el,249
+(defun company-files-directory-files 23,863
+(defvar company-files-regexps29,1060
+(defun company-files-grab-existing-name 37,1359
+(defvar company-files-completion-cache 49,1824
+(defun company-files-complete 51,1869
+(defun company-files 67,2547
+
+elpa/company-0.5/company-abbrev.elc,112
+(defalias 'company-abbrev-insert company-abbrev-insert19,706
+(defalias 'company-abbrev company-abbrev21,847
+
+elpa/company-0.5/company-etags.elc,192
+(defalias 'company-etags-find-table company-etags-find-table23,1233
+(defalias 'company-etags-buffer-table company-etags-buffer-table24,1421
+(defalias 'company-etags company-etags26,1685
+
+elpa/company-0.5/company-etags.el,248
+(defcustom company-etags-use-main-table-list 24,900
+(defvar company-etags-modes 32,1194
+(defvar company-etags-buffer-table 35,1336
+(defun company-etags-find-table 38,1439
+(defun company-etags-buffer-table 45,1722
+(defun company-etags 52,1997
+
+elpa/company-0.5/company-css.elc,639
+(defconst company-css-property-alist 19,663
+(defconst company-css-value-classes 21,6310
+(defconst company-css-html-tags 23,7009
+(defconst company-css-pseudo-classes 25,7765
+(defalias 'company-css-property-values company-css-property-values28,8231
+(defconst company-css-braces-syntax-table 30,8815
+(defalias 'company-css-inside-braces-p company-css-inside-braces-p32,9042
+(defconst company-css-tag-regexp 34,9459
+(defconst company-css-pseudo-regexp 36,9782
+(defalias 'company-css-grab-property company-css-grab-property39,10185
+(defconst company-css-property-value-regexp 41,10363
+(defalias 'company-css company-css43,10556
+
+elpa/company-0.5/company-dabbrev.el,364
+(defcustom company-dabbrev-other-buffers 23,863
+(defcustom company-dabbrev-time-limit 33,1253
+(defcustom company-dabbrev-char-regexp 39,1472
+(defmacro company-dabrev--time-limit-while 44,1633
+(defsubst company-dabbrev--make-regexp 56,2089
+(defun company-dabbrev--search-buffer 62,2309
+(defun company-dabbrev--search 84,3247
+(defun company-dabbrev 103,4103
+
+elpa/company-0.5/company-dabbrev-code.el,242
+(defcustom company-dabbrev-code-modes24,893
+(defcustom company-dabbrev-code-other-buffers 39,1651
+(defcustom company-dabbrev-code-time-limit 49,2053
+(defsubst company-dabbrev-code--make-regexp 55,2274
+(defun company-dabbrev-code 62,2506
+
+elpa/company-0.5/company.el,7692
+(defgroup company 148,6054
+(defface company-tooltip154,6184
+(defface company-tooltip-selection160,6319
+(defface company-tooltip-mouse167,6556
+(defface company-tooltip-common172,6695
+(defface company-tooltip-common-selection178,6864
+(defface company-preview184,7062
+(defface company-preview-common190,7206
+(defface company-preview-search196,7379
+(defface company-echo 202,7556
+(defface company-echo-common206,7651
+(defun company-frontends-set 212,7876
+(defcustom company-frontends 231,8717
+(defcustom company-tooltip-limit 269,10460
+(defcustom company-tooltip-minimum 274,10587
+(defvar company-safe-backends280,10777
+(defun company-safe-backends-p 302,11563
+(defcustom company-backends 310,11865
+(defcustom company-completion-started-hook 386,15438
+(defcustom company-completion-cancelled-hook 393,15658
+(defcustom company-completion-finished-hook 400,15881
+(defcustom company-minimum-prefix-length 406,16077
+(defcustom company-require-match 411,16237
+(defcustom company-auto-complete 424,16817
+(defcustom company-auto-complete-chars 435,17319
+(defcustom company-idle-delay 464,18852
+(defcustom company-begin-commands 473,19251
+(defcustom company-show-numbers 484,19732
+(defvar company-end-of-buffer-workaround 490,19939
+(defvar company-mode-map 496,20191
+(defvar company-active-map499,20274
+(defvar company--disabled-backends 526,21538
+(defun company-init-backend 528,21579
+(defvar company-default-lighter 548,22263
+(defvar company-lighter 550,22308
+(define-minor-mode company-mode554,22419
+(define-globalized-minor-mode global-company-mode 589,23822
+(defsubst company-assert-enabled 592,23918
+(defvar company-overriding-keymap-bound 599,24124
+(defvar company-old-keymap 602,24232
+(defvar company-my-keymap 605,24314
+(defsubst company-enable-overriding-keymap 608,24394
+(defun company-install-map 613,24551
+(defun company-uninstall-map 620,24832
+(defun company-ignore 628,25194
+(defun company-input-noop 634,25318
+(defun company--col-row 639,25469
+(defsubst company--column 643,25618
+(defsubst company--row 646,25705
+(defun company-grab 651,25878
+(defun company-grab-line 655,26032
+(defun company-grab-symbol 658,26139
+(defun company-grab-word 665,26416
+(defun company-in-string-or-comment 672,26681
+(defun company-call-backend 690,27342
+(defun company--multi-backend-adapter 695,27520
+(defvar company-backend 710,28014
+(defvar company-prefix 713,28090
+(defvar company-candidates 716,28164
+(defvar company-candidates-length 719,28246
+(defvar company-candidates-cache 722,28342
+(defvar company-candidates-predicate 725,28436
+(defvar company-common 728,28538
+(defvar company-selection 731,28612
+(defvar company-selection-changed 734,28690
+(defvar company--explicit-action 737,28786
+(defvar company--point-max 741,28928
+(defvar company-point 744,29010
+(defvar company-timer 747,29082
+(defvar company-added-newline 749,29110
+(defsubst company-strip-prefix 752,29198
+(defmacro company-with-candidate-inserted 755,29279
+(defun company-explicit-action-p 768,29791
+(defsubst company-reformat 773,29962
+(defun company--should-complete 778,30214
+(defsubst company-call-frontends 790,30790
+(defsubst company-set-selection 797,31072
+(defun company-apply-predicate 804,31398
+(defun company-update-candidates 811,31571
+(defun company-calculate-candidates 835,32643
+(defun company-idle-begin 869,34159
+(defun company-auto-begin 884,34643
+(defun company-manual-begin 895,34956
+(defun company-other-backend 900,35064
+(defun company-require-match-p 917,35735
+(defun company-punctuation-p 925,36056
+(defun company-auto-complete-p 929,36224
+(defun company--incremental-p 941,36792
+(defsubst company--string-incremental-p 949,37116
+(defun company--continue-failed 953,37305
+(defun company--good-prefix-p 975,38108
+(defun company--continue 981,38337
+(defun company--begin-new 1005,39321
+(defun company-begin 1038,40786
+(defun company-cancel 1051,41319
+(defun company-abort 1086,42631
+(defun company-finish 1092,42774
+(defsubst company-keep 1098,42954
+(defun company-pre-command 1101,43043
+(defun company-post-command 1114,43485
+(defvar company-search-string 1137,44495
+(defvar company-search-lighter 1140,44583
+(defvar company-search-old-map 1143,44685
+(defvar company-search-old-selection 1146,44775
+(defun company-search 1149,44875
+(defun company-search-printing-char 1157,45089
+(defun company-search-repeat-forward 1170,45631
+(defun company-search-repeat-backward 1181,46066
+(defun company-create-match-predicate 1193,46574
+(defun company-filter-printing-char 1206,47173
+(defun company-search-kill-others 1213,47367
+(defun company-search-abort 1221,47628
+(defun company-search-other-char 1228,47841
+(defvar company-search-map1236,48070
+(define-minor-mode company-search-mode1270,49532
+(defsubst company-search-assert-enabled 1286,50182
+(defun company-search-candidates 1292,50354
+(defvar company-filter-map1308,51002
+(defun company-filter-candidates 1316,51293
+(defun company-select-next 1326,51698
+(defun company-select-previous 1332,51872
+(defun company-select-mouse 1338,52054
+(defun company-complete-mouse 1347,52358
+(defun company-complete-selection 1353,52537
+(defun company-complete-common 1359,52725
+(defun company-complete 1368,53054
+(defun company-complete-number 1380,53614
+(defconst company-space-strings-limit 1392,54044
+(defconst company-space-strings1394,54088
+(defsubst company-space-string 1400,54278
+(defsubst company-safe-substring 1405,54425
+(defvar company-last-metadata 1416,54783
+(defun company-fetch-metadata 1419,54871
+(defun company-doc-buffer 1426,55161
+(defvar company--electric-commands1431,55314
+(defmacro company--electric-do 1435,55465
+(defun company-show-doc-buffer 1453,56171
+(defun company-show-location 1465,56687
+(defvar company-callback 1486,57578
+(defvar company-begin-with-marker 1489,57656
+(defun company-remove-callback 1492,57752
+(defun company-begin-backend 1499,58111
+(defun company-begin-with 1515,58880
+(defvar company-pseudo-tooltip-overlay 1541,59910
+(defvar company-tooltip-offset 1544,60016
+(defun company-pseudo-tooltip-update-offset 1547,60104
+(defsubst company-round-tab 1570,60692
+(defun company-untabify 1573,60776
+(defun company-fill-propertize 1582,61066
+(defun company-buffer-lines 1614,62548
+(defsubst company-modify-line 1626,62930
+(defsubst company--length-limit 1631,63105
+(defun company--replacement-string 1636,63206
+(defun company--create-lines 1657,63903
+(defsubst company--window-inner-height 1720,65783
+(defsubst company--pseudo-tooltip-height 1724,65921
+(defun company-pseudo-tooltip-show 1734,66422
+(defun company-pseudo-tooltip-show-at-point 1768,67592
+(defun company-pseudo-tooltip-edit 1774,67828
+(defun company-pseudo-tooltip-hide 1783,68357
+(defun company-pseudo-tooltip-hide-temporarily 1788,68535
+(defun company-pseudo-tooltip-unhide 1793,68770
+(defun company-pseudo-tooltip-frontend 1800,69131
+(defun company-pseudo-tooltip-unless-just-one-frontend 1822,70227
+(defvar company-preview-overlay 1830,70588
+(defun company-preview-show-at-point 1833,70680
+(defun company-preview-hide 1860,71707
+(defun company-preview-frontend 1865,71857
+(defun company-preview-if-just-one-frontend 1872,72136
+(defvar company-echo-last-msg 1880,72467
+(defvar company-echo-timer 1883,72555
+(defvar company-echo-delay 1885,72588
+(defun company-echo-show 1887,72621
+(defsubst company-echo-show-soon 1895,72860
+(defun company-echo-format 1901,73117
+(defun company-echo-strip-common-format 1931,74176
+(defun company-echo-hide 1956,75004
+(defun company-echo-frontend 1963,75204
+(defun company-echo-strip-common-frontend 1970,75476
+(defun company-echo-metadata-frontend 1977,75774
+
+elpa/company-0.5/company-ropemacs.el,165
+(defun company-ropemacs--grab-symbol 29,1057
+(defun company-ropemacs-doc-buffer 41,1466
+(defun company-ropemacs-location 49,1766
+(defun company-ropemacs 56,2072
+
+elpa/company-0.5/company-oddmuse.elc,133
+(defalias 'company-oddmuse-get-page-table company-oddmuse-get-page-table18,828
+(defalias 'company-oddmuse company-oddmuse20,1141
+
+elpa/company-0.5/company-pkg.elc,34
+(define-package "company" 17,586
+
+elpa/company-0.5/company-tempo.elc,228
+(defalias 'company-tempo-lookup company-tempo-lookup18,657
+(defalias 'company-tempo-insert company-tempo-insert21,886
+(defalias 'company-tempo-meta company-tempo-meta22,1098
+(defalias 'company-tempo company-tempo25,1429
+
+elpa/company-0.5/company-xcode.elc,299
+(defalias 'company-xcode-reset company-xcode-reset22,956
+(defalias 'company-xcode-fetch company-xcode-fetch29,2135
+(defalias 'company-xcode-find-project company-xcode-find-project30,2901
+(defalias 'company-xcode-tags company-xcode-tags31,3210
+(defalias 'company-xcode company-xcode33,3480
+
+elpa/company-0.5/company-files.elc,279
+(defalias 'company-files-directory-files company-files-directory-files18,609
+(defalias 'company-files-grab-existing-name company-files-grab-existing-name20,1174
+(defalias 'company-files-complete company-files-complete22,1816
+(defalias 'company-files company-files24,2321
+
+elpa/company-0.5/company-keywords.el,118
+(defun company-keywords-upper-lower 23,869
+(defvar company-keywords-alist27,1008
+(defun company-keywords 210,13132
+
+elpa/company-0.5/company-css.el,582
+(defconst company-css-property-alist23,859
+(defconst company-css-value-classes162,7096
+(defconst company-css-html-tags182,8064
+(defconst company-css-pseudo-classes194,8832
+(defconst company-css-property-cache 199,9071
+(defun company-css-property-values 201,9151
+(defconst company-css-braces-syntax-table218,9883
+(defun company-css-inside-braces-p 225,10099
+(defconst company-css-tag-regexp233,10357
+(defconst company-css-pseudo-regexp247,10842
+(defun company-css-grab-property 262,11358
+(defconst company-css-property-value-regexp269,11588
+(defun company-css 274,11770
+
+elpa/company-0.5/company-semantic.el,504
+(defcustom company-semantic-metadata-function 25,937
+(defvar company-semantic-modes 30,1118
+(defvar company-semantic--current-tags 32,1189
+(defun company-semantic-doc-or-summary 35,1267
+(defun company-semantic-summary-and-doc 41,1505
+(defun company-semantic-doc-buffer 54,2018
+(defsubst company-semantic-completions 63,2312
+(defun company-semantic-completions-raw 71,2642
+(defun company-semantic--pre-prefix-length 78,2973
+(defun company-semantic--grab 89,3358
+(defun company-semantic 96,3619
+
+elpa/company-0.5/company-gtags.elc,268
+(defalias 'company-gtags--tags-available-p company-gtags--tags-available-p21,1215
+(defalias 'company-gtags-fetch-tags company-gtags-fetch-tags22,1406
+(defalias 'company-gtags-location company-gtags-location23,1781
+(defalias 'company-gtags company-gtags25,2322
+
+elpa/company-0.5/company-elisp.el,464
+(defcustom company-elisp-detect-function-context 24,889
+(defun company-grab-lisp-symbol 31,1164
+(defun company-elisp-predicate 39,1412
+(defvar company-elisp-parse-limit 43,1500
+(defvar company-elisp-parse-depth 44,1538
+(defvar company-elisp-binding-regexp46,1578
+(defvar company-elisp-binding-regexp-152,1860
+(defun company-elisp-parse-local 56,2034
+(defun company-elisp-candidates 86,3274
+(defun company-elisp-doc 98,3815
+(defun company-elisp 108,4144
+
+elpa/company-0.5/company-eclim.elc,577
+(defalias 'company-eclim-executable-find company-eclim-executable-find18,609
+(defalias 'company-eclim--buffer-lines company-eclim--buffer-lines25,1924
+(defalias 'company-eclim--call-process company-eclim--call-process26,2108
+(defalias 'company-eclim--project-list company-eclim--project-list27,2603
+(defalias 'company-eclim--project-dir company-eclim--project-dir28,2799
+(defalias 'company-eclim--project-name company-eclim--project-name29,3030
+(defalias 'company-eclim--candidates company-eclim--candidates30,3234
+(defalias 'company-eclim company-eclim36,4171
+
+elpa/company-0.5/company-nxml.elc,386
+(defalias 'company-nxml-all-completions company-nxml-all-completions18,1318
+(defalias 'company-nxml-prepared company-nxml-prepared19,1769
+(defalias 'company-nxml-tag company-nxml-tag20,1995
+(defalias 'company-nxml-attribute company-nxml-attribute21,2504
+(defalias 'company-nxml-attribute-value company-nxml-attribute-value22,3085
+(defalias 'company-nxml company-nxml24,3984
+
+elpa/company-0.5/company-gtags.el,287
+(defcustom company-gtags-executable23,863
+(defvar company-gtags--tags-available-p 33,1106
+(defvar company-gtags-modes 36,1219
+(defun company-gtags--tags-available-p 38,1296
+(defun company-gtags-fetch-tags 44,1544
+(defun company-gtags-location 52,1841
+(defun company-gtags 64,2356
+
+elpa/company-0.5/company-eclim.el,550
+(defun company-eclim-executable-find 23,864
+(defcustom company-eclim-executable32,1305
+(defcustom company-eclim-auto-save 38,1474
+(defvar company-eclim--project-dir 47,1829
+(defvar company-eclim--project-name 50,1932
+(defvar company-eclim--doc 53,2037
+(defun company-eclim--buffer-lines 56,2119
+(defun company-eclim--call-process 64,2341
+(defun company-eclim--project-list 75,2785
+(defun company-eclim--project-dir 79,2950
+(defun company-eclim--project-name 87,3249
+(defun company-eclim--candidates 94,3533
+(defun company-eclim 118,4617
+
+elpa/company-0.5/company-ispell.elc,120
+(defalias 'company-ispell-available company-ispell-available22,1056
+(defalias 'company-ispell company-ispell24,1467
+
+elpa/company-0.5/company-pkg.el,31
+(define-package "company" 1,0
+
+elpa/company-0.5/company-template.el,586
+(defface company-template-field3,35
+(defvar company-template-nav-map9,280
+(defsubst company-template-templates-at 18,616
+(defun company-template-move-to-first 25,793
+(defun company-template-forward-field 31,997
+(defvar company-template--buffer-templates 49,1660
+(defun company-template-declare-template 52,1774
+(defun company-template-remove-template 61,2121
+(defun company-template-add-field 68,2389
+(defun company-template-remove-field 86,3154
+(defun company-template-clean-up 93,3340
+(defun company-template-remove 103,3751
+(defun company-template-post-command 108,3920
+
+elpa/company-0.5/company-elisp.elc,477
+(defalias 'company-grab-lisp-symbol company-grab-lisp-symbol21,945
+(defalias 'company-elisp-predicate company-elisp-predicate22,1122
+(defvar company-elisp-binding-regexp 25,1502
+(defvar company-elisp-binding-regexp-1 27,1750
+(defalias 'company-elisp-parse-local company-elisp-parse-local28,1847
+(defalias 'company-elisp-candidates company-elisp-candidates29,2793
+(defalias 'company-elisp-doc company-elisp-doc30,3141
+(defalias 'company-elisp company-elisp32,3473
+
+elpa/company-0.5/company-template.elc,792
+(defalias 'company-template-templates-at company-template-templates-at18,1157
+(defalias 'company-template-move-to-first company-template-move-to-first20,1455
+(defalias 'company-template-forward-field company-template-forward-field21,1662
+(defalias 'company-template-declare-template company-template-declare-template23,2393
+(defalias 'company-template-remove-template company-template-remove-template24,2717
+(defalias 'company-template-add-field company-template-add-field25,2956
+(defalias 'company-template-remove-field company-template-remove-field26,3529
+(defalias 'company-template-clean-up company-template-clean-up28,3694
+(defalias 'company-template-remove company-template-remove30,4045
+(defalias 'company-template-post-command company-template-post-command31,4189
+
+elpa/company-0.5/company-ispell.el,159
+(defcustom company-ispell-dictionary 24,880
+(defvar company-ispell-available 31,1122
+(defun company-ispell-available 33,1166
+(defun company-ispell 45,1529
+
+elpa/company-0.5/company-pysmell.el,166
+(defvar company-pysmell--available-p 23,865
+(defun company-pysmell--available-p 26,972
+(defun company-pysmell--grab-symbol 32,1214
+(defun company-pysmell 45,1637
+
+elpa/company-0.5/company-tempo.el,143
+(defsubst company-tempo-lookup 24,875
+(defun company-tempo-insert 27,963
+(defsubst company-tempo-meta 34,1186
+(defun company-tempo 42,1400
+
+elpa/company-0.5/company-clang.el,995
+(defcustom company-clang-executable23,858
+(defcustom company-clang-auto-save 29,996
+(defcustom company-clang-arguments 36,1275
+(defcustom company-clang-prefix-guesser 44,1589
+(defvar company-clang-modes 49,1800
+(defvar company-clang--prefix 54,1974
+(defsubst company-clang--guess-pch-file 56,2010
+(defsubst company-clang--file-substring 62,2289
+(defun company-clang-guess-prefix 67,2441
+(defun company-clang-set-prefix 76,2855
+(defconst company-clang--completion-pattern95,3674
+(defconst company-clang--error-buffer-name 98,3764
+(defun company-clang--parse-output 100,3825
+(defun company-clang--handle-error 111,4199
+(defun company-clang--call-process 133,5159
+(defsubst company-clang--build-location 141,5477
+(defsubst company-clang--build-complete-args 147,5660
+(defun company-clang--candidates 156,6026
+(defconst company-clang-required-version 169,6520
+(defsubst company-clang-version 171,6569
+(defun company-clang-objc-templatify 179,6882
+(defun company-clang 192,7334
+
+elpa/company-0.5/company-nxml.el,378
+(defconst company-nxml-token-regexp25,902
+(defvar company-nxml-in-attribute-value-regexp28,984
+(defvar company-nxml-in-tag-name-regexp37,1297
+(defun company-nxml-all-completions 41,1459
+(defmacro company-nxml-prepared 54,1941
+(defun company-nxml-tag 61,2185
+(defun company-nxml-attribute 71,2586
+(defun company-nxml-attribute-value 84,3178
+(defun company-nxml 106,4331
+
+elpa/company-0.5/company-clang.elc,1003
+(defvar company-clang-modes 31,1684
+(defalias 'company-clang--guess-pch-file company-clang--guess-pch-file33,1883
+(defalias 'company-clang--file-substring company-clang--file-substring35,2214
+(defalias 'company-clang-guess-prefix company-clang-guess-prefix38,2662
+(defalias 'company-clang-set-prefix company-clang-set-prefix40,3316
+(defalias 'company-clang--parse-output company-clang--parse-output42,4131
+(defalias 'company-clang--handle-error company-clang--handle-error43,4430
+(defalias 'company-clang--call-process company-clang--call-process44,5071
+(defalias 'company-clang--build-location company-clang--build-location45,5483
+(defalias 'company-clang--build-complete-args company-clang--build-complete-args47,5712
+(defalias 'company-clang--candidates company-clang--candidates49,6123
+(defalias 'company-clang-version company-clang-version52,6907
+(defalias 'company-clang-objc-templatify company-clang-objc-templatify54,7397
+(defalias 'company-clang company-clang66,8280
+
+elpa/company-0.5/company-dabbrev-code.elc,150
+(defalias 'company-dabbrev-code--make-regexp company-dabbrev-code--make-regexp31,2057
+(defalias 'company-dabbrev-code company-dabbrev-code36,2479
+
+elpa/company-0.5/company-abbrev.el,67
+(defun company-abbrev-insert 24,878
+(defun company-abbrev 29,994
+
+elpa/company-0.5/company-oddmuse.el,122
+(defvar company-oddmuse-link-regexp25,962
+(defun company-oddmuse-get-page-table 28,1067
+(defun company-oddmuse 36,1364
+
+elpa/company-0.5/company-dabbrev.elc,366
+(defalias 'company-dabrev--time-limit-while company-dabrev--time-limit-while27,1562
+(defalias 'company-dabbrev--make-regexp company-dabbrev--make-regexp28,1979
+(defalias 'company-dabbrev--search-buffer company-dabbrev--search-buffer30,2242
+(defalias 'company-dabbrev--search company-dabbrev--search31,3374
+(defalias 'company-dabbrev company-dabbrev33,4106
+
+elpa/company-0.5/company-xcode.el,349
+(defcustom company-xcode-xcodeindex-executable 23,867
+(defvar company-xcode-tags 28,1024
+(defun company-xcode-reset 30,1057
+(defcustom company-xcode-types35,1164
+(defvar company-xcode-project 55,2159
+(defun company-xcode-fetch 60,2334
+(defun company-xcode-find-project 78,3190
+(defun company-xcode-tags 90,3624
+(defun company-xcode 99,4043
+
+elpa/company-0.5/company-keywords.elc,171
+(defalias 'company-keywords-upper-lower company-keywords-upper-lower18,615
+(defvar company-keywords-alist 20,815
+(defalias 'company-keywords company-keywords22,14277
+
+elpa/htmlize-1.37/htmlize.elc,4157
+(defvar htmlize-before-hook 143,8945
+(defvar htmlize-after-hook 148,9182
+(defvar htmlize-file-hook 150,9305
+(defalias 'htmlize-protect-string htmlize-protect-string153,11643
+(defalias 'htmlize-buffer-substring-no-invisible htmlize-buffer-substring-no-invisible155,12372
+(defalias 'htmlize-trim-ellipsis htmlize-trim-ellipsis156,13249
+(defalias 'htmlize-untabify htmlize-untabify159,13711
+(defalias 'htmlize-despam-address htmlize-despam-address163,14290
+(defalias 'htmlize-make-hyperlinks htmlize-make-hyperlinks165,14487
+(defalias 'htmlize-defang-local-variables htmlize-defang-local-variables166,15032
+(defalias 'htmlize-get-color-rgb-hash htmlize-get-color-rgb-hash176,16549
+(defalias 'htmlize-face-specifies-property htmlize-face-specifies-property178,17563
+(defalias 'htmlize-face-color-internal htmlize-face-color-internal179,17725
+(defalias 'htmlize-face-foreground htmlize-face-foreground180,18361
+(defalias 'htmlize-face-background htmlize-face-background181,18614
+(defalias 'htmlize-color-to-rgb htmlize-color-to-rgb182,18869
+(defalias 'htmlize-fstruct-foreground htmlize-fstruct-foreground184,19834
+(defalias 'htmlize-fstruct-background htmlize-fstruct-background186,20677
+(defalias 'htmlize-fstruct-size htmlize-fstruct-size188,21502
+(defalias 'htmlize-fstruct-boldp htmlize-fstruct-boldp190,22306
+(defalias 'htmlize-fstruct-italicp htmlize-fstruct-italicp192,23120
+(defalias 'htmlize-fstruct-underlinep htmlize-fstruct-underlinep194,23951
+(defalias 'htmlize-fstruct-overlinep htmlize-fstruct-overlinep196,24791
+(defalias 'htmlize-fstruct-strikep htmlize-fstruct-strikep198,25621
+(defalias 'htmlize-fstruct-css-name htmlize-fstruct-css-name200,26446
+(defalias 'htmlize-fstruct-p htmlize-fstruct-p202,27220
+(defalias 'copy-htmlize-fstruct copy-htmlize-fstruct203,27365
+(defalias 'make-htmlize-fstruct make-htmlize-fstruct208,28818
+(defalias 'htmlize-face-emacs21-attr htmlize-face-emacs21-attr210,32000
+(defalias 'htmlize-face-size htmlize-face-size211,33432
+(defalias 'htmlize-face-to-fstruct htmlize-face-to-fstruct213,33797
+(defalias 'htmlize-copy-attr-if-set htmlize-copy-attr-if-set214,36218
+(defalias 'htmlize-merge-size htmlize-merge-size215,36522
+(defalias 'htmlize-merge-two-faces htmlize-merge-two-faces216,36684
+(defalias 'htmlize-merge-faces htmlize-merge-faces217,38724
+(defalias 'htmlize-attrlist-to-fstruct htmlize-attrlist-to-fstruct218,38998
+(defalias 'htmlize-face-list-p htmlize-face-list-p220,39901
+(defalias 'htmlize-make-face-map htmlize-make-face-map221,40151
+(defalias 'htmlize-unstringify-face htmlize-unstringify-face223,40907
+(defalias 'htmlize-faces-in-buffer htmlize-faces-in-buffer229,41330
+(defalias 'htmlize-method htmlize-method231,43191
+(defalias 'htmlize-method-function htmlize-method-function232,43331
+(defalias 'htmlize-memoize htmlize-memoize238,44015
+(defalias 'htmlize-default-doctype htmlize-default-doctype239,44267
+(defalias 'htmlize-default-body-tag htmlize-default-body-tag240,44380
+(defalias 'htmlize-css-specs htmlize-css-specs241,44455
+(defalias 'htmlize-css-insert-head htmlize-css-insert-head242,45922
+(defalias 'htmlize-css-insert-text htmlize-css-insert-text243,47028
+(defalias 'htmlize-inline-css-body-tag htmlize-inline-css-body-tag244,47509
+(defalias 'htmlize-inline-css-insert-text htmlize-inline-css-insert-text245,47708
+(defalias 'htmlize-font-body-tag htmlize-font-body-tag246,48160
+(defalias 'htmlize-font-insert-text htmlize-font-insert-text247,48551
+(defalias 'htmlize-buffer-1 htmlize-buffer-1248,49800
+(defalias 'htmlize-with-fontify-message htmlize-with-fontify-message249,52273
+(defalias 'htmlize-ensure-fontified htmlize-ensure-fontified250,52603
+(defalias 'htmlize-buffer htmlize-buffer263,53941
+(defalias 'htmlize-region htmlize-region266,54210
+(defalias 'htmlize-region-for-paste htmlize-region-for-paste271,54655
+(defalias 'htmlize-make-file-name htmlize-make-file-name281,55357
+(defalias 'htmlize-file htmlize-file297,56273
+(defalias 'htmlize-many-files htmlize-many-files308,57696
+(defalias 'htmlize-many-files-dired htmlize-many-files-dired310,58244
+
+elpa/htmlize-1.37/htmlize-pkg.elc,34
+(define-package "htmlize" 17,577
+
+elpa/htmlize-1.37/htmlize-pkg.el,31
+(define-package "htmlize" 1,0
+
+elpa/htmlize-1.37/htmlize.el,3092
+(defconst htmlize-version 100,4342
+(defgroup htmlize 119,5082
+(defcustom htmlize-head-tags 123,5170
+(defcustom htmlize-output-type 128,5308
+(defcustom htmlize-generate-hyperlinks 149,6258
+(defcustom htmlize-hyperlink-style 157,6602
+(defcustom htmlize-replace-form-feeds 172,6928
+(defcustom htmlize-html-charset 188,7691
+(defcustom htmlize-convert-nonascii-to-entities 213,8781
+(defcustom htmlize-ignore-face-size 248,10528
+(defcustom htmlize-css-name-prefix 258,10986
+(defcustom htmlize-use-rgb-txt 267,11368
+(defcustom htmlize-html-major-mode 285,12129
+(defvar htmlize-before-hook 293,12441
+(defvar htmlize-after-hook 298,12596
+(defvar htmlize-file-hook 304,12818
+(defvar htmlize-buffer-places)307,12927
+(defconst htmlize-running-xemacs 313,13129
+(defvar htmlize-basic-character-table401,16728
+(defvar htmlize-extended-character-cache 437,18229
+(defun htmlize-protect-string 439,18300
+(defconst htmlize-ellipsis 476,19755
+(defun htmlize-buffer-substring-no-invisible 479,19875
+(defun htmlize-trim-ellipsis 534,22128
+(defconst htmlize-tab-spaces543,22489
+(defun htmlize-untabify 551,22758
+(defun htmlize-despam-address 587,24170
+(defun htmlize-make-hyperlinks 596,24499
+(defun htmlize-defang-local-variables 629,25709
+(defvar htmlize-x-library-search-path648,26411
+(defun htmlize-get-color-rgb-hash 670,27017
+(defvar htmlize-color-rgb-hash 709,28371
+(defun htmlize-face-specifies-property 713,28454
+(defun htmlize-face-color-internal 724,29016
+(defun htmlize-face-foreground 757,30420
+(defun htmlize-face-background 768,30804
+(defun htmlize-color-to-rgb 782,31292
+(defstruct htmlize-fstruct827,33085
+(defun htmlize-face-emacs21-attr 839,33463
+(defun htmlize-face-size 865,34420
+(defun htmlize-face-to-fstruct 876,34814
+(defmacro htmlize-copy-attr-if-set 954,38269
+(defun htmlize-merge-size 965,38732
+(defun htmlize-merge-two-faces 973,39001
+(defun htmlize-merge-faces 982,39297
+(defun htmlize-attrlist-to-fstruct 1002,39983
+(defun htmlize-face-list-p 1023,40803
+(defun htmlize-make-face-map 1050,41760
+(defun htmlize-unstringify-face 1076,42723
+(defun htmlize-faces-in-buffer 1082,42891
+(defmacro htmlize-method 1223,48690
+(defun htmlize-method-function 1228,48903
+(defvar htmlize-memoization-table 1240,49345
+(defmacro htmlize-memoize 1242,49412
+(defun htmlize-default-doctype 1256,49919
+(defun htmlize-default-body-tag 1284,51280
+(defun htmlize-css-specs 1291,51430
+(defun htmlize-css-insert-head 1318,52568
+(defun htmlize-css-insert-text 1351,53824
+(defun htmlize-inline-css-body-tag 1366,54368
+(defun htmlize-inline-css-insert-text 1371,54534
+(defun htmlize-font-body-tag 1388,55034
+(defun htmlize-font-insert-text 1394,55264
+(defun htmlize-buffer-1 1418,56329
+(defmacro htmlize-with-fontify-message 1551,61661
+(defun htmlize-ensure-fontified 1564,62135
+(defun htmlize-buffer 1594,63404
+(defun htmlize-region 1615,64311
+(defun htmlize-region-for-paste 1629,64764
+(defun htmlize-make-file-name 1642,65324
+(defun htmlize-file 1666,66232
+(defun htmlize-many-files 1729,68904
+(defun htmlize-many-files-dired 1763,70218
 
 elpa/yasnippet-bundle-0.6.1/yasnippet-bundle.el,8945
 (defgroup yasnippet 150,5388
@@ -2412,21 +4070,920 @@ elpa/yasnippet-bundle-0.6.1/yasnippet-bundle-pkg.elc,43
 elpa/yasnippet-bundle-0.6.1/yasnippet-bundle-pkg.el,40
 (define-package "yasnippet-bundle" 1,0
 
+elpa/ruby-compilation-0.7/ruby-compilation-pkg.el,40
+(define-package "ruby-compilation" 1,0
+
+elpa/ruby-compilation-0.7/ruby-compilation.el,1170
+(defvar ruby-compilation-error-regexp57,1767
+(defvar ruby-compilation-error-regexp-alist61,1964
+(defvar ruby-compilation-executable 66,2173
+(defvar ruby-compilation-test-name-flag 69,2290
+(defvar ruby-compilation-clear-between 72,2405
+(defvar ruby-compilation-reuse-buffers 75,2506
+(defun pcomplete/rake 79,2629
+(defun pcmpl-rake-tasks 82,2694
+(defun pcomplete/cap 91,3088
+(defun pcmpl-cap-tasks 94,3151
+(defun ruby-compilation-run 103,3540
+(defun ruby-compilation-rake 112,3921
+(defun ruby-compilation-cap 130,4533
+(defvar ruby-capistrano-minor-mode-map155,5677
+(define-minor-mode ruby-capistrano-minor-mode163,5990
+(defun ruby-compilation-this-buffer 171,6217
+(defun ruby-compilation-this-test 176,6371
+(defun ruby-compilation-this-test-buffer-name 186,6815
+(defun ruby-compilation-this-test-name 195,7146
+(defun ruby-compilation-do 204,7493
+(defun ruby-compilation-insertion-filter 226,8486
+(defun ruby-compilation-sentinel 237,8938
+(defun ruby-compilation-previous-error-group 241,9089
+(defun ruby-compilation-next-error-group 250,9403
+(defvar ruby-compilation-minor-mode-map258,9689
+(define-minor-mode ruby-compilation-minor-mode269,10158
+
+elpa/ruby-compilation-0.7/ruby-compilation-pkg.elc,43
+(define-package "ruby-compilation" 17,613
+
+elpa/ruby-compilation-0.7/ruby-compilation.elc,1755
+(defvar ruby-compilation-error-regexp 19,810
+(defvar ruby-compilation-error-regexp-alist 22,1076
+(defvar ruby-compilation-executable 24,1272
+(defvar ruby-compilation-test-name-flag 26,1398
+(defvar ruby-compilation-clear-between 28,1516
+(defvar ruby-compilation-reuse-buffers 30,1637
+(defalias 'pcomplete/rake pcomplete/rake31,1691
+(defalias 'pcmpl-rake-tasks pcmpl-rake-tasks35,1975
+(defalias 'pcomplete/cap pcomplete/cap36,2244
+(defalias 'pcmpl-cap-tasks pcmpl-cap-tasks40,2524
+(defalias 'ruby-compilation-run ruby-compilation-run42,2860
+(defalias 'ruby-compilation-rake ruby-compilation-rake44,3186
+(defalias 'ruby-compilation-cap ruby-compilation-cap46,3717
+(defvar ruby-capistrano-minor-mode-map 48,4545
+(defvar ruby-capistrano-minor-mode 51,4920
+(defalias 'ruby-capistrano-minor-mode ruby-capistrano-minor-mode55,5142
+(defalias 'ruby-compilation-this-buffer ruby-compilation-this-buffer58,5990
+(defalias 'ruby-compilation-this-test ruby-compilation-this-test60,6167
+(defalias 'ruby-compilation-this-test-buffer-name ruby-compilation-this-test-buffer-name62,6528
+(defalias 'ruby-compilation-this-test-name ruby-compilation-this-test-name64,6804
+(defalias 'ruby-compilation-do ruby-compilation-do65,7057
+(defalias 'ruby-compilation-insertion-filter ruby-compilation-insertion-filter67,7835
+(defalias 'ruby-compilation-sentinel ruby-compilation-sentinel69,8120
+(defalias 'ruby-compilation-previous-error-group ruby-compilation-previous-error-group72,8366
+(defalias 'ruby-compilation-next-error-group ruby-compilation-next-error-group75,8705
+(defvar ruby-compilation-minor-mode-map 77,8984
+(defvar ruby-compilation-minor-mode 80,9524
+(defalias 'ruby-compilation-minor-mode ruby-compilation-minor-mode84,9748
+
+elpa/rinari-2.1/rinari.el,1207
+(defcustom rinari-tags-file-name71,2211
+(defvar rinari-minor-mode-hook 76,2352
+(defcustom rinari-rails-env 79,2423
+(defadvice ruby-compilation-do 84,2644
+(defadvice ruby-compilation-rake 91,2913
+(defadvice ruby-compilation-cap 98,3186
+(defun rinari-parse-yaml 105,3456
+(defun rinari-root 114,3757
+(defun rinari-rake 127,4300
+(defun rinari-cap 136,4714
+(defun rinari-script 145,5130
+(defun rinari-test 159,5767
+(defun rinari-console 183,6719
+(defun rinari-sql 202,7552
+(defun rinari-web-server 235,9067
+(defun rinari-insert-erb-skeleton 250,9714
+(defun rinari-extract-partial 257,9999
+(defvar rinari-rgrep-file-endings275,10801
+(defun rinari-rgrep 279,10912
+(defun rinari-generate 292,11407
+(defvar rinari-ruby-hash-regexp297,11608
+(defun rinari-ruby-values-from-render 301,11822
+(defun rinari-which-render 323,12704
+(defun rinari-follow-controller-and-action 332,12987
+(defun rinari-apply-jump-schema 527,23621
+(defvar rinari-minor-mode-map550,24364
+(defun rinari-bind-key-to-func 555,24476
+(defvar rinari-minor-mode-keybindings561,24680
+(defun rinari-launch 579,25418
+(defvar rinari-major-modes592,25951
+(defadvice cd 601,26249
+(define-minor-mode rinari-minor-mode607,26426
+
+elpa/rinari-2.1/rinari-pkg.elc,33
+(define-package "rinari" 17,583
+
+elpa/rinari-2.1/rinari-autoloads.el,35
+(defvar rinari-major-modes 16,372
+
+elpa/rinari-2.1/rinari-pkg.el,30
+(define-package "rinari" 1,0
+
+elpa/magit-0.8.1/magit.elc,23205
+(defvar magit-completing-read 60,7595
+(defvar magit-omit-untracked-dir-contents 62,7737
+(defalias 'magit-with-refresh magit-with-refresh64,8229
+(defalias 'magit-use-region-p magit-use-region-p66,8687
+(defalias 'magit-goto-line magit-goto-line68,8870
+(defalias 'magit-trim-line magit-trim-line69,8960
+(defalias 'magit-split-lines magit-split-lines70,9075
+(defalias 'magit-git-insert magit-git-insert71,9216
+(defalias 'magit-git-output magit-git-output72,9388
+(defalias 'magit-git-string magit-git-string73,9640
+(defalias 'magit-git-lines magit-git-lines74,9745
+(defalias 'magit-git-exit-code magit-git-exit-code75,9851
+(defalias 'magit-file-lines magit-file-lines76,10025
+(defalias 'magit-write-file-lines magit-write-file-lines77,10383
+(defalias 'magit-concat-with-delim magit-concat-with-delim78,10713
+(defalias 'magit-get magit-get79,10857
+(defalias 'magit-get-all magit-get-all80,10986
+(defalias 'magit-set magit-set81,11133
+(defalias 'magit-remove-conflicts magit-remove-conflicts82,11315
+(defalias 'magit-git-repo-p magit-git-repo-p83,11833
+(defalias 'magit-list-repos* magit-list-repos*84,11940
+(defalias 'magit-list-repos magit-list-repos85,12313
+(defalias 'magit-get-top-dir magit-get-top-dir86,12566
+(defalias 'magit-get-ref magit-get-ref87,12805
+(defalias 'magit-get-current-branch magit-get-current-branch88,12906
+(defalias 'magit-get-current-remote magit-get-current-remote92,13214
+(defalias 'magit-ref-exists-p magit-ref-exists-p93,13405
+(defalias 'magit-read-top-dir magit-read-top-dir94,13523
+(defalias 'magit-name-rev magit-name-rev95,13835
+(defalias 'magit-put-line-property magit-put-line-property96,14001
+(defalias 'magit-format-commit magit-format-commit97,14136
+(defalias 'magit-current-line magit-current-line98,14290
+(defalias 'magit-insert-region magit-insert-region99,14428
+(defalias 'magit-insert-current-line magit-insert-current-line100,14556
+(defalias 'magit-file-uptodate-p magit-file-uptodate-p101,14711
+(defalias 'magit-anything-staged-p magit-anything-staged-p102,14838
+(defalias 'magit-everything-clean-p magit-everything-clean-p103,14965
+(defalias 'magit-commit-parents magit-commit-parents104,15115
+(defalias 'magit-choose-parent-id magit-choose-parent-id105,15260
+(defalias 'magit-list-interesting-refs magit-list-interesting-refs106,15429
+(defalias 'magit-read-rev magit-read-rev107,15950
+(defalias 'magit-read-rev-range magit-read-rev-range108,16257
+(defalias 'magit-rev-to-git magit-rev-to-git109,16459
+(defalias 'magit-rev-range-to-git magit-rev-range-to-git110,16611
+(defalias 'magit-rev-describe magit-rev-describe111,16833
+(defalias 'magit-rev-range-describe magit-rev-range-describe112,16993
+(defalias 'magit-default-rev magit-default-rev113,17271
+(defalias 'magit-read-remote magit-read-remote117,17674
+(defalias 'magit-section-parent magit-section-parent119,18458
+(defalias 'magit-section-title magit-section-title121,19246
+(defalias 'magit-section-beginning magit-section-beginning123,20042
+(defalias 'magit-section-end magit-section-end125,20836
+(defalias 'magit-section-children magit-section-children127,21621
+(defalias 'magit-section-hidden magit-section-hidden129,22420
+(defalias 'magit-section-type magit-section-type131,23205
+(defalias 'magit-section-info magit-section-info133,23982
+(defalias 'magit-section-needs-refresh-on-show magit-section-needs-refresh-on-show135,24810
+(defalias 'magit-section-p magit-section-p137,25616
+(defalias 'copy-magit-section copy-magit-section138,25757
+(defalias 'make-magit-section make-magit-section143,27170
+(defvar magit-top-section 146,30291
+(defalias 'magit-new-section magit-new-section154,30922
+(defalias 'magit-cancel-section magit-cancel-section156,31677
+(defalias 'magit-with-section magit-with-section163,32722
+(defalias 'magit-set-section-info magit-set-section-info164,33103
+(defalias 'magit-set-section-needs-refresh-on-show magit-set-section-needs-refresh-on-show165,33345
+(defalias 'magit-create-buffer-sections magit-create-buffer-sections167,33835
+(defalias 'magit-propertize-section magit-propertize-section169,34354
+(defalias 'magit-find-section magit-find-section171,34958
+(defalias 'magit-section-path magit-section-path173,35379
+(defalias 'magit-find-section-at magit-find-section-at175,35786
+(defalias 'magit-find-section-after magit-find-section-after177,36328
+(defalias 'magit-find-section-before magit-find-section-before179,36642
+(defalias 'magit-current-section magit-current-section181,36946
+(defalias 'magit-insert-section magit-insert-section196,37638
+(defalias 'magit-git-section magit-git-section200,38795
+(defalias 'magit-next-section magit-next-section202,39110
+(defalias 'magit-goto-next-section magit-goto-next-section204,39514
+(defalias 'magit-prev-section magit-prev-section206,40484
+(defalias 'magit-goto-previous-section magit-goto-previous-section208,41078
+(defalias 'magit-goto-parent-section magit-goto-parent-section210,41786
+(defalias 'magit-goto-section magit-goto-section212,42175
+(defalias 'magit-for-all-sections magit-for-all-sections216,42584
+(defalias 'magit-section-set-hidden magit-section-set-hidden218,43030
+(defalias 'magit-section-any-hidden magit-section-any-hidden220,44045
+(defalias 'magit-section-collapse magit-section-collapse222,44467
+(defalias 'magit-section-expand magit-section-expand224,44915
+(defalias 'magit-section-expand-all-aux magit-section-expand-all-aux226,45365
+(defalias 'magit-section-expand-all magit-section-expand-all228,45825
+(defalias 'magit-section-hideshow magit-section-hideshow233,46207
+(defalias 'magit-show-section magit-show-section235,46659
+(defalias 'magit-hide-section magit-hide-section237,46789
+(defalias 'magit-collapse-section magit-collapse-section239,46935
+(defalias 'magit-expand-section magit-expand-section241,47106
+(defalias 'magit-toggle-file-section magit-toggle-file-section243,47293
+(defalias 'magit-toggle-section magit-toggle-section245,47550
+(defalias 'magit-expand-collapse-section magit-expand-collapse-section247,47893
+(defalias 'magit-cycle-section magit-cycle-section253,48345
+(defalias 'magit-section-lineage magit-section-lineage255,48940
+(defalias 'magit-section-show-level magit-section-show-level256,49168
+(defalias 'magit-show-level magit-show-level260,49778
+(defalias 'magit-show-only-files magit-show-only-files264,50193
+(defalias 'magit-show-only-files-all magit-show-only-files-all268,50462
+(defalias 'magit-define-level-shower-1 magit-define-level-shower-1273,50862
+(defalias 'magit-define-level-shower magit-define-level-shower276,51276
+(defalias 'magit-define-section-jumper magit-define-section-jumper280,51543
+(defalias 'magit-highlight-section magit-highlight-section283,52076
+(defalias 'magit-section-context-type magit-section-context-type284,52711
+(defalias 'magit-prefix-p magit-prefix-p285,53183
+(defalias 'magit-section-case magit-section-case295,53881
+(defalias 'magit-section-action magit-section-action296,54670
+(defalias 'magit-wash-sequence magit-wash-sequence300,54920
+(defalias 'magit-set-mode-line-process magit-set-mode-line-process301,55013
+(defalias 'magit-process-indicator-from-command magit-process-indicator-from-command302,55193
+(defvar magit-process-buffer-name 305,55670
+(defalias 'magit-run* magit-run*306,55736
+(defalias 'magit-process-sentinel magit-process-sentinel307,57490
+(defalias 'magit-password magit-password309,57950
+(defalias 'magit-process-filter magit-process-filter310,58271
+(defalias 'magit-run magit-run311,58621
+(defalias 'magit-run-git magit-run-git312,58751
+(defalias 'magit-run-with-input magit-run-with-input313,58940
+(defalias 'magit-run-git-with-input magit-run-git-with-input314,59116
+(defalias 'magit-run-git-async magit-run-git-async315,59350
+(defalias 'magit-run-async-with-input magit-run-async-with-input316,59518
+(defalias 'magit-display-process magit-display-process318,59704
+(defalias 'magit-jump-to-untracked magit-jump-to-untracked320,59931
+(defalias 'magit-jump-to-unstaged magit-jump-to-unstaged322,60084
+(defalias 'magit-jump-to-staged magit-jump-to-staged324,60233
+(defalias 'magit-jump-to-unpushed magit-jump-to-unpushed326,60380
+(defalias 'magit-jump-to-svn-unpushed magit-jump-to-svn-unpushed328,60537
+(defalias 'magit-show-level-1 magit-show-level-1330,60686
+(defalias 'magit-show-level-1-all magit-show-level-1-all332,60821
+(defalias 'magit-show-level-2 magit-show-level-2334,60958
+(defalias 'magit-show-level-2-all magit-show-level-2-all336,61093
+(defalias 'magit-show-level-3 magit-show-level-3338,61230
+(defalias 'magit-show-level-3-all magit-show-level-3-all340,61365
+(defalias 'magit-show-level-4 magit-show-level-4342,61502
+(defalias 'magit-show-level-4-all magit-show-level-4-all344,61637
+(defvar magit-mode-menu 347,67543
+(defvar magit-mode-hook 350,69320
+(defalias 'magit-remember-point magit-remember-point352,69720
+(defalias 'magit-invisible-region-end magit-invisible-region-end353,69788
+(defalias 'magit-invisible-region-start magit-invisible-region-start354,69928
+(defalias 'magit-correct-point-after-command magit-correct-point-after-command365,70476
+(defalias 'magit-post-command-hook magit-post-command-hook366,70722
+(defalias 'magit-mode magit-mode372,70987
+(defalias 'magit-mode-init magit-mode-init373,71502
+(defalias 'magit-find-buffer magit-find-buffer374,71760
+(defalias 'magit-find-status-buffer magit-find-status-buffer375,72210
+(defalias 'magit-for-all-buffers magit-for-all-buffers376,72317
+(defalias 'magit-refresh-buffer magit-refresh-buffer377,72568
+(defalias 'magit-string-has-prefix-p magit-string-has-prefix-p378,73376
+(defalias 'magit-revert-buffers magit-revert-buffers379,73507
+(defalias 'magit-refresh-wrapper magit-refresh-wrapper381,74161
+(defalias 'magit-need-refresh magit-need-refresh382,74632
+(defalias 'magit-refresh magit-refresh386,74904
+(defalias 'magit-refresh-all magit-refresh-all390,75195
+(defalias 'magit-wash-untracked-file magit-wash-untracked-file391,75332
+(defalias 'magit-wash-untracked-files magit-wash-untracked-files392,76085
+(defalias 'magit-insert-untracked-files magit-insert-untracked-files393,76229
+(defalias 'magit-diff-U-arg magit-diff-U-arg395,76662
+(defalias 'magit-diff-smaller-hunks magit-diff-smaller-hunks397,76811
+(defalias 'magit-diff-larger-hunks magit-diff-larger-hunks399,77010
+(defalias 'magit-diff-default-hunks magit-diff-default-hunks401,77206
+(defalias 'magit-diff-line-file magit-diff-line-file402,77328
+(defalias 'magit-wash-diffs magit-wash-diffs403,77547
+(defalias 'magit-wash-diff-or-other-file magit-wash-diff-or-other-file404,77653
+(defalias 'magit-wash-other-file magit-wash-other-file405,77767
+(defalias 'magit-insert-diff-title magit-insert-diff-title407,78658
+(defalias 'magit-wash-diff-section magit-wash-diff-section408,79122
+(defalias 'magit-wash-diff magit-wash-diff409,80021
+(defalias 'magit-diff-item-kind magit-diff-item-kind410,80700
+(defalias 'magit-diff-item-file magit-diff-item-file411,80884
+(defalias 'magit-diff-item-file2 magit-diff-item-file2412,81077
+(defalias 'magit-wash-hunk magit-wash-hunk413,81272
+(defalias 'magit-insert-diff magit-insert-diff415,82503
+(defalias 'magit-wash-raw-diffs magit-wash-raw-diffs417,82994
+(defalias 'magit-wash-raw-diff magit-wash-raw-diff418,83124
+(defalias 'magit-hunk-item-diff magit-hunk-item-diff419,84607
+(defalias 'magit-diff-item-insert-header magit-diff-item-insert-header420,84949
+(defalias 'magit-insert-diff-item-patch magit-insert-diff-item-patch421,85504
+(defalias 'magit-insert-hunk-item-patch magit-insert-hunk-item-patch422,85857
+(defalias 'magit-insert-hunk-item-region-patch magit-insert-hunk-item-region-patch423,86241
+(defalias 'magit-hunk-item-is-conflict-p magit-hunk-item-is-conflict-p424,86990
+(defalias 'magit-hunk-item-target-line magit-hunk-item-target-line425,87256
+(defalias 'magit-apply-diff-item magit-apply-diff-item426,87791
+(defalias 'magit-apply-hunk-item* magit-apply-hunk-item*427,88134
+(defalias 'magit-apply-hunk-item magit-apply-hunk-item428,88616
+(defalias 'magit-apply-hunk-item-reverse magit-apply-hunk-item-reverse429,88740
+(defalias 'magit-insert-unstaged-changes magit-insert-unstaged-changes430,88887
+(defalias 'magit-insert-staged-changes magit-insert-staged-changes431,89090
+(defvar magit-log-oneline-re 434,89590
+(defvar magit-present-log-line-function 438,89896
+(defalias 'magit-present-log-line magit-present-log-line440,90012
+(defvar magit-log-count 442,90988
+(defalias 'magit-create-log-buffer-sections magit-create-log-buffer-sections447,91373
+(defalias 'magit-wash-log-line magit-wash-log-line448,91714
+(defalias 'magit-wash-log magit-wash-log449,92850
+(defalias 'magit-wash-commit magit-wash-commit451,93121
+(defalias 'magit-refresh-commit-buffer magit-refresh-commit-buffer452,93398
+(defvar magit-commit-mode 455,94513
+(defalias 'magit-commit-mode magit-commit-mode458,94641
+(defvar magit-commit-buffer-name 461,95408
+(defalias 'magit-show-commit magit-show-commit462,95472
+(defalias 'magit-refresh-marked-commits magit-refresh-marked-commits464,96918
+(defalias 'magit-refresh-marked-commits-in-buffer magit-refresh-marked-commits-in-buffer465,97047
+(defalias 'magit-set-marked-commit magit-set-marked-commit466,97793
+(defalias 'magit-marked-commit magit-marked-commit467,97915
+(defalias 'magit-insert-unpulled-commits magit-insert-unpulled-commits468,98026
+(defalias 'magit-insert-unpushed-commits magit-insert-unpushed-commits469,98265
+(defalias 'magit-insert-unpulled-svn-commits magit-insert-unpulled-svn-commits470,98504
+(defalias 'magit-insert-unpushed-svn-commits magit-insert-unpushed-svn-commits471,98779
+(defalias 'magit-remote-branch-for magit-remote-branch-for473,99120
+(defalias 'magit-remote-string magit-remote-string474,99482
+(defalias 'magit-refresh-status magit-refresh-status475,99683
+(defalias 'magit-init magit-init477,102469
+(defvar magit-status-mode 480,103134
+(defalias 'magit-status-mode magit-status-mode483,103270
+(defalias 'magit-status magit-status485,103984
+(defalias 'magit-stage-item magit-stage-item487,104757
+(defalias 'magit-unstage-item magit-unstage-item489,106109
+(defalias 'magit-stage-all magit-stage-all493,107375
+(defalias 'magit-unstage-all magit-unstage-all496,107624
+(defalias 'magit-get-tracking-name magit-get-tracking-name499,107850
+(defalias 'magit-maybe-create-local-tracking-branch magit-maybe-create-local-tracking-branch502,108309
+(defalias 'magit-checkout magit-checkout507,108875
+(defalias 'magit-read-create-branch-args magit-read-create-branch-args508,109125
+(defalias 'magit-create-branch magit-create-branch512,109505
+(defalias 'magit-guess-branch magit-guess-branch513,109727
+(defalias 'magit-manual-merge magit-manual-merge517,110503
+(defalias 'magit-automatic-merge magit-automatic-merge520,110930
+(defalias 'magit-rebase-info magit-rebase-info521,111128
+(defalias 'magit-rebase-step magit-rebase-step522,111645
+(defalias 'magit-svn-find-rev magit-svn-find-rev523,112198
+(defalias 'magit-svn-rebase magit-svn-rebase524,113116
+(defalias 'magit-svn-dcommit magit-svn-dcommit525,113220
+(defalias 'magit-svn-enabled magit-svn-enabled526,113326
+(defalias 'magit-get-svn-local-ref magit-get-svn-local-ref527,113404
+(defvar magit-get-svn-ref-info-cache 532,114202
+(defalias 'magit-get-svn-ref-info magit-get-svn-ref-info537,114498
+(defalias 'magit-get-svn-ref magit-get-svn-ref540,115461
+(defalias 'magit-reset-head magit-reset-head546,115889
+(defalias 'magit-reset-head-hard magit-reset-head-hard550,116381
+(defalias 'magit-reset-working-tree magit-reset-working-tree553,116669
+(defalias 'magit-read-rewrite-info magit-read-rewrite-info554,116843
+(defalias 'magit-write-rewrite-info magit-write-rewrite-info555,117156
+(defalias 'magit-insert-pending-commits magit-insert-pending-commits556,117545
+(defalias 'magit-rewrite-set-commit-property magit-rewrite-set-commit-property557,118863
+(defalias 'magit-rewrite-set-used magit-rewrite-set-used558,119132
+(defalias 'magit-rewrite-set-unused magit-rewrite-set-unused559,119662
+(defalias 'magit-insert-pending-changes magit-insert-pending-changes560,120196
+(defalias 'magit-rewrite-start magit-rewrite-start561,120482
+(defalias 'magit-rewrite-stop magit-rewrite-stop562,121102
+(defalias 'magit-rewrite-abort magit-rewrite-abort563,121394
+(defalias 'magit-rewrite-finish magit-rewrite-finish564,121777
+(defalias 'magit-rewrite-finish-step magit-rewrite-finish-step565,121922
+(defalias 'magit-remote-update magit-remote-update571,122572
+(defalias 'magit-pull magit-pull572,122847
+(defalias 'magit-shell-command magit-shell-command574,123203
+(defalias 'magit-git-command magit-git-command579,123755
+(defalias 'magit-push magit-push580,124280
+(defvar magit-log-edit-mode-hook 582,124733
+(defvar magit-log-edit-buffer-name 584,124834
+(defalias 'magit-log-fill-paragraph magit-log-fill-paragraph588,125615
+(defalias 'magit-log-edit-mode magit-log-edit-mode603,127187
+(defalias 'magit-log-edit-cleanup magit-log-edit-cleanup604,127960
+(defalias 'magit-log-edit-append magit-log-edit-append605,128156
+(defalias 'magit-log-edit-get-fields magit-log-edit-get-fields607,128470
+(defalias 'magit-log-edit-set-fields magit-log-edit-set-fields608,128838
+(defalias 'magit-log-edit-set-field magit-log-edit-set-field609,129252
+(defalias 'magit-log-edit-get-field magit-log-edit-get-field610,129492
+(defalias 'magit-log-edit-setup-author-env magit-log-edit-setup-author-env611,129592
+(defalias 'magit-log-edit-push-to-comment-ring magit-log-edit-push-to-comment-ring612,129997
+(defalias 'magit-log-edit-commit magit-log-edit-commit615,130246
+(defalias 'magit-log-edit-cancel-log-message magit-log-edit-cancel-log-message617,131470
+(defalias 'magit-log-edit-toggle-amending magit-log-edit-toggle-amending620,131951
+(defalias 'magit-log-edit-toggle-signoff magit-log-edit-toggle-signoff623,132432
+(defalias 'magit-pop-to-log-edit magit-pop-to-log-edit624,132753
+(defalias 'magit-log-edit magit-log-edit625,133176
+(defalias 'magit-add-log magit-add-log626,133857
+(defalias 'magit-tag magit-tag629,135096
+(defalias 'magit-annotated-tag magit-annotated-tag632,135395
+(defalias 'magit-wash-stash magit-wash-stash633,135576
+(defalias 'magit-wash-stashes magit-wash-stashes634,136477
+(defalias 'magit-insert-stashes magit-insert-stashes635,136604
+(defalias 'magit-stash magit-stash640,136989
+(defalias 'magit-stash-snapshot magit-stash-snapshot643,137349
+(defvar magit-stash-mode 647,137886
+(defalias 'magit-stash-mode magit-stash-mode650,138020
+(defvar magit-stash-buffer-name 653,138768
+(defalias 'magit-show-stash magit-show-stash654,138831
+(defalias 'magit-wash-topic magit-wash-topic655,140123
+(defalias 'magit-wash-topics magit-wash-topics656,141014
+(defalias 'magit-insert-topics magit-insert-topics657,141140
+(defalias 'magit-commit-at-point magit-commit-at-point658,141282
+(defalias 'magit-apply-commit magit-apply-commit659,141681
+(defalias 'magit-apply-item magit-apply-item660,142278
+(defalias 'magit-cherry-pick-item magit-cherry-pick-item661,143345
+(defalias 'magit-revert-item magit-revert-item662,144158
+(defalias 'magit-configure-have-graph magit-configure-have-graph664,145459
+(defalias 'magit-configure-have-decorate magit-configure-have-decorate665,145642
+(defalias 'magit-log-show-more-entries magit-log-show-more-entries671,146075
+(defalias 'magit-refresh-log-buffer magit-refresh-log-buffer672,146316
+(defvar magit-log-mode 675,148047
+(defalias 'magit-log-mode magit-log-mode678,148177
+(defvar magit-log-buffer-name 681,148913
+(defvar magit-log-grep-buffer-name 683,149023
+(defalias 'magit-display-log magit-display-log684,149092
+(defalias 'magit-log-all magit-log-all686,149585
+(defalias 'magit-log-first-parent magit-log-first-parent689,149779
+(defalias 'magit-log magit-log691,149959
+(defalias 'magit-log-grep magit-log-grep693,150117
+(defalias 'magit-log-long magit-log-long694,150503
+(defalias 'magit-refresh-reflog-buffer magit-refresh-reflog-buffer695,150893
+(defvar magit-reflog-mode 698,152470
+(defalias 'magit-reflog-mode magit-reflog-mode701,152606
+(defalias 'magit-reflog magit-reflog703,153320
+(defalias 'magit-reflog-head magit-reflog-head704,153679
+(defalias 'magit-refresh-diff-buffer magit-refresh-diff-buffer705,153764
+(defvar magit-diff-mode 708,154889
+(defalias 'magit-diff-mode magit-diff-mode711,155021
+(defalias 'magit-diff magit-diff713,155719
+(defalias 'magit-diff-working-tree magit-diff-working-tree714,156055
+(defalias 'magit-diff-with-mark magit-diff-with-mark715,156209
+(defalias 'magit-wazzup-toggle-ignore magit-wazzup-toggle-ignore716,156337
+(defalias 'magit-refresh-wazzup-buffer magit-refresh-wazzup-buffer717,156745
+(defvar magit-wazzup-mode 720,159089
+(defalias 'magit-wazzup-mode magit-wazzup-mode723,159225
+(defalias 'magit-wazzup magit-wazzup725,159939
+(defalias 'magit-ignore-file magit-ignore-file726,160251
+(defalias 'magit-ignore-item magit-ignore-item727,160741
+(defalias 'magit-ignore-item-locally magit-ignore-item-locally728,161455
+(defalias 'magit-discard-diff magit-discard-diff729,162106
+(defalias 'magit-discard-item magit-discard-item730,162599
+(defalias 'magit-visit-item magit-visit-item731,164346
+(defalias 'magit-show-item-or-scroll-up magit-show-item-or-scroll-up732,165513
+(defalias 'magit-show-item-or-scroll-down magit-show-item-or-scroll-down733,166097
+(defalias 'magit-mark-item magit-mark-item734,166685
+(defalias 'magit-describe-item magit-describe-item735,167397
+(defalias 'magit-copy-item-as-kill magit-copy-item-as-kill737,168095
+(defalias 'magit-server-running-p magit-server-running-p745,169035
+(defalias 'magit-interactive-rebase magit-interactive-rebase747,169907
+(defalias 'magit-show-branches-mode magit-show-branches-mode756,172241
+(defalias 'magit-quit-branches-window magit-quit-branches-window758,172766
+(defalias 'magit--branch-name-from-line magit--branch-name-from-line760,172950
+(defalias 'magit--branch-name-at-point magit--branch-name-at-point762,173125
+(defalias 'magit-branches-window-checkout magit-branches-window-checkout764,173364
+(defalias 'magit-remove-branch magit-remove-branch767,173638
+(defalias 'magit-branches-window-manual-merge magit-branches-window-manual-merge769,173990
+(defalias 'magit-branches-window-automatic-merge magit-branches-window-automatic-merge771,174206
+(defalias 'magit--is-branch-at-point-remote magit--is-branch-at-point-remote774,174605
+(defalias 'magit--branch-view-details magit--branch-view-details776,174764
+(defalias 'magit-show-branches magit-show-branches778,175217
+(defalias 'magit-interactive-resolve magit-interactive-resolve779,175944
+(defalias 'magit-interactive-resolve-item magit-interactive-resolve-item780,177428
+(defalias 'magit-list-buffers magit-list-buffers782,178104
+(defalias 'remove-dupes remove-dupes784,178334
+(defalias 'magit-list-projects magit-list-projects786,178551
+
+elpa/magit-0.8.1/magit-pkg.el,29
+(define-package "magit" 1,0
+
+elpa/magit-0.8.1/magit-pkg.elc,32
+(define-package "magit" 17,582
+
+elpa/magit-0.8.1/magit.el,16573
+(defgroup magit 70,2425
+(defcustom magit-git-executable 75,2514
+(defcustom magit-git-standard-options 80,2622
+(defcustom magit-repo-dirs 85,2758
+(defcustom magit-repo-dirs-depth 92,2983
+(defcustom magit-save-some-buffers 99,3223
+(defcustom magit-commit-all-when-nothing-staged 108,3594
+(defcustom magit-commit-signoff 121,4183
+(defcustom magit-log-cutoff-length 126,4301
+(defcustom magit-log-infinite-length 131,4449
+(defcustom magit-process-popup-time 136,4600
+(defcustom magit-revert-item-confirm 143,4854
+(defcustom magit-log-edit-confirm-cancellation 148,4983
+(defcustom magit-process-connection-type 153,5134
+(defface magit-header161,5430
+(defface magit-section-title168,5566
+(defface magit-branch173,5686
+(defface magit-diff-file-header178,5803
+(defface magit-diff-hunk-header183,5921
+(defface magit-diff-add188,6053
+(defface magit-diff-none196,6278
+(defface magit-diff-del201,6379
+(defface magit-log-graph209,6608
+(defface magit-log-sha1217,6835
+(defface magit-log-message225,7063
+(defface magit-item-highlight230,7169
+(defface magit-item-mark238,7397
+(defface magit-log-tag-label246,7610
+(defface magit-log-head-label-bisect-good254,7855
+(defface magit-log-head-label-bisect-bad266,8185
+(defface magit-log-head-label-remote278,8499
+(defface magit-log-head-label-tags290,8835
+(defvar magit-completing-read 302,9165
+(defvar magit-omit-untracked-dir-contents 305,9277
+(defface magit-log-head-label-local308,9405
+(defmacro magit-with-refresh 322,9754
+(defvar magit-submode 338,10139
+(defun magit-use-region-p 342,10251
+(defun magit-goto-line 347,10376
+(defun magit-trim-line 354,10535
+(defun magit-split-lines 361,10698
+(defun magit-git-insert 369,10907
+(defun magit-git-output 375,11054
+(defun magit-git-string 381,11193
+(defun magit-git-lines 384,11276
+(defun magit-git-exit-code 387,11360
+(defun magit-file-lines 391,11503
+(defun magit-write-file-lines 400,11756
+(defun magit-concat-with-delim 406,11889
+(defun magit-get 414,12074
+(defun magit-get-all 417,12171
+(defun magit-set 420,12283
+(defun magit-remove-conflicts 425,12480
+(defun magit-git-repo-p 445,13113
+(defun magit-list-repos* 448,13193
+(defun magit-list-repos 460,13578
+(defun magit-get-top-dir 470,13816
+(defun magit-get-ref 478,14109
+(defun magit-get-current-branch 481,14183
+(defun magit-get-current-remote 488,14359
+(defun magit-ref-exists-p 496,14682
+(defun magit-read-top-dir 499,14772
+(defun magit-name-rev 511,15218
+(defun magit-put-line-property 518,15399
+(defun magit-format-commit 522,15535
+(defun magit-current-line 527,15677
+(defun magit-insert-region 531,15795
+(defun magit-insert-current-line 536,15946
+(defun magit-file-uptodate-p 542,16149
+(defun magit-anything-staged-p 545,16245
+(defun magit-everything-clean-p 548,16346
+(defun magit-commit-parents 552,16476
+(defun magit-choose-parent-id 557,16633
+(defun magit-list-interesting-refs 565,16833
+(defun magit-read-rev 584,17482
+(defun magit-read-rev-range 596,17872
+(defun magit-rev-to-git 604,18111
+(defun magit-rev-range-to-git 611,18253
+(defun magit-rev-describe 622,18542
+(defun magit-rev-range-describe 629,18688
+(defun magit-default-rev 640,19049
+(defun magit-read-remote 648,19270
+(defstruct magit-section673,20268
+(defvar magit-top-section 677,20374
+(defvar magit-old-top-section 682,20541
+(defvar magit-section-hidden-default 684,20577
+(defun magit-new-section 686,20620
+(defun magit-cancel-section 707,21376
+(defmacro magit-with-section 717,21721
+(defun magit-set-section-info 735,22374
+(defun magit-set-section-needs-refresh-on-show 738,22497
+(defmacro magit-create-buffer-sections 743,22657
+(defun magit-propertize-section 758,23216
+(defun magit-find-section 766,23504
+(defun magit-section-path 777,23872
+(defun magit-find-section-at 785,24117
+(defun magit-find-section-after 797,24496
+(defun magit-find-section-before 804,24727
+(defun magit-current-section 813,25004
+(defun magit-insert-section 818,25151
+(defun magit-git-section 861,26582
+(defun magit-next-section 873,26924
+(defun magit-goto-next-section 882,27196
+(defun magit-prev-section 907,27965
+(defun magit-goto-previous-section 921,28393
+(defun magit-goto-parent-section 941,29121
+(defun magit-goto-section 948,29339
+(defun magit-for-all-sections 955,29563
+(defun magit-section-set-hidden 965,29899
+(defun magit-section-any-hidden 982,30506
+(defun magit-section-collapse 990,30799
+(defun magit-section-expand 996,31012
+(defun magit-section-expand-all-aux 1002,31220
+(defun magit-section-expand-all 1008,31438
+(defun magit-section-hideshow 1013,31603
+(defun magit-show-section 1025,32127
+(defun magit-hide-section 1030,32231
+(defun magit-collapse-section 1035,32333
+(defun magit-expand-section 1040,32480
+(defun magit-toggle-file-section 1045,32623
+(defun magit-toggle-section 1052,32879
+(defun magit-expand-collapse-section 1059,33081
+(defun magit-cycle-section 1069,33359
+(defun magit-section-lineage 1085,33878
+(defun magit-section-show-level 1090,34045
+(defun magit-show-level 1098,34386
+(defun magit-show-only-files 1108,34835
+(defun magit-show-only-files-all 1117,35131
+(defmacro magit-define-level-shower-1 1126,35404
+(defmacro magit-define-level-shower 1139,35893
+(defmacro magit-define-section-jumper 1146,36147
+(defvar magit-highlight-overlay 1157,36495
+(defvar magit-highlighted-section 1159,36533
+(defun magit-highlight-section 1161,36573
+(defun magit-section-context-type 1177,37196
+(defun magit-prefix-p 1188,37504
+(defmacro magit-section-case 1199,37842
+(defmacro magit-section-action 1236,39083
+(defun magit-wash-sequence 1241,39226
+(defun magit-set-mode-line-process 1250,39439
+(defun magit-process-indicator-from-command 1256,39627
+(defvar magit-process 1266,39989
+(defvar magit-process-client-buffer 1267,40016
+(defvar magit-process-buffer-name 1268,40057
+(defun magit-run* 1271,40153
+(defun magit-process-sentinel 1351,42909
+(defun magit-password 1363,43328
+(defun magit-process-filter 1372,43777
+(defun magit-run 1391,44491
+(defun magit-run-git 1395,44583
+(defun magit-run-with-input 1401,44740
+(defun magit-run-git-with-input 1405,44871
+(defun magit-run-git-async 1412,45069
+(defun magit-run-async-with-input 1418,45231
+(defun magit-display-process 1421,45341
+(defvar magit-mode-map1444,46131
+(defvar magit-commit-mode-map1498,48832
+(defvar magit-status-mode-map1505,49063
+(defvar magit-stash-mode-map1538,50631
+(defvar magit-log-mode-map1548,51031
+(defvar magit-reflog-mode-map1571,52045
+(defvar magit-diff-mode-map1583,52525
+(defvar magit-wazzup-mode-map1593,52924
+(defvar magit-mode-hook 1668,55542
+(defvar magit-refresh-function 1672,55640
+(defvar magit-refresh-args 1676,55779
+(defvar last-point)1680,55906
+(defun magit-remember-point 1682,55927
+(defun magit-invisible-region-end 1685,55988
+(defun magit-invisible-region-start 1690,56143
+(defun magit-correct-point-after-command 1695,56309
+(defun magit-post-command-hook 1713,56971
+(defun magit-mode 1717,57073
+(defun magit-mode-init 1737,57660
+(defun magit-find-buffer 1745,57895
+(defun magit-find-status-buffer 1755,58243
+(defun magit-for-all-buffers 1758,58327
+(defun magit-refresh-buffer 1766,58562
+(defun magit-string-has-prefix-p 1790,59435
+(defun magit-revert-buffers 1793,59555
+(defvar magit-refresh-needing-buffers 1804,59965
+(defvar magit-refresh-pending 1805,60008
+(defun magit-refresh-wrapper 1807,60044
+(defun magit-need-refresh 1822,60507
+(defun magit-refresh 1828,60755
+(defun magit-refresh-all 1836,60982
+(defun magit-wash-untracked-file 1845,61270
+(defun magit-wash-untracked-files 1855,61550
+(defun magit-insert-untracked-files 1865,61901
+(defvar magit-diff-context-lines 1876,62227
+(defun magit-diff-U-arg 1878,62264
+(defun magit-diff-smaller-hunks 1881,62336
+(defun magit-diff-larger-hunks 1887,62553
+(defun magit-diff-default-hunks 1893,62761
+(defun magit-diff-line-file 1899,62925
+(defun magit-wash-diffs 1907,63136
+(defun magit-wash-diff-or-other-file 1910,63221
+(defun magit-wash-other-file 1914,63318
+(defvar magit-hide-diffs 1924,63603
+(defun magit-insert-diff-title 1926,63634
+(defun magit-wash-diff-section 1943,64084
+(defun magit-wash-diff 1986,65423
+(defun magit-diff-item-kind 1991,65593
+(defun magit-diff-item-file 1994,65664
+(defun magit-diff-item-file2 1997,65736
+(defun magit-wash-hunk 2000,65810
+(defvar magit-diff-options 2023,66586
+(defun magit-insert-diff 2025,66619
+(defvar magit-last-raw-diff 2041,67040
+(defvar magit-ignore-unmerged-raw-diffs 2042,67073
+(defun magit-wash-raw-diffs 2044,67119
+(defun magit-wash-raw-diff 2048,67236
+(defun magit-hunk-item-diff 2085,68774
+(defun magit-diff-item-insert-header 2091,68954
+(defun magit-insert-diff-item-patch 2101,69305
+(defun magit-insert-hunk-item-patch 2109,69547
+(defun magit-insert-hunk-item-region-patch 2114,69755
+(defun magit-hunk-item-is-conflict-p 2135,70529
+(defun magit-hunk-item-target-line 2140,70708
+(defun magit-apply-diff-item 2158,71294
+(defun magit-apply-hunk-item* 2168,71665
+(defun magit-apply-hunk-item 2181,72157
+(defun magit-apply-hunk-item-reverse 2184,72255
+(defun magit-insert-unstaged-changes 2187,72378
+(defun magit-insert-staged-changes 2193,72574
+(defvar magit-log-oneline-re2206,72937
+(defvar magit-present-log-line-function 2217,73330
+(defun magit-present-log-line 2222,73569
+(defvar magit-log-count 2257,74640
+(defmacro magit-create-log-buffer-sections 2260,74747
+(defun magit-wash-log-line 2274,75281
+(defun magit-wash-log 2304,76230
+(defvar magit-currently-shown-commit 2308,76343
+(defun magit-wash-commit 2310,76386
+(defun magit-refresh-commit-buffer 2318,76656
+(define-minor-mode magit-commit-mode2326,76881
+(defvar magit-commit-buffer-name 2333,77034
+(defun magit-show-commit 2336,77138
+(defvar magit-marked-commit 2361,77967
+(defvar magit-mark-overlay 2363,78001
+(defun magit-refresh-marked-commits 2367,78128
+(defun magit-refresh-marked-commits-in-buffer 2370,78236
+(defun magit-set-marked-commit 2386,78784
+(defun magit-marked-commit 2390,78895
+(defun magit-insert-unpulled-commits 2394,78987
+(defun magit-insert-unpushed-commits 2400,79200
+(defun magit-insert-unpulled-svn-commits 2406,79413
+(defun magit-insert-unpushed-svn-commits 2412,79659
+(defun magit-remote-branch-for 2418,79905
+(defun magit-remote-string 2427,80204
+(defun magit-refresh-status 2435,80441
+(defun magit-init 2484,82271
+(define-minor-mode magit-status-mode2501,82941
+(defun magit-status 2509,83116
+(defun magit-stage-item 2534,84022
+(defun magit-unstage-item 2557,84783
+(defun magit-stage-all 2574,85353
+(defun magit-unstage-all 2583,85691
+(defun magit-get-tracking-name 2591,85855
+(defun magit-maybe-create-local-tracking-branch 2605,86519
+(defun magit-checkout 2617,86988
+(defun magit-read-create-branch-args 2627,87466
+(defun magit-create-branch 2633,87675
+(defun magit-guess-branch 2646,88104
+(defun magit-manual-merge 2652,88266
+(defun magit-automatic-merge 2668,88785
+(defun magit-rebase-info 2677,89080
+(defun magit-rebase-step 2694,89777
+(defun magit-svn-find-rev 2715,90375
+(defun magit-svn-rebase 2732,90960
+(defun magit-svn-dcommit 2736,91044
+(defun magit-svn-enabled 2740,91130
+(defun magit-get-svn-local-ref 2743,91200
+(defvar magit-get-svn-ref-info-cache 2764,92212
+(defun magit-get-svn-ref-info 2770,92429
+(defun magit-get-svn-ref 2805,94104
+(defun magit-reset-head 2813,94379
+(defun magit-reset-head-hard 2830,95022
+(defun magit-reset-working-tree 2839,95363
+(defun magit-read-rewrite-info 2848,95614
+(defun magit-write-rewrite-info 2855,95839
+(defun magit-insert-pending-commits 2860,95993
+(defun magit-rewrite-set-commit-property 2882,96643
+(defun magit-rewrite-set-used 2891,96948
+(defun magit-rewrite-set-unused 2897,97113
+(defun magit-insert-pending-changes 2903,97282
+(defun magit-rewrite-start 2913,97580
+(defun magit-rewrite-stop 2927,98215
+(defun magit-rewrite-abort 2937,98501
+(defun magit-rewrite-finish 2949,98875
+(defun magit-rewrite-finish-step 2954,98981
+(defun magit-remote-update 2973,99605
+(defun magit-pull 2985,100072
+(defun magit-shell-command 2997,100477
+(defun magit-git-command 3007,100779
+(defun magit-push 3024,101370
+(defvar magit-log-edit-mode-hook 3041,101936
+(defvar magit-log-edit-buffer-name 3043,102012
+(defvar magit-log-edit-mode-map3046,102115
+(defvar magit-pre-log-edit-window-configuration 3057,102651
+(defun magit-log-fill-paragraph 3059,102705
+(define-derived-mode magit-log-edit-mode 3071,103184
+(defun magit-log-edit-cleanup 3076,103387
+(defun magit-log-edit-append 3084,103599
+(defconst magit-log-header-end 3089,103757
+(defun magit-log-edit-get-fields 3091,103820
+(defun magit-log-edit-set-fields 3106,104281
+(defun magit-log-edit-set-field 3122,104838
+(defun magit-log-edit-get-field 3134,105185
+(defun magit-log-edit-setup-author-env 3137,105274
+(defun magit-log-edit-push-to-comment-ring 3154,105857
+(defun magit-log-edit-commit 3159,106073
+(defun magit-log-edit-cancel-log-message 3199,107640
+(defun magit-log-edit-toggle-amending 3211,108118
+(defun magit-log-edit-toggle-signoff 3224,108617
+(defun magit-pop-to-log-edit 3236,109068
+(defun magit-log-edit 3248,109523
+(defun magit-add-log 3270,110313
+(defun magit-tag 3324,111951
+(defun magit-annotated-tag 3333,112221
+(defun magit-wash-stash 3342,112482
+(defun magit-wash-stashes 3358,112988
+(defun magit-insert-stashes 3362,113102
+(defun magit-stash 3367,113226
+(defun magit-stash-snapshot 3378,113653
+(defvar magit-currently-shown-stash 3388,114039
+(define-minor-mode magit-stash-mode3390,114081
+(defvar magit-stash-buffer-name 3397,114239
+(defun magit-show-stash 3400,114329
+(defun magit-wash-topic 3429,115316
+(defun magit-wash-topics 3444,115819
+(defun magit-insert-topics 3448,115932
+(defun magit-commit-at-point 3455,116064
+(defun magit-apply-commit 3464,116333
+(defun magit-apply-item 3486,117093
+(defun magit-cherry-pick-item 3505,117631
+(defun magit-revert-item 3516,117945
+(defvar magit-have-graph 3532,118465
+(defvar magit-have-decorate 3533,118498
+(defun magit-configure-have-graph 3539,118721
+(defun magit-configure-have-decorate 3544,118906
+(defun magit-log-show-more-entries 3549,119108
+(defun magit-refresh-log-buffer 3566,119720
+(define-minor-mode magit-log-mode3581,120190
+(defvar magit-log-buffer-name 3588,120344
+(defvar magit-log-grep-buffer-name 3590,120433
+(defun magit-display-log 3593,120538
+(defun magit-log-all 3605,121004
+(defun magit-log-first-parent 3610,121150
+(defun magit-log 3616,121338
+(defun magit-log-grep 3621,121464
+(defun magit-log-long 3632,121889
+(defun magit-refresh-reflog-buffer 3646,122299
+(define-minor-mode magit-reflog-mode3656,122632
+(defun magit-reflog 3663,122792
+(defun magit-reflog-head 3673,123155
+(defun magit-refresh-diff-buffer 3679,123238
+(define-minor-mode magit-diff-mode3686,123471
+(defun magit-diff 3693,123627
+(defun magit-diff-working-tree 3704,123993
+(defun magit-diff-with-mark 3708,124135
+(defun magit-wazzup-toggle-ignore 3715,124270
+(defun magit-refresh-wazzup-buffer 3729,124824
+(define-minor-mode magit-wazzup-mode3775,126404
+(defun magit-wazzup 3782,126564
+(defun magit-ignore-file 3794,126909
+(defun magit-ignore-item 3807,127313
+(defun magit-ignore-item-locally 3815,127554
+(defun magit-discard-diff 3821,127728
+(defun magit-discard-item 3837,128323
+(defun magit-visit-item 3873,129622
+(defun magit-show-item-or-scroll-up 3897,130305
+(defun magit-show-item-or-scroll-down 3907,130536
+(defun magit-mark-item 3917,130775
+(defun magit-describe-item 3927,131043
+(defun magit-copy-item-as-kill 3938,131401
+(defun magit-server-running-p 3948,131646
+(defun magit-interactive-rebase 3975,132589
+(defvar magit-show-branches-mode-map3992,133254
+(define-derived-mode magit-show-branches-mode 4006,133895
+(defun magit-quit-branches-window 4009,133979
+(defun magit--branch-name-from-line 4015,134120
+(defun magit--branch-name-at-point 4019,134274
+(defun magit-branches-window-checkout 4024,134478
+(defun magit-remove-branch 4031,134678
+(defun magit-branches-window-manual-merge 4043,135093
+(defun magit-branches-window-automatic-merge 4049,135273
+(defvar magit-branches-buffer-name 4055,135464
+(defun magit--is-branch-at-point-remote(4057,135520
+(defun magit--branch-view-details 4061,135666
+(defun magit-show-branches 4085,136583
+(defvar magit-ediff-file)4116,137636
+(defvar magit-ediff-windows)4117,137662
+(defun magit-interactive-resolve 4121,137730
+(defun magit-interactive-resolve-item 4172,139904
+(defun magit-list-buffers 4178,140067
+(defun remove-dupes 4186,140336
+(defun magit-list-projects 4195,140575
+
 starter-kit-elpa.el,103
 (defvar starter-kit-packages 7,126
-(defun starter-kit-elpa-install 15,461
-(defun esk-online? 24,796
+(defun starter-kit-elpa-install 19,640
+(defun esk-online? 28,975
 
 starter-kit-misc.el,73
 (defvar coding-hook 75,2430
 (defalias 'yes-or-no-p yes-or-no-p78,2518
 
+starter-kit-ruby.elc,250
+(defalias 'pcomplete/rake pcomplete/rake19,1430
+(defalias 'pcmpl-rake-tasks pcmpl-rake-tasks23,1708
+(defalias 'rake rake24,1977
+(defalias 'flymake-ruby-init flymake-ruby-init26,2589
+(defalias 'flymake-ruby-enable flymake-ruby-enable27,2828
+
+starter-kit-lisp.elc,118
+(defalias 'esk-remove-elc-on-save esk-remove-elc-on-save20,1261
+(defalias 'clojure-project clojure-project22,1686
+
 bart.el,28
 (defun pull-next-line(5,90
 
-elpa/weblogger-1.4.3/weblogger-autoloads.el,0
+starter-kit-eshell.elc,86
+(defalias 'eshell/cds eshell/cds19,1441
+(defalias 'eshell/find eshell/find20,1567
 
-elpa/xml-rpc-1.6.7/xml-rpc-autoloads.el,0
+dominating-file.elc,0
+
+starter-kit-perl.elc,0
+
+elpa/magit-0.8.1/magit-autoloads.el,0
+
+elpa/ruby-compilation-0.7/ruby-compilation-autoloads.el,0
+
+elpa/htmlize-1.37/htmlize-autoloads.el,0
+
+elpa/company-0.5/company-autoloads.el,0
+
+elpa/ruby-electric-1.1/ruby-electric-autoloads.el,0
 
 elpa/idle-highlight-1.0/idle-highlight-autoloads.el,0
 
@@ -2434,16 +4991,32 @@ elpa/gist-0.4/gist-autoloads.el,0
 
 elpa/ruby-mode-1.1/ruby-mode-autoloads.el,0
 
+elpa/inflections-1.0/inflections-autoloads.el,0
+
+elpa/jump-2.0/jump-autoloads.el,0
+
+elpa/findr-0.7/findr-autoloads.el,0
+
 elpa/inf-ruby-2.1/inf-ruby-autoloads.el,0
 
+starter-kit-js.elc,0
+
+custom.elc,0
+
 dominating-file.el,0
+
+init.elc,0
 
 starter-kit-perl.el,0
 
 init.el,0
 
+starter-kit-registers.elc,0
+
 custom.el,0
 
 starter-kit-registers.el,0
+
+starter-kit-bindings.elc,0
 
 starter-kit-js.el,0
