@@ -8,6 +8,8 @@
                                    'ruby-mode
                                    'inf-ruby
                                    'ruby-electric
+                                   'rinari
+                                   'magit
                                    'htmlize
                                    'css-mode
                                    'gist
