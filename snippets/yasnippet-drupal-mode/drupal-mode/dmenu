@@ -1,9 +1,0 @@
-    $items[] = array(
-      'path' => '${1:path}',
-      'title' => t('${2:title}'),
-      'description' => t('${3:description}'),
-      'callback' => 'drupal_get_form',
-      'callback arguments' => '{$4:form}',
-      'access' => {$5:access},
-      'type' => {$6:type},
-    );

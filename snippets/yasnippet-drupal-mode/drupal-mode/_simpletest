@@ -1,9 +1,0 @@
-/**
- * Implementation of hook_simpletest().
- */
-function ${1:`(sacha/drupal-module-name)`}_simpletest() {
-  $module_name = '${1:`(sacha/drupal-module-name)`}'; 
-  $dir = drupal_get_path('module', $module_name). '/tests';
-  $tests = file_scan_directory($dir, '\.test$');
-  return array_keys($tests);
-}

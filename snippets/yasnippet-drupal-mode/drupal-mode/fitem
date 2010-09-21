@@ -1,5 +1,0 @@
-$form['${1:id}'] = array(
-  '#type' => 'item',
-  '#title' => "${2:title}",
-  '#value' => $0,
-);

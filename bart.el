@@ -17,3 +17,7 @@
 
 ;; use Monaco as default font
 (set-face-attribute 'default nil :family "Monaco" :height 120)
+
+;; load ruby / rails / rspec yasnippets
+(setq yas/root-directory "~/.emacs.d/snippets")
+(yas/load-directory yas/root-directory)
