@@ -33,6 +33,11 @@
 (defun eshell/find (dir &rest opts)
   (find-dired dir (mapconcat 'identity opts " ")))
 
+(defun eshell/clear ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)))
+
 ;; Port features from
 ;; http://blog.peepcode.com/tutorials/2009/shell-method-missing/shell_method_missing.rb
 ;; * cloning git repos, github repos
