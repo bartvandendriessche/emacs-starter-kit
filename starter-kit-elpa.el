@@ -9,6 +9,9 @@
                                    'inf-ruby
                                    'ruby-electric
                                    'rinari
+                                   'css-mode
+                                   'yaml-mode
+                                   'find-file-in-project
                                    'magit
                                    'htmlize
                                    'css-mode
