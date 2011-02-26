@@ -21,3 +21,11 @@
 ;; load ruby / rails / rspec yasnippets
 (setq yas/root-directory "~/.emacs.d/snippets")
 (yas/load-directory yas/root-directory)
+
+;; include /usr/local/bin in eshell path
+(add-hook 'eshell-mode-hook
+   '(lambda nil
+   (let ((path))
+      (setq path (concat (getenv "PATH") ":/usr/local/bin"))
+    (setenv "PATH" path))
+   (local-set-key "\C-u" 'eshell-kill-input)))
