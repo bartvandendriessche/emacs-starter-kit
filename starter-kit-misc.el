@@ -111,6 +111,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\(on\\)?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.xml$" . nxml-mode))
 (add-to-list 'auto-mode-alist '("\\.fish$" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.jsp$" . java-mode))
 
 (eval-after-load 'grep
   '(when (boundp 'grep-find-ignored-files)
