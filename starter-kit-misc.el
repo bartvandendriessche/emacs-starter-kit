@@ -75,6 +75,7 @@
 (set-default 'imenu-auto-rescan t)
 
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+(add-hook 'html-mode-hook 'turn-off-auto-fill)
 (add-hook 'text-mode-hook 'turn-on-flyspell)
 
 (defvar coding-hook nil
