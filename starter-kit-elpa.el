@@ -16,7 +16,8 @@
                                    'htmlize
                                    'css-mode
                                    'gist
-                                   'yasnippet-bundle)
+                                   'yasnippet-bundle
+                                   'color-theme)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
