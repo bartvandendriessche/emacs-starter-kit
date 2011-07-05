@@ -17,7 +17,10 @@
                                    'css-mode
                                    'gist
                                    'yasnippet-bundle
-                                   'color-theme)
+                                   'color-theme
+                                   'graphviz-dot-mode
+                                   'notify
+                                   'paredit)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
