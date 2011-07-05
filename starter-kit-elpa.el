@@ -20,7 +20,8 @@
                                    'color-theme
                                    'graphviz-dot-mode
                                    'notify
-                                   'paredit)
+                                   'paredit
+                                   'php-mode)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()

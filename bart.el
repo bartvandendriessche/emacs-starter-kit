@@ -33,6 +33,14 @@
 ;; set default TAGS filename for rinari mode
 (setq rinari-tags-file-name "TAGS")
 
+;; load autocomplete
+(add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/auto-complete-1.3.1"))
+(require 'auto-complete-config)
+
+(add-to-list 'ac-dictionary-directories (concat dotfiles-dir "/elpa-to-submit/auto-complete-1.3.1/dict"))
+(ac-config-default) ;; sets default ac-sources
+(setq-default ac-sources (append '(ac-source-yasnippet) ac-sources))
+
 ;; load emacs-eclim
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/senny-emacs-eclim"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/senny-emacs-eclim/vendor"))
